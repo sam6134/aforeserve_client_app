@@ -349,62 +349,10 @@
               </button>
             </div>
             <div id="mbody" class="modal-body">
-              <div align="left">
-                <button type="button" class="btn btn-dark">Urgency</button>
-              </div>
-              <div align="right" id="in1" class="ui action input" style="width: 70%;left: 32%;">
-                <input type="text" id="urgency" placeholder="urgency">
-                <button class="ui button" onclick="in1()">Send</button>
-              </div>
-              <div id="h1" align="left" style="display: none;">
-                <button type="button" class="btn btn-dark">Impact</button>
-              </div>
-              <div id="in2" style="display: none;">
-                <div align="right" class="ui action input" style="width: 70%;left: 32%;">
-                  <input type="text" id="impact" placeholder="impact">
-                  <button class="ui button" onclick="in2()">Send</button>
-                </div>
-              </div>
-              <div id="h2" align="left" style="display: none;">
-                <button type="button" class="btn btn-dark">Priority</button>
-              </div>
-              <div id="in3" style="display: none;">
-                <div align="right" class="ui action input" style="width: 70%;left: 32%;">
-                <input type="text" id="priority" placeholder="priority">
-                <button class="ui button" onclick="in3()">Send</button>
-              </div>
-            </div>
-              <div id="h3" align="left" style="display: none;">
-                <button type="button" class="btn btn-dark">Classification</button>
-              </div>
-              <div id="in4" style="display: none;">
-                <div align="right" class="ui action input" style="width: 70%;left: 32%;">
-                <input type="text" id="classification" placeholder="classification">
-                <button class="ui button" onclick="in4()">Send</button>
-              </div>
-            </div>
-              <div id="h4" align="left" style="display: none;">
-                <button type="button" class="btn btn-dark">Work Group</button>
-              </div>
-              <div id="in5" style="display: none;">
-                <div align="right" class="ui action input" style="width: 70%;left: 32%;">
-                <input type="text" id="wg" placeholder="Work Group">
-                <button class="ui button" onclick="in5()">Send</button>
-              </div>
-            </div>
-              <div id="h5" align="left" style="display: none;">
-                <button type="button" class="btn btn-dark">Medium</button>
-              </div>
-              <div id="in6" style="display: none;">
-                <div align="right" class="ui action input" style="width: 70%;left: 32%;">
-                <input type="text" id="medium" placeholder="Medium">
-                <button class="ui button" onclick="in6()">Send</button>
-              </div>
-            </div>
-              <div id="h6" align="left" style="display: none;">
+              <div id="h6" align="left">
                 <button type="button" class="btn btn-dark">Symptom</button>
               </div>
-              <div id="in7" style="display: none;">
+              <div id="in7">
                 <div align="right" class="ui action input" style="width: 70%;left: 32%;">
                 <input type="text" id="symptom" placeholder="Symptom">
                 <button class="ui button" onclick="in7()">Send</button>
@@ -513,48 +461,27 @@
       <div id="e1" style="display: none;">
         <button class="btn btn-outline-primary waves-effect" onclick="email()">Email</button>
       </div>
+      <div id="pass1" style="display: none;">
+        <button class="btn btn-outline-primary waves-effect" onclick="password()">Password</button>
+      </div>
+      <div id="dc1" style="display: none;">
+        <button class="btn btn-outline-primary waves-effect" onclick="diskcleanup()">Disk Dleanup</button>
+      </div>
+      <div id="si1" style="display: none;">
+        <button class="btn btn-outline-primary waves-effect" onclick="sftinstall()">Software Install</button>
+      </div>
     </div>
   </div>
       <script>
-        function in1(){
-          document.getElementById('h1').style.display = 'inline';
-          document.getElementById('in2').style.display = 'inline';
-        }
-        function in2(){
-          document.getElementById('h2').style.display = 'inline';
-          document.getElementById('in3').style.display = 'inline';
-        }
-        function in3(){
-          document.getElementById('h3').style.display = 'inline';
-          document.getElementById('in4').style.display = 'inline';
-        }
-        function in4(){
-          document.getElementById('h4').style.display = 'inline';
-          document.getElementById('in5').style.display = 'inline';
-        }
-        function in5(){
-          document.getElementById('h5').style.display = 'inline';
-          document.getElementById('in6').style.display = 'inline';
-        }
-        function in6(){
-          document.getElementById('h6').style.display = 'inline';
-          document.getElementById('in7').style.display = 'inline';
-        }
         function in7(){
           document.getElementById('h7').style.display = 'inline';
           document.getElementById('in8').style.display = 'inline';
         }
         var t_id = '';
         function in8(){
-          var urgency = document.getElementById('urgency').value;
-          var impact = document.getElementById('impact').value;
-          var priority = document.getElementById('priority').value;
-          var classification = document.getElementById('classification').value;
-          var wg = document.getElementById('wg').value;
-          var medium = document.getElementById('medium').value;
           var symptom = document.getElementById('symptom').value;
           var description = document.getElementById('description').value;
-          $.get("/newt/"+urgency+'/'+impact+'/'+priority+'/'+classification+'/'+wg+'/'+medium+'/'+symptom+'/'+description).done(function (data){
+          $.get("/newt/"+symptom+'/'+description).done(function (data){
             alert(data);
             console.log(data);
             t_id = data.id;
@@ -596,13 +523,40 @@
        function ref(){
          $.get("/ref",{id:456}).done(function (data){
            console.log(data);
-           if(data == 'printer'){
+           if(data == 'Printer'){
              document.getElementById('p1').style.display = 'inline';
              document.getElementById('e1').style.display = 'none'
+             document.getElementById('pass1').style.display = 'none'
+             document.getElementById('dc1').style.display = 'none'
+             document.getElementById('si1').style.display = 'none'
            }
-           else if (data == 'email'){
+           else if (data == 'Email'){
              document.getElementById('e1').style.display = 'inline';
              document.getElementById('p1').style.display = 'none';
+             document.getElementById('pass1').style.display = 'none'
+             document.getElementById('dc1').style.display = 'none'
+             document.getElementById('si1').style.display = 'none'
+           }
+           else if (data == 'Password'){
+             document.getElementById('e1').style.display = 'none';
+             document.getElementById('p1').style.display = 'none';
+             document.getElementById('pass1').style.display = 'inline'
+             document.getElementById('dc1').style.display = 'none'
+             document.getElementById('si1').style.display = 'none'
+           }
+           else if (data == 'DiskCLeanup'){
+             document.getElementById('e1').style.display = 'none';
+             document.getElementById('p1').style.display = 'none';
+             document.getElementById('pass1').style.display = 'none'
+             document.getElementById('dc1').style.display = 'inline'
+             document.getElementById('si1').style.display = 'none'
+           }
+           else if (data == 'SoftwareInstall'){
+             document.getElementById('e1').style.display = 'none';
+             document.getElementById('p1').style.display = 'none';
+             document.getElementById('pass1').style.display = 'none'
+             document.getElementById('dc1').style.display = 'none'
+             document.getElementById('si1').style.display = 'inline'
            }
            else{
              document.getElementById('dynamic').innerHTML = 'unknown returned';
@@ -616,6 +570,21 @@
        }
        function email(){
          $.get("/em").done(function (data){
+           alert(data);
+         })
+       }
+       function  password(){
+         $.get("/passw").done(function (data){
+           alert(data);
+         })
+       }
+       function diskcleanup(){
+         $.get("/dc").done(function (data){
+           alert(data);
+         })
+       }
+       function sftinstall(){
+         $.get("/sft").done(function (data){
            alert(data);
          })
        }

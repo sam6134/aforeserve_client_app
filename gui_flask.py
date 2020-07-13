@@ -1,6 +1,5 @@
 from flaskwebgui import FlaskUI #get the FlaskUI class
 import requests
-#from get_data import fetch_data_db
 from flask import Flask, request, render_template, jsonify
 import printer
 import email_s
@@ -22,8 +21,8 @@ def login():
             return render_template('login.html')
     return render_template('login.html')
 
-@app.route('/newt/<urgency>/<impact>/<priority>/<classification>/<wg>/<medium>/<symptom>/<description>', methods = ['GET','POST'])
-def newt(urgency,impact,priority,classification,wg,medium,symptom,description):
+@app.route('/newt/<symptom>/<description>', methods = ['GET','POST'])
+def newt(symptom,description):
     # urgency = request.args.get('urgency')
     # impact = request.args.get('impact')
     # priority = request.args.get('priority')
@@ -32,11 +31,10 @@ def newt(urgency,impact,priority,classification,wg,medium,symptom,description):
     # medium = request.args.get('medium')
     # symptom = request.args.get('symptom')
     # description = request.args.get('description')
-    print(urgency,impact,priority,classification,wg,medium,symptom,description)
-    url = 'http://35.184.236.4:7005/newt/'+urgency+'/'+impact+'/'+priority+'/'+classification+'/'+wg+'/'+medium+'/'+symptom+'/'+description
+    url = 'http://35.184.236.4:7005/newt/'+symptom+'/'+description
     res = requests.get(str(url))
     a = {
-        'id':res.text
+        'id':int(res.text)
     }
     return jsonify(a)
 
@@ -73,5 +71,18 @@ def pr():
 @app.route('/em', methods = ['GET','POST'])
 def em():
     flg,out = email_s.mailConfig()
+    return out
+
+@app.route('/passw', methods = ['GET','POST'])
+def passw():
+    return 'Yet to implement'
+
+@app.route('/dc', methods = ['GET','POST'])
+def dc():
+    return 'Yet to implement'
+
+@app.route('/sft', methods = ['GET','POST'])
+def sft():
+    return 'Yet to implement'
 
 ui.run()
