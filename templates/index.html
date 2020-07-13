@@ -482,7 +482,7 @@
           var symptom = document.getElementById('symptom').value;
           var description = document.getElementById('description').value;
           $.get("/newt/"+symptom+'/'+description).done(function (data){
-            alert(data);
+            alert(data.id);
             console.log(data);
             t_id = data.id;
           });
@@ -521,6 +521,7 @@
        }
 */ 
        function ref(){
+         alert(t_id);
          $.get("/ref",{id:t_id}).done(function (data){
            console.log(data);
            if(data == 'Printer'){

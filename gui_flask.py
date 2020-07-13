@@ -1,8 +1,8 @@
 from flaskwebgui import FlaskUI #get the FlaskUI class
 import requests
 from flask import Flask, request, render_template, jsonify
-import printer
-import email_s
+#import printer
+#import email_s
 
 app = Flask(__name__)
 
@@ -33,9 +33,11 @@ def newt(symptom,description):
     # description = request.args.get('description')
     url = 'http://35.184.236.4:7005/newt/'+symptom+'/'+description
     res = requests.get(str(url))
+    print(res)
     a = {
         'id':int(res.text)
     }
+    print(a)
     return jsonify(a)
 
 # @app.route('/submit', methods = ['GET','POST'])
@@ -61,6 +63,7 @@ def ref():
     url = 'http://35.184.236.4:7005/ref/'+str(text)
     res = requests.get(str(url))
     ab = res.text
+    print(ab)
     return(ab)
 
 @app.route('/pr', methods = ['GET','POST'])
