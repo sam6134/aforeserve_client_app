@@ -1,0 +1,4 @@
+flaskwebgui
+flask
+sqlalchemy
+pandas
