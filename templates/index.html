@@ -521,7 +521,7 @@
        }
 */ 
        function ref(){
-         $.get("/ref",{id:456}).done(function (data){
+         $.get("/ref",{id:t_id}).done(function (data){
            console.log(data);
            if(data == 'Printer'){
              document.getElementById('p1').style.display = 'inline';
