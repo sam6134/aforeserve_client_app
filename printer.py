@@ -1,7 +1,6 @@
 import pyautogui
 import pywinauto
 import time
-import pandas as pd
 import config
 
 flag=0
