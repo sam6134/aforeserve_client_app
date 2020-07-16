@@ -34,15 +34,17 @@
       font-family: 'Open Sans', sans-serif;
       box-sizing: border-box;
     }
+
     .speech-bubble {
-            position: relative;
-            background: #00aabb;
-            border-radius: .4em;
-            height: 36px;
-            padding-top: 2%;
-            padding-left: 4%;
-            width: 70%;
+      position: relative;
+      background: #00aabb;
+      border-radius: .4em;
+      height: 36px;
+      padding-top: 2%;
+      padding-left: 4%;
+      width: 72%;
     }
+
     .cd-container {
       width: 90%;
       max-width: 1080px;
@@ -189,6 +191,7 @@
           }
         }
       }
+
       .content-skills {
         font-size: 12px;
         padding: 0;
@@ -386,8 +389,6 @@
       <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
     <!-- Button trigger modal -->
-
-
     <!-- Full Height Modal Right -->
     <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
       aria-hidden="true">
@@ -395,13 +396,13 @@
       <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
       <div class="modal-dialog modal-side modal-bottom-right" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" align="middle" style="color:white;background-color: #7f53ac;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
             <h4 class="modal-title w-100" id="myModalLabel">A4BOT</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div id="mod" class="modal-body" style="overflow-y: scroll;height: 500px;">
+          <div id="mod" class="modal-body" style="overflow-y: scroll;height: 500px;background-color: #2d3436;background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
             <div align="left">
               <p class="speech-bubble btn-primary">Hello {{User}}</p>
               <p class="speech-bubble btn-primary">Welcome to Aforesight A4BOT..!</p>
@@ -417,10 +418,6 @@
               </p>
 
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -488,7 +485,7 @@
             <strong>What could we improve?</strong>
           </p>
           <!--Basic textarea-->
-          <div class="md-form">
+          <div class="md-form" style="color: white;">
             <textarea type="text" id="form79textarea" class="md-textarea form-control" rows="3"></textarea>
             <label for="form79textarea">Your message</label>
           </div>
@@ -651,7 +648,16 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
-        html = "<br><div align='left'><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='confirmnewreq()'>Confirm</p></div>";
+        html = "<br><div align='left'><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='confirmnewreq()'>Confirm</p><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='nonewreq()'>No</p></div>";
+        $("#mod").append(html);
+      });
+    }
+    function nonewreq() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Not Confirmed</p></div>";
+      $("#mod").append(html);
+      $.get("/confirmnew", { con1: 'no' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
       });
     }
@@ -678,7 +684,7 @@
       $("#mod").append(html);
       $.get("/confirmnew", { con1: 'msoff' }).done(function (data) {
         console.log(data);
-        html = "<br><div align='right'>" + data + "</div>";
+        html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
       })
     }
@@ -690,26 +696,107 @@
         $("#mod").append(html);
       })
     }
-    function otherssft(){
-            html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Others</p></div>";
-            $("#mod").append(html);
-            $.get("/confirmnew",{con1 : 'other'}).done(function (data){
-                console.log(data);
-                html = "<br><div align='left'>"+data+"</div>";
-                $("#mod").append(html);
-                html = "<br><div align='left'><div class='md-form' ><textarea id='textother' class='form-control md-textarea' length='120' rows='3' style='width:70%' placeholder='Description'></textarea></div></div>";
-                $("#mod").append(html);
-                html = "<button class='btn btn-secondary' onclick='conmsother()'>Confirm</button>";
-                $("#mod").append(html);
-            })
-        }
-        function conmsother(){
-            text = document.getElementById('textother').value;
-            $.get("/confirmnew",{con1 : 'othercon',text : text}).done(function (data){
-                html = "<br><div align='right'>"+data+"</div>";
-                $("#mod").append(html);
-            })
-        }
+    function otherssft() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Others</p></div>";
+      $("#mod").append(html);
+      $.get("/confirmnew", { con1: 'other' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+        html = "<br><div align='left'><div class='md-form' style='color:white;'><textarea id='textother' class='form-control md-textarea' length='120' rows='3' style='width:70%;color:white;' placeholder='Description'></textarea></div></div>";
+        $("#mod").append(html);
+        html = "<button class='btn btn-secondary' onclick='conmsother()'>Confirm</button>";
+        $("#mod").append(html);
+      })
+    }
+    function conmsother() {
+      text = document.getElementById('textother').value;
+      $.get("/confirmnew", { con1: 'othercon', text: text }).done(function (data) {
+        html = "<br><div align='right'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function sysrelated() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>System Related</p></div>";
+      $("#mod").append(html);
+      $.get("/sysrelated", { con1: 'sysrelated' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function apprelated() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Application Related</p></div>";
+      $("#mod").append(html);
+      $.get("/apprelated", { con1: 'apprelated' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function osrelated() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>OS Related</p></div>";
+      $("#mod").append(html);
+      $.get("/osrelated", { con1: 'osrelated' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function printerrelated() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Printer Related</p></div>";
+      $("#mod").append(html);
+      $.get("/printerrelated", { con1: 'printerrelated' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function networkrelated() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Network Related</p></div>";
+      $("#mod").append(html);
+      $.get("/networkrelated", { con1: 'networkrelated' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function knowticket() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Know about your IT ticket</p></div>";
+      $("#mod").append(html);
+      $.get("/knowticket", { con1: 'know' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+        html = "<br><div align='right'><input type='text' id='tid' class='form-control' style='width: 70%;'><br><button type='button' class='btn btn-primary' onclick='proceed()'>Proceed</button></div>";
+        $("#mod").append(html);
+      });
+    }
+    function proceed() {
+      tid = document.getElementById('tid').value;
+      $.get("knowticket", { con1: 'proceed', id: tid }).done(function (data) {
+
+      })
+    }
+    // new query
+    function newquery() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>New Query</p></div>";
+      $("#mod").append(html);
+      $.get("/newquery", { con1: 'newq' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      });
+    }
+    function asset() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Know Your IT Asset</p></div>";
+      $("#mod").append(html);
+      $.get("/newquery", { con1: 'asset' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      });
+    }
   </script>
 </body>
 

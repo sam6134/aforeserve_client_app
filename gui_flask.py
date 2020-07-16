@@ -101,6 +101,8 @@ def dc():
 def sft():
     return 'Yet to implement'
 
+#flow start for new request
+
 @app.route('/newrequest', methods = ['GET','POST'])
 def newreq():
     return '''
@@ -132,7 +134,7 @@ def connew():
                             <br>
                                     <button class="btn btn-secondary" onclick="printerrelated()">Printer Related</button>
                             <br>
-                                    <button class="btn btn-secondary" onclick="netrelated()">Network Related</button>
+                                    <button class="btn btn-secondary" onclick="networkrelated()">Network Related</button>
                                             
     </p>
     '''
@@ -157,8 +159,8 @@ def connew():
         <p class="speech-bubble btn-primary" style="padding-right:3%;">
                             Please describe the issue
         </p>
-        <div class="md-form" >
-            <textarea id="textms" class="form-control md-textarea" length="120" rows="3" style="width:70%" placeholder="Description"></textarea>
+        <div class="md-form" style="">
+            <textarea id="textms" class="form-control md-textarea" length="120" rows="3" style="width:70%;color:white;" placeholder="Description"></textarea>
         </div>
         <button class="btn btn-secondary" onclick="conms()">Confirm</button>
         
@@ -166,7 +168,7 @@ def connew():
     elif arg == 'conms':
         arg2 = request.args.get('text')
         return '''
-        <p class="speech-bubble btn-light" style="padding-right:3%;">Description Added : <br>'''+arg2+'''</p>'''
+        <p class="speech-bubble btn-light" style="padding-right:3%;height: 11%;">Description Added : <br>'''+arg2+'''</p>'''
     elif arg == 'other':
         return '''
         <p class="speech-bubble btn-primary" style="padding-right:3%;height: 10%;">
@@ -178,5 +180,179 @@ def connew():
         return '''
         <br><p class="speech-bubble btn-light" style="padding-right:3%;height: 10%;">Description Added : <br>'''+arg2+'''</p>
         '''
+    elif arg == 'no':
+        return'''
+        <p class="speech-bubble btn-primary" style="padding-right:3%;height: 10%;">
+            Please contact IT Helpdesk on +91 9999999 to raise ticket on behalf of others…
+        </p>
+        '''
 
+@app.route('/sysrelated', methods = ['GET', 'POST'])
+def sysrelated():
+    arg = request.args.get('con1')
+    if arg == 'sysrelated':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 77%;">
+                            Please select desired option…
+                            <br>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="performance()">Performance Issue/System Slow</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="disk()">Disk full/No Space</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="autoshutres()">Auto shutdown/restart</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="forgetpsw()">Forget login password</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="unablelog()">Unable to login</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="sysother()">Other</button>                
+    </p>
+        '''
+        
+@app.route('/apprelated', methods = ['GET','POST'])
+def apprelated():
+    arg = request.args.get('con1')
+    if arg == 'apprelated':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 84%;">
+                            Please select desired option…
+                            <br>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="outlook()">Outlook related issue</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="exc_el()">Excel not responding</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="sap()">SAP not working</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="emailconf()">Email Configuration</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="ieconf()">IE Configuration</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="vpnconf()">VPN Configuration</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="appother()">Other</button>                        
+    </p>
+        '''
+
+@app.route('/osrelated', methods = ['GET','POST'])
+def osrelated():
+    arg = request.args.get('con1')
+    if arg == 'osrelated':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 42%;">
+                            Please select desired option…
+                            <br>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="addpcdomain()">Add PC with Domain</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="osnotbooting()">OS not booting</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="osother()">Other</button>                        
+    </p>
+        '''
+
+@app.route('/printerrelated', methods = ['GET','POST'])
+def printerrelated():
+    arg = request.args.get('con1')
+    if arg == 'printerrelated':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 53%;">
+                            Please select desired option…
+                            <br>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="newprinter()">Printer - New configuration</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="printernotworking()">Printer not working</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="printernotproper()">Printout not proper</button>                        
+                            <br>
+                                    <button class="btn btn-secondary" onclick="printerother()">Other</button>        
+    </p>
+        '''
+
+@app.route('/networkrelated', methods = ['GET','POST'])
+def networkrelated():
+    arg = request.args.get('con1')
+    if arg == 'networkrelated':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 63%;">
+                            Please select desired option…
+                            <br>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="IEnotworking()">Internet not working</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="noacessserver()">Unable to access server</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="ipchange()">IP Address - Change</button>                        
+                            <br>
+                                    <button class="btn btn-secondary" onclick="wificonf)">Wi-Fi Configuration</button>                        
+                            <br>
+                                    <button class="btn btn-secondary" onclick="networkother()">Other</button>        
+    </p>
+        '''
+# flow end for new request
+
+#flow know your ticket
+@app.route('/knowticket', methods = ['GET','POST'])
+def knowticket():
+    arg = request.args.get('con1')
+    if arg == 'know':
+        return '''
+        <p class="speech-bubble btn-light" style="padding-right:3%;">Select one from your previous tickets : <br></p>
+            <table class="table">
+                <thead class="black white-text">
+                    <tr>
+                        <th scope="col">Ticket ID</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Issue</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>New</td>
+                        <td>Printer</td>
+                        <td>Printer has to be resolved</td>
+                    </tr>
+                    <tr>
+                        <td>423</td>
+                        <td>Resolved</td>
+                        <td>Password</td>
+                        <td>Printer has to be resolved</td>
+                    </tr>
+                    <tr>
+                        <td>567</td>
+                        <td>In Progress</td>
+                        <td>Email</td>
+                        <td>Printer has to be resolved</td>
+                    </tr>
+                </tbody>
+            </table>
+        '''
+
+#flow new query
+@app.route('/newquery', methods = ['GET','POST'])
+def newquery():
+    arg = request.args.get('con1')
+    if arg == 'newq':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 42%;">
+                            Please select desired option…
+                            <br>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="itpolicies()">Know your IT Policies</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="helpdesk()">Contact of IT Helpdesk</button>
+                            <br>
+                                    <button class="btn btn-secondary" onclick="asset()">Know your IT Asset</button>                        
+    </p>
+        '''
+    elif arg == 'asset':
+        return '''
+    <p class="speech-bubble btn-primary" style="height: 11%;">
+        Please verify your Username : '''+str(hostname)+''' and EmailID : xyz@emai.com 
+    </p>
+    '''
 ui.run()
