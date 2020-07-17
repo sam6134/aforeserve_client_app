@@ -725,12 +725,49 @@
         $("#mod").append(html);
       })
     }
+    // disk clean up trigger
+    function performance(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
+      $("#mod").append(html);
+      $.get("/diskclean").done(function (data){
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+        $("#mod").append(html);
+      })
+    }
+    function disk(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
+      $("#mod").append(html);
+      $.get("/diskclean").done(function (data){
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+        $("#mod").append(html);
+      })
+    }
     function apprelated() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Application Related</p></div>";
       $("#mod").append(html);
       $.get("/apprelated", { con1: 'apprelated' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    // email coonfiguration setup
+    function emailconf(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Email Configuration</p></div>";
+      $("#mod").append(html);
+      $.get("/apprelated",{con1 : 'email'}).done(function (data){
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+        $("#mod").append(html);
+      })
+    }
+    function email_reg(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
+      $("#mod").append(html);
+      username = document.getElementById('username').value;
+      email_s = document.getElementById('email').value;
+      password_s = document.getElementById('password').value;
+      $.get("/emailconfig",{username : username,email_s : email_s,password_s : password_s}).done(function (data){
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
       })
     }

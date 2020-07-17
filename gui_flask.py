@@ -1,8 +1,8 @@
 from flaskwebgui import FlaskUI #get the FlaskUI class
 import requests
 from flask import Flask, request, render_template, jsonify
-#import printer
-#import email_s
+import printer
+import email_s
 import socket
 from getmac import get_mac_address
 from platform import platform
@@ -20,8 +20,16 @@ s.close()
 macid = get_mac_address()
 OS_v = platform()
 username = getuser()
-
+sernum = '12345'
+lap_desk = 'desk'
+url = 'http://35.184.236.4:7005/inoutserver/'+macid
+res = requests.get(url)
+res = res.json()
+inser,outser = res['inserver'],res['outserver']
+dprint = '2'
 #data = fetch_data_db("select * from login;",'creds')
+url = 'http://35.184.236.4:7005/userdetails/'+hostname+'/'+IP+'/'+macid+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
+requests.get(url)
 
 @app.route('/', methods = ['GET','POST'])
 def login():
@@ -29,7 +37,7 @@ def login():
         user = request.form['user']
         passw = request.form['pass']
         if user == 'User' and passw == '12345':
-            return render_template('index.html')
+            return render_template('index.html',User = hostname.title())
         else:
             return render_template('login.html')
     return render_template('login.html')
@@ -84,16 +92,19 @@ def pr():
     flg,out = printer.printerConfig()
     return out
 
-@app.route('/em', methods = ['GET','POST'])
+@app.route('/emailconfig', methods = ['GET','POST'])
 def em():
-    flg,out = email_s.mailConfig()
+    username = request.args.get('username')
+    email_s = request.args.get('email_s')
+    password_s = request.args.get('password_s')
+    flg,out = email_s.mailConfig(username,inser,outser,email_s,password_s)
     return out
 
 @app.route('/passw', methods = ['GET','POST'])
 def passw():
     return 'Yet to implement'
 
-@app.route('/dc', methods = ['GET','POST'])
+@app.route('/diskclean', methods = ['GET','POST'])
 def dc():
     return 'Yet to implement'
 
@@ -234,7 +245,21 @@ def apprelated():
                                     <button class="btn btn-secondary" onclick="appother()">Other</button>                        
     </p>
         '''
-
+    elif arg == 'email':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 54%;padding-right: 3%;">
+                            All fields are mandatory
+                            <br>
+                            <br>
+                                    <input type="text" id="username" class="form-control" placeholder="UserName">
+                            <br>
+                                    <input type="text" id="useremail" class="form-control" placeholder = "Email">
+                            <br>
+                                    <input type="password" id="password" class="form-control" placeholder = "Password">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="email_reg()">Proceed</button>                        
+    </p>
+        '''
 @app.route('/osrelated', methods = ['GET','POST'])
 def osrelated():
     arg = request.args.get('con1')

@@ -6,7 +6,7 @@ from pywinauto.keyboard import send_keys, KeySequenceError
 import config
 
 flag=0
-def mailConfig():
+def mailConfig(username,inser,outser,email_s,password_s):
     
     global flag
     
@@ -157,15 +157,15 @@ def mailConfig():
                                     
                                     #user_details=pd.read_csv('http://127.0.0.1:8000/input.csv').columns
                                     
-                                    user_details=['Bramhesh','bramhesh.srivastava@prithvi.ai',"Dp's@0119@"]
+                                    user_details=[username,email_s,password_s]
                                     
                                     add_account["Your Name:Edit"].type_keys(user_details[0])    
                                     
                                     add_account["Email Address:Edit"].type_keys(user_details[1])
                                     
-                                    add_account["Incoming mail server:Edit"].type_keys('outlook.office365.com')
+                                    add_account["Incoming mail server:Edit"].type_keys(inser)
                                     
-                                    add_account["Outgoing mail server (SMTP):Edit"].type_keys('smtp.office365.com')
+                                    add_account["Outgoing mail server (SMTP):Edit"].type_keys(outser)
                                     
                                     add_account["User Name:Edit"].type_keys('^a{BACKSPACE}')
                                     #add_account["User Name:Edit"].Edit.set_edit_text(u'')
