@@ -121,7 +121,7 @@ def em():
     username = request.args.get('username')
     email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
-    url = 'http://35.184.236.4:7005/newt/Email-to-be-configured/Email-to-be-configured'
+    url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured'
     get(url)
     if rel == '8.1':
         flg,out = test_fetch_mail_for_8.mailConfig(username,inser,outser,email_ss,password_s)
@@ -139,7 +139,7 @@ def passw():
 
 @app.route('/diskclean', methods = ['GET','POST'])
 def dc():
-    url = 'http://35.184.236.4:7005/newt/Disk-full-disk-clean-to-be-configured/disk-full-disk-clean-to-be-configured'
+    url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured'
     get(url)
     error,out = diskCleanup.startCleanup()
     print(error)
