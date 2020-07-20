@@ -95,9 +95,9 @@ def pr():
 @app.route('/emailconfig', methods = ['GET','POST'])
 def em():
     username = request.args.get('username')
-    email_s = request.args.get('email_s')
+    email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
-    flg,out = email_s.mailConfig(username,inser,outser,email_s,password_s)
+    flg,out = email_s.mailConfig(username,inser,outser,email_ss,password_s)
     return out
 
 @app.route('/passw', methods = ['GET','POST'])

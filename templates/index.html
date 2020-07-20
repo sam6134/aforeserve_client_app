@@ -764,7 +764,7 @@
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
       username = document.getElementById('username').value;
-      email_s = document.getElementById('email').value;
+      email_s = document.getElementById('useremail').value;
       password_s = document.getElementById('password').value;
       $.get("/emailconfig",{username : username,email_s : email_s,password_s : password_s}).done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
