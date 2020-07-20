@@ -757,7 +757,7 @@
     }
     // disk clean up trigger
     function performance(){
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       $.get("/diskclean").done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
@@ -765,7 +765,7 @@
       })
     }
     function disk(){
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       $.get("/diskclean").done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
