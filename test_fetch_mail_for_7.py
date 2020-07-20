@@ -256,5 +256,4 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         flag=1
     
     print(flag)
-    return flag
-#flag = mailConfig()
+    return flag,'Success'
