@@ -327,7 +327,7 @@ def printerrelated():
     arg = request.args.get('con1')
     if arg == 'printerrelated':
         return '''
-        <p class="speech-bubble btn-primary" style="height: 53%;">
+        <p class="speech-bubble btn-primary" style="height: 56%;width:75%">
                             Please select desired option…
                             <br>
                             <br>

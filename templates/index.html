@@ -793,7 +793,7 @@
     function email_reg(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       username = document.getElementById('username').value;
       email_s = document.getElementById('useremail').value;
@@ -835,7 +835,7 @@
       model = document.getElementById('model').value;
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       $.get("/pr",{manuname : manuname, model : model}).done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
