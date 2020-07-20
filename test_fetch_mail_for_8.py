@@ -1,10 +1,9 @@
 import pyautogui
 import pywinauto
 import time
-import pandas as pd
 from pywinauto.controls.win32_controls import ButtonWrapper
 from pywinauto.keyboard import send_keys, KeySequenceError
-#import config
+import config
 
 flag=0
 def mailConfig(username,inser,outser,email_ss,password_s):
@@ -60,7 +59,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
             pyautogui.press('enter')
             
         except Exception as e:
-            
+            print(e)
             pass
             #print(e)
             

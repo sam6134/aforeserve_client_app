@@ -186,11 +186,11 @@ def printerConfig(manufac_name,mdelname):
                                                 time.sleep(5)
                 
                                                 # ask from chatbot
-                                                #printer_driver.child_window(title=model_name, control_type="ListItem").select()
-                                                #printer_driver.child_window(title="Printers", auto_id="HeaderItem 0", control_type="HeaderItem").ListView()
-                                                #a.get_item('Remote Desktop Easy Print').click()
+                                                printer_driver.child_window(title=model_name, control_type="ListItem").select()
+                                                printer_driver.child_window(title="Printers", auto_id="HeaderItem 0", control_type="HeaderItem").ListView()
+                                                a.get_item(model_type).click()
                                                 # ask from chatbot
-                                                #printer_driver.child_window(best_match=model_type, control_type="ListItem").select()
+                                                printer_driver.child_window(best_match=model_type, control_type="ListItem").select()
                                                 printer_driver.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
                                                 #time.sleep(5)
                                                 
