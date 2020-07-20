@@ -725,6 +725,36 @@
         $("#mod").append(html);
       })
     }
+    function forgetpsw(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Forget Password</p></div>";
+      $("#mod").append(html);
+      $.get("/sysrelated", { con1: 'psw' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+      })
+    }
+    function new_pass(){
+      ps1 = document.getElementById('password1').value;
+      ps2 = document.getElementById('password2').value;
+      ps1_new = document.getElementById('password1');
+      var check=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+      if(ps1_new.value.match(check))
+      {
+        if (ps1 == ps2) {
+          html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Changed Successfully.</div>"; 
+          $("#mod").append(html);
+        }
+        else {
+          html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Does Not Match.</div>";
+          $("#mod").append(html);
+        }
+      }
+      else{
+        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 22%;'>Wrong Format Used \nPassword should be of 7-15 in length and must contains : \n* 1 UPPERCASE\n* 1 lowercase\n* 1 digit\n* 1 special character</div>";
+        $("#mod").append(html);
+      }
+    }
     // disk clean up trigger
     function performance(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
@@ -762,6 +792,8 @@
     }
     function email_reg(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
+      $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       username = document.getElementById('username').value;
       email_s = document.getElementById('useremail').value;
@@ -802,6 +834,8 @@
       manuname = document.getElementById('manuname').value;
       model = document.getElementById('model').value;
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
+      $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       $.get("/pr",{manuname : manuname, model : model}).done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";

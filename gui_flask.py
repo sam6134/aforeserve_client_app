@@ -1,12 +1,27 @@
 from flaskwebgui import FlaskUI #get the FlaskUI class
 import requests
 from flask import Flask, request, render_template, jsonify
-import printer
-import email_s
 import socket
 from getmac import get_mac_address
-from platform import platform
+from platform import platform, system, release
 from getpass import getuser
+
+rel = release()
+
+#for windows 10
+import printer
+import email_s
+import diskCleanup
+
+#for windows 8
+import Printer_Latest_Remove_Latency_for_8
+import test_fetch_mail_for_8
+
+#for windows 7
+import Printer_Latest_Remove_Latency_for_7
+import test_fetch_mail_for_7
+
+
 
 app = Flask(__name__)
 
@@ -91,16 +106,30 @@ def ref():
 def pr():
     manufac_name = request.args.get('manuname')
     mdelname = request.args.get('model')
-    flg,out = printer.printerConfig(manufac_name,mdelname)
-    return out
+    if rel == '8.1':
+        flg,out = Printer_Latest_Remove_Latency_for_8.printerConfig(manufac_name,mdelname)
+        return out
+    elif rel == '7':
+        flg,out = Printer_Latest_Remove_Latency_for_7.printerConfig(manufac_name,mdelname)
+        return out
+    else:
+        flg,out = printer.printerConfig(manufac_name,mdelname)
+        return out
 
 @app.route('/emailconfig', methods = ['GET','POST'])
 def em():
     username = request.args.get('username')
     email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
-    flg,out = email_s.mailConfig(username,inser,outser,email_ss,password_s)
-    return out
+    if rel == '8.1':
+        flg,out = test_fetch_mail_for_8.mailConfig(username,inser,outser,email_ss,password_s)
+        return out
+    elif rel == '7':
+        flg,out = test_fetch_mail_for_7.mailConfig(username,inser,outser,email_ss,password_s)
+        return out
+    else:
+        flg,out = email_s.mailConfig(username,inser,outser,email_ss,password_s)
+        return out
 
 @app.route('/passw', methods = ['GET','POST'])
 def passw():
@@ -108,7 +137,9 @@ def passw():
 
 @app.route('/diskclean', methods = ['GET','POST'])
 def dc():
-    return 'Yet to implement'
+    error,out = diskCleanup.startCleanup()
+    print(error)
+    return out
 
 @app.route('/sft', methods = ['GET','POST'])
 def sft():
@@ -222,7 +253,19 @@ def sysrelated():
                                     <button class="btn btn-secondary" onclick="sysother()">Other</button>                
     </p>
         '''
-        
+    elif arg == 'psw':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 54%;padding-right: 3%;">
+                            All fields are mandatory
+                            <br>
+                            <br>
+                                    <input type="password" id="password1" class="form-control" placeholder = "New Password">
+                            <br>
+                                    <input type="password" id="password2" class="form-control" placeholder = "Confirm Password">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="new_pass()">Proceed</button>                        
+    </p>
+        '''
 @app.route('/apprelated', methods = ['GET','POST'])
 def apprelated():
     arg = request.args.get('con1')
