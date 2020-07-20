@@ -89,7 +89,9 @@ def ref():
 
 @app.route('/pr', methods = ['GET','POST'])
 def pr():
-    flg,out = printer.printerConfig()
+    manufac_name = request.args.get('manuname')
+    mdelname = request.args.get('model')
+    flg,out = printer.printerConfig(manufac_name,mdelname)
     return out
 
 @app.route('/emailconfig', methods = ['GET','POST'])
@@ -293,6 +295,19 @@ def printerrelated():
                                     <button class="btn btn-secondary" onclick="printernotproper()">Printout not proper</button>                        
                             <br>
                                     <button class="btn btn-secondary" onclick="printerother()">Other</button>        
+    </p>
+        '''
+    elif arg == 'newprinter':
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 54%;padding-right: 3%;">
+                            All fields are mandatory
+                            <br>
+                            <br>
+                                    <input type="text" id="manuname" class="form-control" placeholder="Manufaturer Name">
+                            <br>
+                                    <input type="text" id="model" class="form-control" placeholder = "Model Name">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="new_print()">Proceed</button>                        
     </p>
         '''
 

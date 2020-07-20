@@ -5,7 +5,7 @@ import config
 
 flag=0
 
-def printerConfig():
+def printerConfig(manufac_name,mdelname):
     
     global flag
     
@@ -176,8 +176,8 @@ def printerConfig():
                                             header_flag=checkForHeaderInWindows(printer_driver,'Install the printer driver','Text')
                                             #printer_model=pd.read_csv('http://127.0.0.1:8000/input.csv').columns
                                             if header_flag:
-                                                printer_model=['Canon','Canon Inkjet 0253 Class Driver']
-                                                model_name,model_type=printer_model[0],printer_model[1]
+                                                #printer_model=[manufac_name,mdelname]
+                                                model_name,model_type=manufac_name,mdelname
                                                 time.sleep(5)
                 
                                                 # ask from chatbot
