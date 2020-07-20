@@ -1,5 +1,5 @@
 from flaskwebgui import FlaskUI #get the FlaskUI class
-import requests
+from requests import get
 from flask import Flask, request, render_template, jsonify
 import socket
 from getmac import get_mac_address
@@ -38,13 +38,13 @@ username = getuser()
 sernum = '12345'
 lap_desk = 'desk'
 url = 'http://35.184.236.4:7005/inoutserver/'+macid
-res = requests.get(url)
+res = get(url)
 res = res.json()
 inser,outser = res['inserver'],res['outserver']
 dprint = '2'
 #data = fetch_data_db("select * from login;",'creds')
 url = 'http://35.184.236.4:7005/userdetails/'+hostname+'/'+IP+'/'+macid+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
-requests.get(url)
+get(url)
 
 @app.route('/', methods = ['GET','POST'])
 def login():
@@ -68,7 +68,7 @@ def newt(symptom,description):
     # symptom = request.args.get('symptom')
     # description = request.args.get('description')
     url = 'http://35.184.236.4:7005/newt/'+symptom+'/'+description
-    res = requests.get(str(url))
+    res = get(str(url))
     print(res)
     a = {
         'id':int(res.text)
@@ -97,7 +97,7 @@ def newt(symptom,description):
 def ref():
     text = request.args.get('id')
     url = 'http://35.184.236.4:7005/ref/'+str(text)
-    res = requests.get(str(url))
+    res = get(str(url))
     ab = res.text
     print(ab)
     return(ab)

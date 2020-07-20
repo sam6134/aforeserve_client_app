@@ -1,7 +1,6 @@
 import pyautogui
 import pywinauto
 import time
-import pandas as pd
 import config
 from pywinauto.keyboard import send_keys, KeySequenceError
 flag=0
