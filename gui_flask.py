@@ -10,18 +10,18 @@ rel = release()
 
 #for windows 10
 #import printer
-import Printer_Latest_Remove_Latency_win10
+#import Printer_Latest_Remove_Latency_win10
 #import email_s
-import test_fetch_mail_win10
-import diskCleanup
+#import test_fetch_mail_win10
+#import diskCleanup
 
 #for windows 8
-import Printer_Latest_Remove_Latency_for_8
-import test_fetch_mail_for_8
+#import Printer_Latest_Remove_Latency_for_8
+#import test_fetch_mail_for_8
 
 #for windows 7
-import Printer_Latest_Remove_Latency_for_7
-import test_fetch_mail_for_7
+#import Printer_Latest_Remove_Latency_for_7
+#import test_fetch_mail_for_7
 
 app = Flask(__name__)
 
@@ -110,13 +110,19 @@ def pr():
     get(url)
     if rel == '8.1':
         flg,out = Printer_Latest_Remove_Latency_for_8.printerConfig(manufac_name,mdelname)
-        return out
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
     elif rel == '7':
         flg,out = Printer_Latest_Remove_Latency_for_7.printerConfig(manufac_name,mdelname)
-        return out
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
     else:
         flg,out = Printer_Latest_Remove_Latency_win10.printerConfig(manufac_name,mdelname)
-        return out
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
 
 @app.route('/emailconfig', methods = ['GET','POST'])
 def em():
@@ -124,16 +130,23 @@ def em():
     email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
     url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured'
-    get(url)
+    res = get(url)
+    print(res.text)
     if rel == '8.1':
         flg,out = test_fetch_mail_for_8.mailConfig(username,inser,outser,email_ss,password_s)
-        return out
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
     elif rel == '7':
         flg,out = test_fetch_mail_for_7.mailConfig(username,inser,outser,email_ss,password_s)
-        return out
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
     else:
         flg,out = test_fetch_mail_win10.mailConfig(username,inser,outser,email_ss,password_s)
-        return out
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
 
 @app.route('/passw', methods = ['GET','POST'])
 def passw():
@@ -145,7 +158,9 @@ def dc():
     get(url)
     error,out = diskCleanup.startCleanup()
     print(error)
-    return out
+    url = 'http://35.184.236.4:7005/upt/'+res.text
+    res = get(url)
+    return res.text
 
 @app.route('/sft', methods = ['GET','POST'])
 def sft():
@@ -389,7 +404,7 @@ def knowticket():
     if arg == 'know':
         return '''
         <p class="speech-bubble btn-light" style="padding-right:3%;">Select one from your previous tickets : <br></p>
-            <table class="table">
+            <table class="table" style="background-color: #eec0c6;background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);">
                 <thead class="black white-text">
                     <tr>
                         <th scope="col">Ticket ID</th>
@@ -420,7 +435,22 @@ def knowticket():
                 </tbody>
             </table>
         '''
-
+    elif arg == 'newr':
+        return '''
+    <p class="speech-bubble btn-primary" style="height: 25%;">
+        Please verify the below details to continue with Aforesight
+       <br>
+       <br>
+        Your IP : '''+str(IP)+'''
+       <br>
+       Your Hostname : '''+str(hostname)+'''
+    </p>
+    '''
+    elif arg == 'proceed':
+        tid = request.args.get('id')
+        url = 'http://35.184.236.4:7005/oldt/'+str(tid)
+        msg = get(url)
+        return msg.text
 #flow new query
 @app.route('/newquery', methods = ['GET','POST'])
 def newquery():

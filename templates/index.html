@@ -873,21 +873,34 @@
         $("#mod").append(html);
       })
     }
-    function knowticket() {
+    function knowticket(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Know about your IT ticket</p></div>";
+      $("#mod").append(html);
+      $.get("/knowticket", { con1: 'newr' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+        html = "<br><div align='left'><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='confirmknow()'>Confirm</p><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='nonewreq()'>No</p></div>";
+        $("#mod").append(html);
+      });
+    }
+    function confirmknow() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Know about your IT ticket</p></div>";
       $("#mod").append(html);
       $.get("/knowticket", { con1: 'know' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
-        html = "<br><div align='right'><input type='text' id='tid' class='form-control' style='width: 70%;'><br><button type='button' class='btn btn-primary' onclick='proceed()'>Proceed</button></div>";
+        html = "<br><div align='right'><input type='text' id='tid' class='form-control' style='width: 70%;'><br><button type='button' class='btn btn-primary' onclick='proceedknow()'>Proceed</button></div>";
         $("#mod").append(html);
       });
     }
-    function proceed() {
+    function proceedknow() {
       tid = document.getElementById('tid').value;
-      $.get("knowticket", { con1: 'proceed', id: tid }).done(function (data) {
-
+      $.get("/knowticket", { con1: 'proceed', id: tid }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;height: 17%;'>"+data+"</p></div>";
+        $("#mod").append(html);
       })
     }
     // new query
