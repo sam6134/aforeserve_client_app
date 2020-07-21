@@ -757,16 +757,28 @@
     }
     // disk clean up trigger
     function performance(){
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 10 sec approx.</p></div>";
+      $("#mod").append(html);
+      setTimeout(function(){ 
+        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+        $("#mod").append(html);
+       }, 6000);
       $.get("/diskclean").done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
       })
     }
     function disk(){
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 10 sec approx.</p></div>";
+      $("#mod").append(html);
+      setTimeout(function(){ 
+        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+        $("#mod").append(html);
+       }, 6000);
       $.get("/diskclean").done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
@@ -793,8 +805,12 @@
     function email_reg(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 10 sec approx.</p></div>";
       $("#mod").append(html);
+      setTimeout(function(){ 
+        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+        $("#mod").append(html);
+       }, 6000);
       username = document.getElementById('username').value;
       email_s = document.getElementById('useremail').value;
       password_s = document.getElementById('password').value;
@@ -822,8 +838,14 @@
       })
     }
     function newprinter(){
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>New Printer Configuration</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 10 sec approx.</p></div>";
+      $("#mod").append(html);
+      setTimeout(function(){ 
+        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+        $("#mod").append(html);
+       }, 7000);
       $.get("/printerrelated", { con1: 'newprinter' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
