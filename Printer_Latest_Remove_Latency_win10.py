@@ -1,6 +1,7 @@
 import pyautogui
 import pywinauto
 import time
+import pandas as pd
 import config
 
 flag=0
@@ -192,90 +193,161 @@ def printerConfig(manufac_name,mdelname):
                                                 #time.sleep(5)
                                                 
                                                 # confirmation for version
-                                                #try:
-                                                 #   config.logger.info('Searching for Add Printer window for confirming printer version')
-                                                  #  printer_version_confirm=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
-                                                #except:
-                                                 #   printer_version_confirm=checkForWindowExistence(u'Add Printer')
-                                                
-                                                #if printer_version_confirm:
-                                                 #   printer_version_confirm=control_panel.window_(handle=printer_version_confirm[0])
-                                                 #   printer_version_confirm.set_focus()
-                                                  #  header_flag=checkForHeaderInWindows(printer_version_confirm,'Which version of the driver do you want to use?','Text')
-                                                   # if header_flag:
-                                                    #    printer_version_confirm.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-                                                    #time.sleep(5)                          
-                                                    #click for printer name
                                                 try:
-                                                    config.logger.info('Searching for Add Printer window for selecting printer name')
-                                                    printer_name=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                    config.logger.info('Searching for Add Printer window for confirming printer version')
+                                                    printer_version_confirm=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                                 except:
-                                                    printer_name=checkForWindowExistence(u'Add Printer')
-                
-                                                if printer_name:
-                                                    printer_name=control_panel.window_(handle=printer_name[0])
-                                                    printer_name.set_focus()
-                                                    header_flag=checkForHeaderInWindows(printer_name,'Type a printer name','Text')
+                                                    printer_version_confirm=checkForWindowExistence(u'Add Printer')
+                                                
+                                                if printer_version_confirm:
+                                                    printer_version_confirm=control_panel.window_(handle=printer_version_confirm[0])
+                                                    printer_version_confirm.set_focus()
+                                                    header_flag=checkForHeaderInWindows(printer_version_confirm,'Which version of the driver do you want to use?','Text')
                                                     if header_flag:
-                                                        printer_name.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-                
-                                                        #time.sleep(10)
-                                                        
-                                                        #click for printer don't share
+                                                        printer_version_confirm.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                    time.sleep(5)                          
+                                                    #click for printer name
                                                     try:
-                                                        config.logger.info('Searching for Add Printer window for selecting printer do not share')
-                                                        printer_not_share=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                        config.logger.info('Searching for Add Printer window for selecting printer name')
+                                                        printer_name=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                                     except:
-                                                        printer_not_share=checkForWindowExistence(u'Add Printer')
-                                                        
-                                                    try:
-                                                        if printer_not_share:
-                                                            printer_not_share=control_panel.window_(handle=printer_not_share[0])
-                                                            printer_not_share.set_focus()
-                                                            print('Share in try')
-                                                            header_flag=checkForHeaderInWindows(printer_name,'Printer Sharing','Text')
-                                                            if header_flag:
-                                                                printer_not_share.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-                                                    except:
-                                                        pyautogui.press('tab')
-                                                        pyautogui.press('enter')
-                                                        print('Share in except')
-                                                            #time.sleep(5)
-                                                            #click finish for successful installation
-                                                    try:
-                                                        config.logger.info('Searching for Add Printer window for selecting finish button')
-                                                        finish_page=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
-                                                    except:
-                                                        finish_page=checkForWindowExistence(u'Add Printer')
-                                                    try:
-                                                        if finish_page:
-                                                            finish_page=control_panel.window_(handle=finish_page[0])
-                                                            finish_page.set_focus()
-                                                            header_flag=checkForHeaderInWindows(finish_page,'Print a test page','Button')
-                                                            if header_flag:
-                                                                print('Finish in try')
-                                                                finish_page.child_window(title="Finish",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-                                                    except:
-                                                        print('Finish in except')
-                                                        pyautogui.press('tab')
-                                                        pyautogui.press('tab')
-                                                        pyautogui.press('enter')
-
-                                                    config.logger.info("Default printer not set window closing")
-                                                        
-                                                    try:
-                                                        last_page = pywinauto.findwindows.find_windows(best_match=u'Add Printer')
-                                                        if last_page:
-                                                            last_page=control_panel.window_(handle=last_page[0])
-                                                            last_page.set_focus()
-                                                            header_flag=checkForHeaderInWindows(last_page,"Default printer cannot be set.","Text")
-                                                            last_page.child_window(title='OK',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
-                                                            print('Finish in try for last page')
-                                                    except:
-                                                        print('Finish in except for last page')
-                                                        pyautogui.press('enter')
+                                                        printer_name=checkForWindowExistence(u'Add Printer')
+                    
+                                                    if printer_name:
+                                                        printer_name=control_panel.window_(handle=printer_name[0])
+                                                        printer_name.set_focus()
+                                                        header_flag=checkForHeaderInWindows(printer_name,'Type a printer name','Text')
+                                                        if header_flag:
+                                                            printer_name.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                    
+                                                            #time.sleep(10)
                                                             
-                                                    device_printer_window.child_window(title="Close", control_type="Button").click()
+                                                            #click for printer don't share
+                                                        try:
+                                                            config.logger.info('Searching for Add Printer window for selecting printer do not share')
+                                                            printer_not_share=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                        except:
+                                                            printer_not_share=checkForWindowExistence(u'Add Printer')
+                                                            
+                                                        try:
+                                                            if printer_not_share:
+                                                                printer_not_share=control_panel.window_(handle=printer_not_share[0])
+                                                                printer_not_share.set_focus()
+                                                                print('Share in try')
+                                                                header_flag=checkForHeaderInWindows(printer_name,'Printer Sharing','Text')
+                                                                if header_flag:
+                                                                    printer_not_share.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                        except:
+                                                            pyautogui.press('tab')
+                                                            pyautogui.press('enter')
+                                                            print('Share in except')
+                                                                #time.sleep(5)
+                                                                #click finish for successful installation
+                                                        try:
+                                                            config.logger.info('Searching for Add Printer window for selecting finish button')
+                                                            finish_page=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                        except:
+                                                            finish_page=checkForWindowExistence(u'Add Printer')
+                                                        try:
+                                                            if finish_page:
+                                                                finish_page=control_panel.window_(handle=finish_page[0])
+                                                                finish_page.set_focus()
+                                                                header_flag=checkForHeaderInWindows(finish_page,'Print a test page','Button')
+                                                                if header_flag:
+                                                                    print('Finish in try')
+                                                                    finish_page.child_window(title="Finish",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                        except:
+                                                            print('Finish in except')
+                                                            pyautogui.press('tab')
+                                                            pyautogui.press('tab')
+                                                            pyautogui.press('enter')
+    
+                                                        config.logger.info("Default printer not set window closing")
+                                                            
+                                                        try:
+                                                            last_page = pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                            if last_page:
+                                                                last_page=control_panel.window_(handle=last_page[0])
+                                                                last_page.set_focus()
+                                                                header_flag=checkForHeaderInWindows(last_page,"Default printer cannot be set.","Text")
+                                                                last_page.child_window(title='OK',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
+                                                                print('Finish in try for last page')
+                                                        except:
+                                                            print('Finish in except for last page')
+                                                            pyautogui.press('enter')
+                                                                
+                                                        device_printer_window.child_window(title="Close", control_type="Button").click()
+                                                else:
+                                                    try:
+                                                        config.logger.info('Searching for Add Printer window for selecting printer name')
+                                                        printer_name=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                    except:
+                                                        printer_name=checkForWindowExistence(u'Add Printer')
+                    
+                                                    if printer_name:
+                                                        printer_name=control_panel.window_(handle=printer_name[0])
+                                                        printer_name.set_focus()
+                                                        header_flag=checkForHeaderInWindows(printer_name,'Type a printer name','Text')
+                                                        if header_flag:
+                                                            printer_name.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                    
+                                                            #time.sleep(10)
+                                                            
+                                                            #click for printer don't share
+                                                        try:
+                                                            config.logger.info('Searching for Add Printer window for selecting printer do not share')
+                                                            printer_not_share=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                        except:
+                                                            printer_not_share=checkForWindowExistence(u'Add Printer')
+                                                            
+                                                        try:
+                                                            if printer_not_share:
+                                                                printer_not_share=control_panel.window_(handle=printer_not_share[0])
+                                                                printer_not_share.set_focus()
+                                                                print('Share in try')
+                                                                header_flag=checkForHeaderInWindows(printer_name,'Printer Sharing','Text')
+                                                                if header_flag:
+                                                                    printer_not_share.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                        except:
+                                                            pyautogui.press('tab')
+                                                            pyautogui.press('enter')
+                                                            print('Share in except')
+                                                                #time.sleep(5)
+                                                                #click finish for successful installation
+                                                        try:
+                                                            config.logger.info('Searching for Add Printer window for selecting finish button')
+                                                            finish_page=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                        except:
+                                                            finish_page=checkForWindowExistence(u'Add Printer')
+                                                        try:
+                                                            if finish_page:
+                                                                finish_page=control_panel.window_(handle=finish_page[0])
+                                                                finish_page.set_focus()
+                                                                header_flag=checkForHeaderInWindows(finish_page,'Print a test page','Button')
+                                                                if header_flag:
+                                                                    print('Finish in try')
+                                                                    finish_page.child_window(title="Finish",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                        except:
+                                                            print('Finish in except')
+                                                            pyautogui.press('tab')
+                                                            pyautogui.press('tab')
+                                                            pyautogui.press('enter')
+    
+                                                        config.logger.info("Default printer not set window closing")
+                                                            
+                                                        try:
+                                                            last_page = pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                            if last_page:
+                                                                last_page=control_panel.window_(handle=last_page[0])
+                                                                last_page.set_focus()
+                                                                header_flag=checkForHeaderInWindows(last_page,"Default printer cannot be set.","Text")
+                                                                last_page.child_window(title='OK',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
+                                                                print('Finish in try for last page')
+                                                        except:
+                                                            print('Finish in except for last page')
+                                                            pyautogui.press('enter')
+                                                                
+                                                        device_printer_window.child_window(title="Close", control_type="Button").click()
                                                              
     flag=1
     return flag,'Successfully Configured'
