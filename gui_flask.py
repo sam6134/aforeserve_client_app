@@ -107,7 +107,7 @@ def pr():
     manufac_name = request.args.get('manuname')
     mdelname = request.args.get('model')
     url = 'http://35.184.236.4:7005/newt/Printer_to_be_configured/Printer_to_be_configured'
-    get(url)
+    res = get(url)
     if rel == '8.1':
         flg,out = Printer_Latest_Remove_Latency_for_8.printerConfig(manufac_name,mdelname)
         url = 'http://35.184.236.4:7005/upt/'+res.text
