@@ -650,7 +650,9 @@
         $("#mod").append(html);
         html = "<br><div align='left'><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='confirmnewreq()'>Confirm</p><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='nonewreq()'>No</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
+      
     }
     function nonewreq() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Not Confirmed</p></div>";
@@ -659,6 +661,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
     function confirmnewreq() {
@@ -668,7 +671,8 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
-      })
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
+      });
     }
     function sft2install() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Software Install</p></div>";
@@ -677,6 +681,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function msoffice() {
@@ -686,6 +691,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function conms() {
@@ -694,6 +700,7 @@
         console.log(data);
         html = "<br><div align='right'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function otherssft() {
@@ -707,6 +714,7 @@
         $("#mod").append(html);
         html = "<button class='btn btn-secondary' onclick='conmsother()'>Confirm</button>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function conmsother() {
@@ -714,6 +722,7 @@
       $.get("/confirmnew", { con1: 'othercon', text: text }).done(function (data) {
         html = "<br><div align='right'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function sysrelated() {
@@ -723,6 +732,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function forgetpsw(){
@@ -732,6 +742,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function new_pass(){
@@ -744,53 +755,66 @@
         if (ps1 == ps2) {
           html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Changed Successfully.</div>"; 
           $("#mod").append(html);
+          $('#mod').scrollTop($('#mod')[0].scrollHeight);
         }
         else {
           html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Does Not Match.</div>";
           $("#mod").append(html);
+          $('#mod').scrollTop($('#mod')[0].scrollHeight);
         }
       }
       else{
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 22%;'>Wrong Format Used \nPassword should be of 7-15 in length and must contains : \n* 1 UPPERCASE\n* 1 lowercase\n* 1 digit\n* 1 special character</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       }
     }
     // disk clean up trigger
     function performance(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
+      $('#mod').scrollTop($('#mod')[0].scrollHeight);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 15 sec approx.</p></div>";
       $("#mod").append(html);
+      $('#mod').scrollTop($('#mod')[0].scrollHeight);
       setTimeout(function(){ 
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
        }, 15000);
       $.get("/diskclean").done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function disk(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
+      $('#mod').scrollTop($('#mod')[0].scrollHeight);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 15 sec approx.</p></div>";
       $("#mod").append(html);
+      $('#mod').scrollTop($('#mod')[0].scrollHeight);
       setTimeout(function(){ 
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
        }, 15000);
       $.get("/diskclean").done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function apprelated() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Application Related</p></div>";
       $("#mod").append(html);
+      $('#mod').scrollTop($('#mod')[0].scrollHeight);
       $.get("/apprelated", { con1: 'apprelated' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     // email coonfiguration setup
@@ -800,6 +824,7 @@
       $.get("/apprelated",{con1 : 'email'}).done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function email_reg(){
@@ -810,6 +835,7 @@
       setTimeout(function(){ 
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
        }, 15000);
       username = document.getElementById('username').value;
       email_s = document.getElementById('useremail').value;
@@ -817,6 +843,7 @@
       $.get("/emailconfig",{username : username,email_s : email_s,password_s : password_s}).done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function osrelated() {
@@ -826,6 +853,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function printerrelated() {
@@ -835,6 +863,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function newprinter(){
@@ -844,6 +873,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
     function new_print(){
@@ -856,10 +886,12 @@
       setTimeout(function(){ 
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
        }, 15000);
       $.get("/pr",{manuname : manuname, model : model}).done(function (data){
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
     function networkrelated() {
@@ -869,6 +901,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     function knowticket(){
@@ -880,6 +913,7 @@
         $("#mod").append(html);
         html = "<br><div align='left'><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='confirmknow()'>Confirm</p><p class='speech-bubble btn btn-secondary' style='padding-right: 3%;' onclick='nonewreq()'>No</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
     function confirmknow() {
@@ -891,6 +925,7 @@
         $("#mod").append(html);
         html = "<br><div align='right'><input type='text' id='tid' class='form-control' style='width: 70%;'><br><button type='button' class='btn btn-primary' onclick='proceedknow()'>Proceed</button></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
     function proceedknow() {
@@ -899,6 +934,7 @@
         console.log(data);
         html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;height: 17%;'>"+data+"</p></div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
     // new query
@@ -909,6 +945,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
     function asset() {
@@ -918,6 +955,7 @@
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
   </script>
