@@ -284,8 +284,6 @@ def printerConfig(manufac_name,mdelname):
                                                         send_keys('"%{F4}"')
                                                              
     flag=1
-    return flag,'Success'        
-    
-#flag=printerConfig()                                                            
+    return flag,'Success'                                                          
                                                                 
                
