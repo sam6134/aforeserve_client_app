@@ -10,18 +10,18 @@ rel = release()
 
 #for windows 10
 #import printer
-#import Printer_Latest_Remove_Latency_win10
+import Printer_Latest_Remove_Latency_win10
 #import email_s
-#import test_fetch_mail_win10
-#import diskCleanup
+import test_fetch_mail_win10
+import diskCleanup
 
 #for windows 8
-#import Printer_Latest_Remove_Latency_for_8
-#import test_fetch_mail_for_8
+import Printer_Latest_Remove_Latency_for_8
+import test_fetch_mail_for_8
 
 #for windows 7
-#import Printer_Latest_Remove_Latency_for_7
-#import test_fetch_mail_for_7
+import Printer_Latest_Remove_Latency_for_7
+import test_fetch_mail_for_7
 
 app = Flask(__name__)
 
