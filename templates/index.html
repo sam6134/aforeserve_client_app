@@ -840,12 +840,6 @@
     function newprinter(){
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 10 sec approx.</p></div>";
-      $("#mod").append(html);
-      setTimeout(function(){ 
-        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
-        $("#mod").append(html);
-       }, 7000);
       $.get("/printerrelated", { con1: 'newprinter' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
@@ -857,6 +851,12 @@
       model = document.getElementById('model').value;
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 10 sec approx.</p></div>";
+      $("#mod").append(html);
+      setTimeout(function(){ 
+        html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
+        $("#mod").append(html);
+       }, 7000);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
       $("#mod").append(html);
       $.get("/pr",{manuname : manuname, model : model}).done(function (data){
