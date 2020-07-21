@@ -9,8 +9,10 @@ from getpass import getuser
 rel = release()
 
 #for windows 10
-import printer
-import email_s
+#import printer
+import Printer_Latest_Remove_Latency_win10
+#import email_s
+import test_fetch_mail_win10
 import diskCleanup
 
 #for windows 8
@@ -113,7 +115,7 @@ def pr():
         flg,out = Printer_Latest_Remove_Latency_for_7.printerConfig(manufac_name,mdelname)
         return out
     else:
-        flg,out = printer.printerConfig(manufac_name,mdelname)
+        flg,out = Printer_Latest_Remove_Latency_win10.printerConfig(manufac_name,mdelname)
         return out
 
 @app.route('/emailconfig', methods = ['GET','POST'])
@@ -130,7 +132,7 @@ def em():
         flg,out = test_fetch_mail_for_7.mailConfig(username,inser,outser,email_ss,password_s)
         return out
     else:
-        flg,out = email_s.mailConfig(username,inser,outser,email_ss,password_s)
+        flg,out = test_fetch_mail_win10.mailConfig(username,inser,outser,email_ss,password_s)
         return out
 
 @app.route('/passw', methods = ['GET','POST'])
