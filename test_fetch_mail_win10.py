@@ -161,7 +161,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                     
                                     #user_details=pd.read_csv('http://127.0.0.1:8000/input.csv').columns
                                     
-                                    user_details=[username,email_ss,password_s]"
+                                    user_details=[username,email_ss,password_s]
                                     
                                     add_account["Your Name:Edit"].type_keys(user_details[0])    
                                     
