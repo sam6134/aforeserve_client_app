@@ -26,620 +26,48 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-  <style>
-    html,
-    body {
-      background-color: #222C32;
-      height: 100%;
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box;
-    }
-
-    .speech-bubble {
-      position: relative;
-      background: #00aabb;
-      border-radius: .4em;
-      height: 36px;
-      padding-top: 2%;
-      padding-left: 4%;
-      width: 72%;
-    }
-
-    .cd-container {
-      width: 90%;
-      max-width: 1080px;
-      margin: 0 auto;
-      background: #2B343A;
-      padding: 0 10%;
-      border-radius: 2px;
-    }
-
-    .cd-container::after {
-      content: '';
-      display: table;
-      clear: both;
-    }
-
-    /* -------------------------------- 
-          
-          Main components 
-          
-          -------------------------------- */
-
-
-    #cd-timeline {
-      position: relative;
-      padding: 2em 0;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-
-    #cd-timeline::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 25px;
-      height: 100%;
-      width: 4px;
-      background: #7E57C2;
-    }
-
-    @media only screen and (min-width: 1170px) {
-      #cd-timeline {
-        margin-top: 3em;
-        margin-bottom: 3em;
-      }
-
-      #cd-timeline::before {
-        left: 50%;
-        margin-left: -2px;
-      }
-    }
-
-    .cd-timeline-block {
-      position: relative;
-      margin: 2em 0;
-    }
-
-    .cd-timeline-block:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .cd-timeline-block:first-child {
-      margin-top: 0;
-    }
-
-    .cd-timeline-block:last-child {
-      margin-bottom: 0;
-    }
-
-    @media only screen and (min-width: 1170px) {
-      .cd-timeline-block {
-        margin: 4em 0;
-      }
-
-      .cd-timeline-block:first-child {
-        margin-top: 0;
-      }
-
-      .cd-timeline-block:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .cd-timeline-img {
-      position: absolute;
-      top: 8px;
-      left: 12px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px #7E57C2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .cd-timeline-img {
-      background: #673AB7;
-    }
-
-    @media only screen and (min-width: 1170px) {
-      .cd-timeline-img {
-        width: 30px;
-        height: 30px;
-        left: 50%;
-        margin-left: -15px;
-        margin-top: 15px;
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
-      }
-    }
-
-    .cd-timeline-content {
-      position: relative;
-      margin-left: 60px;
-      margin-right: 30px;
-      background: #333C42;
-      border-radius: 2px;
-      padding: 1em;
-
-      .timeline-content-info {
-        background: #2B343A;
-        padding: 5px 10px;
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 12px;
-        box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
-        border-radius: 2px;
-
-        i {
-          margin-right: 5px;
-        }
-
-        .timeline-content-info-title,
-        .timeline-content-info-date {
-          width: calc(50% - 2px);
-          display: inline-block;
-        }
-
-        @media (max-width: 500px) {
-
-          .timeline-content-info-title,
-          .timeline-content-info-date {
-            display: block;
-            width: 100%;
-          }
-        }
-      }
-
-      .content-skills {
-        font-size: 12px;
-        padding: 0;
-        margin-bottom: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        li {
-          background: #40484D;
-          border-radius: 2px;
-          display: inline-block;
-          padding: 2px 10px;
-          color: rgba(255, 255, 255, 0.7);
-          margin: 3px 2px;
-          text-align: center;
-          flex-grow: 1;
-        }
-      }
-    }
-
-    .cd-timeline-content:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .cd-timeline-content h2 {
-      color: rgba(255, 255, 255, .9);
-      margin-top: 0;
-      margin-bottom: 5px;
-    }
-
-    .cd-timeline-content p,
-    .cd-timeline-content .cd-date {
-      color: rgba(255, 255, 255, .7);
-      font-size: 13px;
-      font-size: 0.8125rem;
-    }
-
-    .cd-timeline-content .cd-date {
-      display: inline-block;
-    }
-
-    .cd-timeline-content p {
-      margin: 1em 0;
-      line-height: 1.6;
-    }
-
-    .cd-timeline-content::before {
-      content: '';
-      position: absolute;
-      top: 16px;
-      right: 100%;
-      height: 0;
-      width: 0;
-      border: 7px solid transparent;
-      border-right: 7px solid #333C42;
-    }
-
-    @media only screen and (min-width: 768px) {
-      .cd-timeline-content h2 {
-        font-size: 20px;
-        font-size: 1.25rem;
-      }
-
-      .cd-timeline-content p {
-        font-size: 16px;
-        font-size: 1rem;
-      }
-
-      .cd-timeline-content .cd-read-more,
-      .cd-timeline-content .cd-date {
-        font-size: 14px;
-        font-size: 0.875rem;
-      }
-    }
-
-    @media only screen and (min-width: 1170px) {
-      .cd-timeline-content {
-        color: white;
-        margin-left: 0;
-        padding: 1.6em;
-        width: 36%;
-        margin: 0 5%
-      }
-
-      .cd-timeline-content::before {
-        top: 24px;
-        left: 100%;
-        border-color: transparent;
-        border-left-color: #333C42;
-      }
-
-      .cd-timeline-content .cd-date {
-        position: absolute;
-        width: 100%;
-        left: 122%;
-        top: 6px;
-        font-size: 16px;
-        font-size: 1rem;
-      }
-
-      .cd-timeline-block:nth-child(even) .cd-timeline-content {
-        float: right;
-      }
-
-      .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-        top: 24px;
-        left: auto;
-        right: 100%;
-        border-color: transparent;
-        border-right-color: #333C42;
-      }
-
-      .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-        float: right;
-      }
-
-      .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
-        left: auto;
-        right: 122%;
-        text-align: right;
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <div id="menu" class="ui inverted menu">
-    <a class="item active" onclick="home()">
-      Home
-    </a>
-    <a class="item" onclick="resolve()">
-      Resolve Query
-    </a>
-    <div class="right menu">
-      <a class="ui item" onclick="logout()">
-        Logout
-      </a>
-    </div>
-  </div>
-  <div id="home" style="display: inline;">
-    <section id="cd-timeline" class="cd-container">
-      <!-- cd-timeline-block -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
+  <div style="position: absolute;top: 91%;left: 42%;z-index: 10;">
+  <a type="button" data-toggle="modal" data-target="#fullHeightModalRight">
+    <img src="{{url_for('static', filename='chatbot.svg')}}" style="width:22%;">
+  </a>
+</div>
+  <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
 
-        <div class="cd-timeline-content">
-          <h2>Interact With Chat-Bot</h2>
-          <a type="button" data-toggle="modal" data-target="#fullHeightModalRight">
-            <img src="{{url_for('static', filename='chatbot.svg')}}" style="width:20%;">
-          </a>
-          <p>Click on the Chat-Bot and raise query by just typing no need to put extra effort
-          </p>
-        </div> <!-- cd-timeline-content -->
-
-      </div> <!-- cd-timeline-block -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content">
-          <h2>Mail</h2>
-          <p>Wait for a mail and then proceed further</p>
-        </div>
-      </div>
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-picture">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content">
-          <h2>Resolve Query</h2>
-          <p>Navigate to Resolve Query section and see what solutions are available else click on refresh button</p>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-location">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content">
-          <h2>Start Automation</h2>
-          <p>Once resolve options are visible you can start automation by just a single click</p>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-location">
-        </div>
-        <div class="cd-timeline-content">
-          <h2>Feedback</h2>
-          <p>Please log a feedback stating all the things which are good or bad or needs some improvement.</p>
-          <a type="button" data-toggle="modal" data-target="#modalPoll-1">
-            <img src="{{url_for('static', filename='fed.svg')}}" style="width:20%;">
-          </a>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-      <!-- cd-timeline-block -->
-    </section> <!-- cd-timeline -->
-    <!-- Button trigger modal -->
-    <!-- Full Height Modal Right -->
-    <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-
-      <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
-      <div class="modal-dialog modal-side modal-bottom-right" role="document">
-        <div class="modal-content">
-          <div class="modal-header" align="middle" style="color:white;background-color: #7f53ac;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
-            <h4 class="modal-title w-100" id="myModalLabel">A4BOT</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div id="mod" class="modal-body" style="overflow-y: scroll;height: 500px;background-color: #2d3436;background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
-            <div align="left">
-              <p class="speech-bubble btn-primary">Hello {{User}}</p>
-              <p class="speech-bubble btn-primary">Welcome to Aforesight A4BOT..!</p>
-              <p class="speech-bubble btn-primary" style="height: 45%;">
-                Please select desired option…
-                <br>
-                <br>
-                <button class="btn btn-secondary" onclick="newrequest()">New Request</button>
-                <br>
-                <button class="btn btn-secondary" onclick="knowticket()">Know about your IT Ticket</button>
-                <br>
-                <button class="btn btn-secondary" onclick="newquery()">New Queries</button>
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Full Height Modal Right -->
-  </div>
-  <!-- Modal: modalPoll -->
-  <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true" data-backdrop="false">
-    <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+    <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+    <div class="modal-dialog modal-side modal-bottom-right" role="document">
       <div class="modal-content">
-        <!--Header-->
-        <div class="modal-header">
-          <p class="heading lead">Feedback request
-          </p>
-
+        <div class="modal-header" align="middle"
+          style="color:white;background-color: #7f53ac;background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
+          <h4 class="modal-title w-100" id="myModalLabel">A4BOT</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" class="white-text">×</span>
+            <span aria-hidden="true">&times;</span>
           </button>
         </div>
-
-        <!--Body-->
-        <div class="modal-body">
-          <div class="text-center">
-            <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i>
-            <p>
-              <strong>Your opinion matters</strong>
+        <div id="mod" class="modal-body"
+          style="overflow-y: scroll;height: 500px;background-color: #2d3436;background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
+          <div align="left">
+            <p class="speech-bubble btn-primary">Hello {{User}}</p>
+            <p class="speech-bubble btn-primary">Welcome to Aforesight A4BOT..!</p>
+            <p class="speech-bubble btn-primary" style="height: 45%;">
+              Please select desired option…
+              <br>
+              <br>
+              <button class="btn btn-secondary" onclick="newrequest()">New Request</button>
+              <br>
+              <button class="btn btn-secondary" onclick="knowticket()">Know about your IT Ticket</button>
+              <br>
+              <button class="btn btn-secondary" onclick="newquery()">New Queries</button>
             </p>
-            <p>Have some ideas how to improve our product?
-              <strong>Give us your feedback.</strong>
-            </p>
           </div>
-
-          <hr>
-
-          <!-- Radio -->
-          <p class="text-center">
-            <strong>Your rating</strong>
-          </p>
-          <div class="form-check mb-4">
-            <input class="form-check-input" name="group1" type="radio" id="radio-179" value="option1" checked>
-            <label class="form-check-label" for="radio-179">Very good</label>
-          </div>
-
-          <div class="form-check mb-4">
-            <input class="form-check-input" name="group1" type="radio" id="radio-279" value="option2">
-            <label class="form-check-label" for="radio-279">Good</label>
-          </div>
-
-          <div class="form-check mb-4">
-            <input class="form-check-input" name="group1" type="radio" id="radio-379" value="option3">
-            <label class="form-check-label" for="radio-379">Mediocre</label>
-          </div>
-          <div class="form-check mb-4">
-            <input class="form-check-input" name="group1" type="radio" id="radio-479" value="option4">
-            <label class="form-check-label" for="radio-479">Bad</label>
-          </div>
-          <div class="form-check mb-4">
-            <input class="form-check-input" name="group1" type="radio" id="radio-579" value="option5">
-            <label class="form-check-label" for="radio-579">Very bad</label>
-          </div>
-          <!-- Radio -->
-
-          <p class="text-center">
-            <strong>What could we improve?</strong>
-          </p>
-          <!--Basic textarea-->
-          <div class="md-form" style="color: white;">
-            <textarea type="text" id="form79textarea" class="md-textarea form-control" rows="3"></textarea>
-            <label for="form79textarea">Your message</label>
-          </div>
-
         </div>
-
-        <!--Footer-->
-        <div class="modal-footer justify-content-center">
-          <a type="button" class="btn btn-primary waves-effect waves-light">Send
-            <i class="fa fa-paper-plane ml-1"></i>
-          </a>
-          <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal: modalPoll -->
-  <div id="resolve" style="display: none;">
-    <div id="dynamic">
-      <button class="btn btn-outline-primary waves-effect" onclick="ref()">Refresh</button>
-      <div id="p1" style="display: none;">
-        <button class="btn btn-outline-primary waves-effect" onclick="printer()">Printer</button>
-      </div>
-      <div id="e1" style="display: none;">
-        <button class="btn btn-outline-primary waves-effect" onclick="email()">Email</button>
-      </div>
-      <div id="pass1" style="display: none;">
-        <button class="btn btn-outline-primary waves-effect" onclick="password()">Password</button>
-      </div>
-      <div id="dc1" style="display: none;">
-        <button class="btn btn-outline-primary waves-effect" onclick="diskcleanup()">Disk Dleanup</button>
-      </div>
-      <div id="si1" style="display: none;">
-        <button class="btn btn-outline-primary waves-effect" onclick="sftinstall()">Software Install</button>
       </div>
     </div>
   </div>
   <script>
-    function in7() {
-      document.getElementById('h7').style.display = 'inline';
-      document.getElementById('in8').style.display = 'inline';
-    }
-    var t_id = '';
-    function in8() {
-      var symptom = document.getElementById('symptom').value;
-      var description = document.getElementById('description').value;
-      $.get("/newt/" + symptom + '/' + description).done(function (data) {
-        alert(data.id);
-        console.log(data);
-        t_id = data.id;
-      });
-    }
-    var menu = document.getElementById('menu');
-    var items = document.getElementsByClassName('item');
-    for (i = 0; i < items.length; i++) {
-      items[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-    function resolve() {
-      document.getElementById('home').style.display = 'none';
-      document.getElementById('resolve').style.display = 'inline';
-    }
-    function home() {
-      document.getElementById('home').style.display = 'inline';
-      document.getElementById('resolve').style.display = 'none';
-    }
-
-    /*        function msg(){
-              text = document.getElementById('msg').value;
-              userHtml = '<div align="right"><button type="button" class="btn btn-primary">'+text+'</button></div>'
-              $('#mbody').append(userHtml);
-            }
-    
-           function submit(){
-             var text = document.getElementById('text').value;
-             $.get("/submit",{text : text}).done(function (data){
-               console.log(data);
-               t_id = data.id;
-               alert(t_id);
-             });
-           }
-    */
-    function ref() {
-      alert(t_id);
-      $.get("/ref", { id: t_id }).done(function (data) {
-        console.log(data);
-        if (data == 'Printer') {
-          document.getElementById('p1').style.display = 'inline';
-          document.getElementById('e1').style.display = 'none'
-          document.getElementById('pass1').style.display = 'none'
-          document.getElementById('dc1').style.display = 'none'
-          document.getElementById('si1').style.display = 'none'
-        }
-        else if (data == 'Email') {
-          document.getElementById('e1').style.display = 'inline';
-          document.getElementById('p1').style.display = 'none';
-          document.getElementById('pass1').style.display = 'none'
-          document.getElementById('dc1').style.display = 'none'
-          document.getElementById('si1').style.display = 'none'
-        }
-        else if (data == 'Password') {
-          document.getElementById('e1').style.display = 'none';
-          document.getElementById('p1').style.display = 'none';
-          document.getElementById('pass1').style.display = 'inline'
-          document.getElementById('dc1').style.display = 'none'
-          document.getElementById('si1').style.display = 'none'
-        }
-        else if (data == 'DiskCLeanup') {
-          document.getElementById('e1').style.display = 'none';
-          document.getElementById('p1').style.display = 'none';
-          document.getElementById('pass1').style.display = 'none'
-          document.getElementById('dc1').style.display = 'inline'
-          document.getElementById('si1').style.display = 'none'
-        }
-        else if (data == 'SoftwareInstall') {
-          document.getElementById('e1').style.display = 'none';
-          document.getElementById('p1').style.display = 'none';
-          document.getElementById('pass1').style.display = 'none'
-          document.getElementById('dc1').style.display = 'none'
-          document.getElementById('si1').style.display = 'inline'
-        }
-        else {
-          document.getElementById('dynamic').innerHTML = 'unknown returned';
-        }
-      })
-    }
-    function printer() {
-      $.get("/pr").done(function (data) {
-        alert(data);
-      })
-    }
-    function email() {
-      $.get("/em").done(function (data) {
-        alert(data);
-      })
-    }
-    function password() {
-      $.get("/passw").done(function (data) {
-        alert(data);
-      })
-    }
-    function diskcleanup() {
-      $.get("/dc").done(function (data) {
-        alert(data);
-      })
-    }
-    function sftinstall() {
-      $.get("/sft").done(function (data) {
-        alert(data);
-      })
-    }
     //chatbot script
     function newrequest() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>New Request</p></div>";
@@ -652,7 +80,7 @@
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
-      
+
     }
     function nonewreq() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Not Confirmed</p></div>";
@@ -735,7 +163,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function forgetpsw(){
+    function forgetpsw() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Forget Password</p></div>";
       $("#mod").append(html);
       $.get("/sysrelated", { con1: 'psw' }).done(function (data) {
@@ -745,15 +173,14 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function new_pass(){
+    function new_pass() {
       ps1 = document.getElementById('password1').value;
       ps2 = document.getElementById('password2').value;
       ps1_new = document.getElementById('password1');
-      var check=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-      if(ps1_new.value.match(check))
-      {
+      var check = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+      if (ps1_new.value.match(check)) {
         if (ps1 == ps2) {
-          html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Changed Successfully.</div>"; 
+          html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Changed Successfully.</div>";
           $("#mod").append(html);
           $('#mod').scrollTop($('#mod')[0].scrollHeight);
         }
@@ -763,45 +190,45 @@
           $('#mod').scrollTop($('#mod')[0].scrollHeight);
         }
       }
-      else{
+      else {
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 22%;'>Wrong Format Used \nPassword should be of 7-15 in length and must contains : \n* 1 UPPERCASE\n* 1 lowercase\n* 1 digit\n* 1 special character</div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       }
     }
     // disk clean up trigger
-    function performance(){
+    function performance() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
       $('#mod').scrollTop($('#mod')[0].scrollHeight);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
       $("#mod").append(html);
       $('#mod').scrollTop($('#mod')[0].scrollHeight);
-      setTimeout(function(){ 
+      setTimeout(function () {
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
-       }, 15000);
-      $.get("/diskclean").done(function (data){
-        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+      }, 15000);
+      $.get("/diskclean").done(function (data) {
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>" + data + "</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function disk(){
+    function disk() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
       $('#mod').scrollTop($('#mod')[0].scrollHeight);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
       $("#mod").append(html);
       $('#mod').scrollTop($('#mod')[0].scrollHeight);
-      setTimeout(function(){ 
+      setTimeout(function () {
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
-       }, 15000);
-      $.get("/diskclean").done(function (data){
-        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+      }, 15000);
+      $.get("/diskclean").done(function (data) {
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>" + data + "</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
@@ -818,30 +245,30 @@
       })
     }
     // email coonfiguration setup
-    function emailconf(){
+    function emailconf() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Email Configuration</p></div>";
       $("#mod").append(html);
-      $.get("/apprelated",{con1 : 'email'}).done(function (data){
-        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+      $.get("/apprelated", { con1: 'email' }).done(function (data) {
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>" + data + "</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function email_reg(){
+    function email_reg() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
       $("#mod").append(html);
-      setTimeout(function(){ 
+      setTimeout(function () {
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
-       }, 15000);
+      }, 15000);
       username = document.getElementById('username').value;
       email_s = document.getElementById('useremail').value;
       password_s = document.getElementById('password').value;
-      $.get("/emailconfig",{username : username,email_s : email_s,password_s : password_s}).done(function (data){
-        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+      $.get("/emailconfig", { username: username, email_s: email_s, password_s: password_s }).done(function (data) {
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>" + data + "</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
@@ -866,7 +293,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function newprinter(){
+    function newprinter() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
       $.get("/printerrelated", { con1: 'newprinter' }).done(function (data) {
@@ -876,20 +303,20 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
-    function new_print(){
+    function new_print() {
       manuname = document.getElementById('manuname').value;
       model = document.getElementById('model').value;
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
       $("#mod").append(html);
-      setTimeout(function(){ 
+      setTimeout(function () {
         html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Automation would be starting in 2-3 seconds</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
-       }, 15000);
-      $.get("/pr",{manuname : manuname, model : model}).done(function (data){
-        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>"+data+"</p></div>";
+      }, 15000);
+      $.get("/pr", { manuname: manuname, model: model }).done(function (data) {
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;'>" + data + "</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
@@ -904,7 +331,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function knowticket(){
+    function knowticket() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Know about your IT ticket</p></div>";
       $("#mod").append(html);
       $.get("/knowticket", { con1: 'newr' }).done(function (data) {
@@ -932,7 +359,7 @@
       tid = document.getElementById('tid').value;
       $.get("/knowticket", { con1: 'proceed', id: tid }).done(function (data) {
         console.log(data);
-        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;height: 17%;'>"+data+"</p></div>";
+        html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-left: 3%;height: 17%;'>" + data + "</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
