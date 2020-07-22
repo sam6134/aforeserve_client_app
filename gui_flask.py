@@ -370,39 +370,20 @@ def networkrelated():
 def knowticket():
     arg = request.args.get('con1')
     if arg == 'know':
-        return '''
-        <p class="speech-bubble btn-light" style="padding-right:3%;">Select one from your previous tickets : <br></p>
-            <table class="table" style="background-color: #eec0c6;background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);">
-                <thead class="black white-text">
-                    <tr>
-                        <th scope="col">Ticket ID</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Issue</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>111</td>
-                        <td>New</td>
-                        <td>Printer</td>
-                        <td>Printer has to be resolved</td>
-                    </tr>
-                    <tr>
-                        <td>423</td>
-                        <td>Resolved</td>
-                        <td>Password</td>
-                        <td>Printer has to be resolved</td>
-                    </tr>
-                    <tr>
-                        <td>567</td>
-                        <td>In Progress</td>
-                        <td>Email</td>
-                        <td>Printer has to be resolved</td>
-                    </tr>
-                </tbody>
-            </table>
-        '''
+        url = 'http://35.184.236.4:7005/know/'+macid
+        res = get(url)
+        res = res.json()
+        ticket_id = res['Incident ID']
+        status = res['Status']
+        issue = res['Issue_Class']
+        description = res['Description']
+        print(ticket_id,status,issue,description)
+        ht = '''<p class="speech-bubble btn-light" style="padding-right:3%;">Select one from your previous tickets : <br></p><table class="table" style="background-color: #eec0c6;background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);"><thead class="black white-text"><tr><th scope="col">Ticket ID</th><th scope="col">Status</th><th scope="col">Issue</th><th scope="col">Description</th></tr></thead><tbody>'''
+        for i in range(0,len(ticket_id)):
+            ht = ht + '''<tr><td>'''+str(ticket_id[str(i)])+'''</td><td>'''+str(status[str(i)])+'''</td><td>'''+str(issue[str(i)])+'''</td><td>'''+str(description[str(i)])+'''</td></tr>'''
+        ht = ht + '''</tbody></table>'''
+        return ht
+
     elif arg == 'newr':
         return '''
     <p class="speech-bubble btn-primary" style="height: 25%;">
