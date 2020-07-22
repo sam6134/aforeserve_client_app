@@ -252,7 +252,4 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         time.sleep(2)
                                         send_keys('"%{F4}"')
                                         
-                                        flag=1
-    
-    print(flag)
-    return flag,'Successfully Configured'
+    return 'Successfully Configured'

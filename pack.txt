@@ -1,4 +1,9 @@
 flaskwebgui
 flask
-sqlalchemy
-pandas
+getmac
+pywinauto
+pyautogui
+platform
+getpass
+socket
+requests

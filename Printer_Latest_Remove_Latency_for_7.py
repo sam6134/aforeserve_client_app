@@ -283,7 +283,6 @@ def printerConfig(manufac_name,mdelname):
                                                         time.sleep(2)
                                                         send_keys('"%{F4}"')
                                                              
-    flag=1
-    return flag,'Success'                                                          
+    return 'Success'                                                          
                                                                 
                

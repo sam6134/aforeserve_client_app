@@ -48,25 +48,10 @@ get(url)
 
 @app.route('/', methods = ['GET','POST'])
 def login():
-    if request.method == 'POST': 
-        user = request.form['user']
-        passw = request.form['pass']
-        if user == 'User' and passw == '12345':
-            return render_template('index.html',User = hostname.title())
-        else:
-            return render_template('login.html')
-    return render_template('login.html')
-
+    return render_template('index.html',User = username.title())
+    
 @app.route('/newt/<symptom>/<description>', methods = ['GET','POST'])
 def newt(symptom,description):
-    # urgency = request.args.get('urgency')
-    # impact = request.args.get('impact')
-    # priority = request.args.get('priority')
-    # classification = request.args.get('classification')
-    # wg = request.args.get('wg')
-    # medium = request.args.get('medium')
-    # symptom = request.args.get('symptom')
-    # description = request.args.get('description')
     url = 'http://35.184.236.4:7005/newt/'+symptom+'/'+description
     res = get(str(url))
     print(res)
@@ -75,23 +60,6 @@ def newt(symptom,description):
     }
     print(a)
     return jsonify(a)
-
-# @app.route('/submit', methods = ['GET','POST'])
-# def sub():
-#     text = request.args.get('text')
-#     url = 'http://35.184.236.4:7005/submit/'+text
-#     print('------------')
-#     print(url)
-#     print('------------')
-#     res = requests.get(str(url))
-#     print('------------')
-#     print(res)
-#     print('------------')
-#     a = {
-#         'id' : int(res.text)
-#     }
-#     print(a)
-#     return jsonify(a)
 
 @app.route('/ref', methods = ['GET', 'POST'])
 def ref():
@@ -106,20 +74,20 @@ def ref():
 def pr():
     manufac_name = request.args.get('manuname')
     mdelname = request.args.get('model')
-    url = 'http://35.184.236.4:7005/newt/Printer_to_be_configured/Printer_to_be_configured'
+    url = 'http://35.184.236.4:7005/newt/Printer_to_be_configured/Printer_to_be_configured/'+macid
     res = get(url)
     if rel == '8.1':
-        flg,out = Printer_Latest_Remove_Latency_for_8.printerConfig(manufac_name,mdelname)
+        out = Printer_Latest_Remove_Latency_for_8.printerConfig(manufac_name,mdelname)
         url = 'http://35.184.236.4:7005/upt/'+res.text
         res = get(url)
         return res.text
     elif rel == '7':
-        flg,out = Printer_Latest_Remove_Latency_for_7.printerConfig(manufac_name,mdelname)
+        out = Printer_Latest_Remove_Latency_for_7.printerConfig(manufac_name,mdelname)
         url = 'http://35.184.236.4:7005/upt/'+res.text
         res = get(url)
         return res.text
     else:
-        flg,out = Printer_Latest_Remove_Latency_win10.printerConfig(manufac_name,mdelname)
+        out = Printer_Latest_Remove_Latency_win10.printerConfig(manufac_name,mdelname)
         url = 'http://35.184.236.4:7005/upt/'+res.text
         res = get(url)
         return res.text
@@ -129,21 +97,21 @@ def em():
     username = request.args.get('username')
     email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
-    url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured'
+    url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured/'+macid
     res = get(url)
     print(res.text)
     if rel == '8.1':
-        flg,out = test_fetch_mail_for_8.mailConfig(username,inser,outser,email_ss,password_s)
+        out = test_fetch_mail_for_8.mailConfig(username,inser,outser,email_ss,password_s)
         url = 'http://35.184.236.4:7005/upt/'+res.text
         res = get(url)
         return res.text
     elif rel == '7':
-        flg,out = test_fetch_mail_for_7.mailConfig(username,inser,outser,email_ss,password_s)
+        out = test_fetch_mail_for_7.mailConfig(username,inser,outser,email_ss,password_s)
         url = 'http://35.184.236.4:7005/upt/'+res.text
         res = get(url)
         return res.text
     else:
-        flg,out = test_fetch_mail_win10.mailConfig(username,inser,outser,email_ss,password_s)
+        out = test_fetch_mail_win10.mailConfig(username,inser,outser,email_ss,password_s)
         url = 'http://35.184.236.4:7005/upt/'+res.text
         res = get(url)
         return res.text
@@ -154,7 +122,7 @@ def passw():
 
 @app.route('/diskclean', methods = ['GET','POST'])
 def dc():
-    url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured'
+    url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/'+macid
     get(url)
     error,out = diskCleanup.startCleanup()
     print(error)
@@ -177,7 +145,7 @@ def newreq():
        <br>
         Your IP : '''+str(IP)+'''
        <br>
-       Your Hostname : '''+str(hostname)+'''
+       Your Hostname : '''+str(username.title())+'''
     </p>
     '''
 @app.route('/confirmnew', methods = ['GET', 'POST'])
@@ -443,7 +411,7 @@ def knowticket():
        <br>
         Your IP : '''+str(IP)+'''
        <br>
-       Your Hostname : '''+str(hostname)+'''
+       Your Hostname : '''+str(username.title())+'''
     </p>
     '''
     elif arg == 'proceed':
@@ -471,7 +439,7 @@ def newquery():
     elif arg == 'asset':
         return '''
     <p class="speech-bubble btn-primary" style="height: 11%;">
-        Please verify your Username : '''+str(hostname)+''' and EmailID : xyz@emai.com 
+        Please verify your Username : '''+str(username.title())+''' and EmailID : xyz@emai.com 
     </p>
     '''
 ui.run()

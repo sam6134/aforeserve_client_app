@@ -275,7 +275,6 @@ def printerConfig(manufac_name,mdelname):
                                                             
                                                         device_printer_window.child_window(title="Close", control_type="Button").click()
                                                              
-    flag=1
-    return flag,'Success'                                                          
+    return 'Success'                                                          
                                                                 
                
