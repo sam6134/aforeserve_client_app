@@ -5,6 +5,65 @@ import socket
 from getmac import get_mac_address
 from platform import platform, system, release
 from getpass import getuser
+import uuid
+import os.path
+
+#creating new id
+print(os.path.isfile('static/ids.txt'))
+if(os.path.isfile('static/ids.txt')):
+        global ids
+        ids = open('static/ids.txt')
+        ids = ids.read()
+        ids = ids.replace('\n','')
+        all_id = get('http://35.184.236.4:7005/getalluniqueid')
+        all_id = all_id.json()
+        all_id = all_id['MAC_ID']
+        flag = 0
+        for i in range(0,len(all_id)):
+                if str(ids) == all_id[str(i)]:
+                        flag += 1
+        if flag > 0:
+                pass
+        else:
+                token = True
+                while token:
+                        ids = uuid.uuid1()
+                        ids = str(ids)
+                        ids = ids.replace('-','')
+                        all_id = get('http://35.184.236.4:7005/getalluniqueid')
+                        all_id = all_id.json()
+                        all_id = all_id['MAC_ID']
+                        flag = 0
+                        for i in range(0,len(all_id)):
+                                if ids == all_id[str(i)]:
+                                        flag += 1
+                                else:
+                                        pass
+                        if flag == 0:
+                                with open('static/ids.txt', 'w') as file:
+                                        file.write(str(ids))
+                                token = False
+else:
+        token = True
+        while token:
+                ids = uuid.uuid1()
+                ids = str(ids)
+                ids = ids.replace('-','')
+                all_id = get('http://35.184.236.4:7005/getalluniqueid')
+                all_id = all_id.json()
+                all_id = all_id['MAC_ID']
+                flag = 0
+                for i in range(0,len(all_id)):
+                        if ids == all_id[str(i)]:
+                                flag += 1
+                        else:
+                                pass
+                if flag == 0:
+                        with open('static/ids.txt', 'w') as file:
+                                file.write(str(ids))
+                        url = 'http://35.184.236.4:7005/new/userdetails/1/1/'+str(id)+'/1/1/1/outlook.office365.com/smtp.office.com/1/1'
+                        res = get(url)
+                        token = False
 
 rel = release()
 
@@ -32,18 +91,23 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80))
 IP = s.getsockname()[0]
 s.close()
-macid = get_mac_address()
+# macid = get_mac_address()
 OS_v = platform()
 username = getuser()
 sernum = '12345'
 lap_desk = 'desk'
-url = 'http://35.184.236.4:7005/inoutserver/'+macid
+url = 'http://35.184.236.4:7005/inoutserver/'+str(ids)
+print('------------')
+print(url)
 res = get(url)
 res = res.json()
 inser,outser = res['inserver'],res['outserver']
 dprint = '2'
 
-url = 'http://35.184.236.4:7005/userdetails/'+hostname+'/'+IP+'/'+macid+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
+#creating new user
+
+
+url = 'http://35.184.236.4:7005/old/userdetails/'+hostname+'/'+IP+'/'+str(ids)+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
 get(url)
 
 @app.route('/', methods = ['GET','POST'])
@@ -74,7 +138,7 @@ def ref():
 def pr():
     manufac_name = request.args.get('manuname')
     mdelname = request.args.get('model')
-    url = 'http://35.184.236.4:7005/newt/Printer_to_be_configured/Printer_to_be_configured/'+macid
+    url = 'http://35.184.236.4:7005/newt/Printer_to_be_configured/Printer_to_be_configured/'+str(ids)
     res = get(url)
     if rel == '8.1':
         out = Printer_Latest_Remove_Latency_for_8.printerConfig(manufac_name,mdelname)
@@ -97,7 +161,7 @@ def em():
     username = request.args.get('username')
     email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
-    url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured/'+macid
+    url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured/'+str(ids)
     res = get(url)
     print(res.text)
     if rel == '8.1':
@@ -122,7 +186,7 @@ def passw():
 
 @app.route('/diskclean', methods = ['GET','POST'])
 def dc():
-    url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/'+macid
+    url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/'+str(ids)
     get(url)
     error,out = diskCleanup.startCleanup()
     print(error)
@@ -370,7 +434,7 @@ def networkrelated():
 def knowticket():
     arg = request.args.get('con1')
     if arg == 'know':
-        url = 'http://35.184.236.4:7005/know/'+macid
+        url = 'http://35.184.236.4:7005/know/'+str(ids)
         res = get(url)
         res = res.json()
         ticket_id = res['Incident ID']
