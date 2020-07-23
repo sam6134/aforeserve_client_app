@@ -33,6 +33,7 @@
       font-family: 'Open Sans', sans-serif;
       box-sizing: border-box;
     }
+
     .speech-bubble {
       position: relative;
       background: #00aabb;
@@ -44,12 +45,13 @@
     }
   </style>
 </head>
+
 <body>
   <div style="position: absolute;top: 91%;left: 38%;z-index: 10;">
-  <a type="button" data-toggle="modal" data-target="#fullHeightModalRight">
-    <img src="{{url_for('static', filename='images/logo.png')}}" style="width:43%;">
-  </a>
-</div>
+    <a type="button" data-toggle="modal" data-target="#fullHeightModalRight">
+      <img src="{{url_for('static', filename='images/logo.png')}}" style="width:43%;">
+    </a>
+  </div>
   <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
 
@@ -96,7 +98,6 @@
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
-
     }
     function nonewreq() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Not Confirmed</p></div>";
@@ -128,7 +129,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function msoffice(){
+    function msoffice() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>MS Office Installation</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -140,7 +141,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function adobe(){
+    function adobe() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Adobe Installation</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -152,7 +153,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function anti(){
+    function anti() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>AntiVirus Installation</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -164,7 +165,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function otherssft(){
+    function otherssft() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Other</p></div>";
       $("#mod").append(html);
       $.get("/confirmnew", { con1: 'otherssft' }).done(function (data) {
@@ -181,7 +182,7 @@
       $("#mod").append(html);
       symptom = document.getElementById('sftsymptom').value;
       des = document.getElementById('sftdes').value;
-      $.get("/confirmnew", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+      $.get("/confirmnew", { con1: 'newt', symptom: symptom, des: des }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
@@ -240,7 +241,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function autoshutres(){
+    function autoshutres() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Auto Shutdown/Restart</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -252,7 +253,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function unablelog(){
+    function unablelog() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Unable to login</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -264,7 +265,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function sysother(){
+    function sysother() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Other</p></div>";
       $("#mod").append(html);
       $.get("/sysrelated", { con1: 'sysother' }).done(function (data) {
@@ -281,7 +282,7 @@
       $("#mod").append(html);
       symptom = document.getElementById('syssymptom').value;
       des = document.getElementById('sysdes').value;
-      $.get("/sysrelated", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+      $.get("/sysrelated", { con1: 'newt', symptom: symptom, des: des }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
@@ -308,7 +309,7 @@
         if (ps1 == ps2) {
           html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
           $("#mod").append(html);
-          $.get("/passw",{psw = ps1}).done(function (data){
+          $.get("/passw", { psw : ps1 }).done(function (data) {
             console.log(data);
           })
           html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Changed Successfully.</div>";
@@ -376,7 +377,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function outlook(){
+    function outlook() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Outlook related issue</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -388,7 +389,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function exc_el(){
+    function exc_el() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Excel not responding</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -400,7 +401,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function sap(){
+    function sap() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>SAP not workin</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -412,7 +413,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function ieconf(){
+    function ieconf() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>IE Configuration</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -424,7 +425,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function vpnconf(){
+    function vpnconf() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>VPN Configuration</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -436,7 +437,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function appother(){
+    function appother() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Other</p></div>";
       $("#mod").append(html);
       $.get("/apprelated", { con1: 'appother' }).done(function (data) {
@@ -453,7 +454,7 @@
       $("#mod").append(html);
       symptom = document.getElementById('appsymptom').value;
       des = document.getElementById('appdes').value;
-      $.get("/apprelated", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+      $.get("/apprelated", { con1: 'newt', symptom: symptom, des: des }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
@@ -501,7 +502,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function addpcdomain(){
+    function addpcdomain() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Add PC Domain</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -513,7 +514,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function osnotbooting(){
+    function osnotbooting() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>OS Not Booting</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -542,7 +543,7 @@
       $("#mod").append(html);
       symptom = document.getElementById('ossymptom').value;
       des = document.getElementById('osdes').value;
-      $.get("/printerrelated", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+      $.get("/printerrelated", { con1: 'newt', symptom: symptom, des: des }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
@@ -589,7 +590,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
-    function printernotworking(){
+    function printernotworking() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Printer Not Working</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -601,7 +602,7 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function printernotproper(){
+    function printernotproper() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Printer Not Proper</p></div>";
       $("#mod").append(html);
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
@@ -630,7 +631,7 @@
       $("#mod").append(html);
       symptom = document.getElementById('printsymptom').value;
       des = document.getElementById('printdes').value;
-      $.get("/printerrelated", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+      $.get("/printerrelated", { con1: 'newt', symptom: symptom, des: des }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
@@ -714,7 +715,7 @@
       $("#mod").append(html);
       symptom = document.getElementById('netsymptom').value;
       des = document.getElementById('netdes').value;
-      $.get("/networkrelated", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+      $.get("/networkrelated", { con1: 'newt', symptom: symptom, des: des }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
