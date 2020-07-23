@@ -203,7 +203,12 @@ def em():
 
 @app.route('/passw', methods=['GET', 'POST'])
 def passw():
-    return 'Yet to implement'
+    url = 'http://35.184.236.4:7005/newt/password_has_to_be_changed/password_has_to_be_changed/' + \
+        str(ids)
+    res = get(url)
+    url = 'http://35.184.236.4:7005/upt/'+res.text
+    res = get(url)
+    return res.text
 
 
 @app.route('/diskclean', methods=['GET', 'POST'])
@@ -278,6 +283,60 @@ def connew():
                                             
     </p>
         '''
+    elif arg == 'msoffice':
+        url = 'http://35.184.236.4:7005/newt/MS_office_installation/MS_office_installation/' + str(ids)
+        res = get(url)
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
+        </p>
+        '''
+    elif arg == 'adobe':
+        url = 'http://35.184.236.4:7005/newt/adobe_installation/adobe_installation/' + str(ids)
+        res = get(url)
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
+        </p>
+        '''
+    elif arg == 'anti':
+        url = 'http://35.184.236.4:7005/newt/Antivirus_installation/Antivirus_installation/' + str(ids)
+        res = get(url)
+        return '''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
+        </p>
+        '''
+    elif arg == 'otherssft':
+        return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            All fields are mandatory
+                            <br>
+                            <br>
+                                    <input type="text" id="sftsymptom" class="form-control" placeholder="Symptom">
+                            <br>
+                                    <input type="text" id="sftdes" class="form-control" placeholder = "Description">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="sftothernew()">Proceed</button>                        
+    </p>
+            '''
+    elif arg == 'newt':
+        symp = request.args.get('symptom')
+        des = request.args.get('des')
+        if len(symp) >= 10 and len(des) >= 10:
+            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            res = get(url)
+            return '''
+                <p class="speech-bubble btn-primary" style="height: 7%;">
+                Ticket ID : '''+res.text+'''
+                </p>
+                '''
+        else:
+            return '''
+                <p class="speech-bubble btn-primary" style="height: 10%;">
+                Symptom and Description should not be less than 10 characters
+                </p>
+                '''
     elif arg == 'msoff':
         return '''
         <p class="speech-bubble btn-primary" style="padding-right:3%;">
@@ -339,8 +398,8 @@ def sysrelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'unlog':
@@ -348,8 +407,8 @@ def sysrelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'sysother':
@@ -372,8 +431,8 @@ def sysrelated():
             url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
-                <p class="speech-bubble btn-primary" style="height: 63%;">
-                '''+res.text+'''
+                <p class="speech-bubble btn-primary" style="height: 7%;">
+                Ticket ID : '''+res.text+'''
                 </p>
                 '''
         else:
@@ -426,8 +485,8 @@ def apprelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'excel':
@@ -435,8 +494,8 @@ def apprelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'sap':
@@ -444,8 +503,8 @@ def apprelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'ie':
@@ -453,8 +512,8 @@ def apprelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'vpn':
@@ -462,8 +521,8 @@ def apprelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'appother':

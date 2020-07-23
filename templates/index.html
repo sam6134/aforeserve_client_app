@@ -128,47 +128,107 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function msoffice() {
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>MS Office</p></div>";
+    function msoffice(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>MS Office Installation</p></div>";
       $("#mod").append(html);
-      $.get("/confirmnew", { con1: 'msoff' }).done(function (data) {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
+      $("#mod").append(html);
+      $.get("/confirmnew", { con1: 'msoffice' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function conms() {
-      text = document.getElementById('textms').value;
-      $.get("/confirmnew", { con1: 'conms', text: text }).done(function (data) {
-        console.log(data);
-        html = "<br><div align='right'>" + data + "</div>";
-        $("#mod").append(html);
-        $('#mod').scrollTop($('#mod')[0].scrollHeight);
-      })
-    }
-    function otherssft() {
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Others</p></div>";
+    function adobe(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Adobe Installation</p></div>";
       $("#mod").append(html);
-      $.get("/confirmnew", { con1: 'other' }).done(function (data) {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
+      $("#mod").append(html);
+      $.get("/confirmnew", { con1: 'adobe' }).done(function (data) {
         console.log(data);
         html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
-        html = "<br><div align='left'><div class='md-form' style='color:white;'><textarea id='textother' class='form-control md-textarea' length='120' rows='3' style='width:70%;color:white;' placeholder='Description'></textarea></div></div>";
-        $("#mod").append(html);
-        html = "<button class='btn btn-secondary' onclick='conmsother()'>Confirm</button>";
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
+      })
+    }
+    function anti(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>AntiVirus Installation</p></div>";
+      $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
+      $("#mod").append(html);
+      $.get("/confirmnew", { con1: 'anti' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
-    function conmsother() {
-      text = document.getElementById('textother').value;
-      $.get("/confirmnew", { con1: 'othercon', text: text }).done(function (data) {
-        html = "<br><div align='right'>" + data + "</div>";
+    function otherssft(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Other</p></div>";
+      $("#mod").append(html);
+      $.get("/confirmnew", { con1: 'otherssft' }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       })
     }
+    function sftothernew() {
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Proceeding</p></div>";
+      $("#mod").append(html);
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
+      $("#mod").append(html);
+      symptom = document.getElementById('sftsymptom').value;
+      des = document.getElementById('sftdes').value;
+      $.get("/confirmnew", { con1: 'newt',symptom : symptom,des : des }).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
+      })
+    }
+    // function msoffice() {
+    //   html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>MS Office</p></div>";
+    //   $("#mod").append(html);
+    //   $.get("/confirmnew", { con1: 'msoff' }).done(function (data) {
+    //     console.log(data);
+    //     html = "<br><div align='left'>" + data + "</div>";
+    //     $("#mod").append(html);
+    //     $('#mod').scrollTop($('#mod')[0].scrollHeight);
+    //   })
+    // }
+    // function conms() {
+    //   text = document.getElementById('textms').value;
+    //   $.get("/confirmnew", { con1: 'conms', text: text }).done(function (data) {
+    //     console.log(data);
+    //     html = "<br><div align='right'>" + data + "</div>";
+    //     $("#mod").append(html);
+    //     $('#mod').scrollTop($('#mod')[0].scrollHeight);
+    //   })
+    // }
+    // function otherssft() {
+    //   html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Others</p></div>";
+    //   $("#mod").append(html);
+    //   $.get("/confirmnew", { con1: 'other' }).done(function (data) {
+    //     console.log(data);
+    //     html = "<br><div align='left'>" + data + "</div>";
+    //     $("#mod").append(html);
+    //     html = "<br><div align='left'><div class='md-form' style='color:white;'><textarea id='textother' class='form-control md-textarea' length='120' rows='3' style='width:70%;color:white;' placeholder='Description'></textarea></div></div>";
+    //     $("#mod").append(html);
+    //     html = "<button class='btn btn-secondary' onclick='conmsother()'>Confirm</button>";
+    //     $("#mod").append(html);
+    //     $('#mod').scrollTop($('#mod')[0].scrollHeight);
+    //   })
+    // }
+    // function conmsother() {
+    //   text = document.getElementById('textother').value;
+    //   $.get("/confirmnew", { con1: 'othercon', text: text }).done(function (data) {
+    //     html = "<br><div align='right'>" + data + "</div>";
+    //     $("#mod").append(html);
+    //     $('#mod').scrollTop($('#mod')[0].scrollHeight);
+    //   })
+    // }
     //sysrelated start
     function sysrelated() {
       html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>System Related</p></div>";
@@ -246,6 +306,11 @@
       var check = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
       if (ps1_new.value.match(check)) {
         if (ps1 == ps2) {
+          html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;height: 10%;'>Creating new ticket wait for 2 minutes approx.</p></div>";
+          $("#mod").append(html);
+          $.get("/passw",{psw = ps1}).done(function (data){
+            console.log(data);
+          })
           html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Password Changed Successfully.</div>";
           $("#mod").append(html);
           $('#mod').scrollTop($('#mod')[0].scrollHeight);
