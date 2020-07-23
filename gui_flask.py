@@ -42,6 +42,8 @@ if(os.path.isfile('static/ids.txt')):
                         if flag == 0:
                                 with open('static/ids.txt', 'w') as file:
                                         file.write(str(ids))
+                                url = 'http://35.184.236.4:7005/userdetails/new/1/1/'+str(ids)+'/1/1/1/outlook.office365.com/smtp.office.com/1/1'
+                                res = get(url)
                                 token = False
 else:
         token = True
