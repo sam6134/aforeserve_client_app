@@ -61,7 +61,7 @@ else:
                 if flag == 0:
                         with open('static/ids.txt', 'w') as file:
                                 file.write(str(ids))
-                        url = 'http://35.184.236.4:7005/new/userdetails/1/1/'+str(id)+'/1/1/1/outlook.office365.com/smtp.office.com/1/1'
+                        url = 'http://35.184.236.4:7005/userdetails/new/1/1/'+str(id)+'/1/1/1/outlook.office365.com/smtp.office.com/1/1'
                         res = get(url)
                         token = False
 
@@ -107,7 +107,7 @@ dprint = '2'
 #creating new user
 
 
-url = 'http://35.184.236.4:7005/old/userdetails/'+hostname+'/'+IP+'/'+str(ids)+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
+url = 'http://35.184.236.4:7005/userdetails/old/'+hostname+'/'+IP+'/'+str(ids)+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
 get(url)
 
 @app.route('/', methods = ['GET','POST'])
