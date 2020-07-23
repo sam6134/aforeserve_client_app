@@ -26,12 +26,29 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <style>
+    html,
+    body {
+      background-color: #222C32;
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+    }
+    .speech-bubble {
+      position: relative;
+      background: #00aabb;
+      border-radius: .4em;
+      height: 36px;
+      padding-top: 2%;
+      padding-left: 4%;
+      width: 72%;
+    }
+  </style>
 </head>
-
 <body>
   <div style="position: absolute;top: 91%;left: 42%;z-index: 10;">
   <a type="button" data-toggle="modal" data-target="#fullHeightModalRight">
-    <img src="{{url_for('static', filename='chatbot.svg')}}" style="width:22%;">
+    <img src="{{url_for('static', filename='images/logo.png')}}" style="width:22%;">
   </a>
 </div>
   <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"

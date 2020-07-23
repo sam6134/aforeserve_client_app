@@ -42,7 +42,7 @@ res = get(url)
 res = res.json()
 inser,outser = res['inserver'],res['outserver']
 dprint = '2'
-#data = fetch_data_db("select * from login;",'creds')
+
 url = 'http://35.184.236.4:7005/userdetails/'+hostname+'/'+IP+'/'+macid+'/'+sernum+'/'+OS_v+'/'+lap_desk+'/'+inser+'/'+outser+'/'+dprint+'/'+username
 get(url)
 
