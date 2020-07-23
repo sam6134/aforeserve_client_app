@@ -9,9 +9,7 @@ import uuid
 import os.path
 
 # for windows 10
-#import printer
 import Printer_Latest_Remove_Latency_win10
-#import email_s
 import test_fetch_mail_win10
 import diskCleanup
 
@@ -851,6 +849,5 @@ def newquery():
         Please verify your Username : '''+str(username.title())+''' and EmailID : xyz@emai.com 
     </p>
     '''
-
 
 ui.run()
