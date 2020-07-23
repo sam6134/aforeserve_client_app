@@ -122,29 +122,6 @@ get(url)
 def login():
     return render_template('index.html', User=username.title())
 
-
-@app.route('/newt/<symptom>/<description>', methods=['GET', 'POST'])
-def newt(symptom, description):
-    url = 'http://35.184.236.4:7005/newt/'+symptom+'/'+description
-    res = get(str(url))
-    print(res)
-    a = {
-        'id': int(res.text)
-    }
-    print(a)
-    return jsonify(a)
-
-
-@app.route('/ref', methods=['GET', 'POST'])
-def ref():
-    text = request.args.get('id')
-    url = 'http://35.184.236.4:7005/ref/'+str(text)
-    res = get(str(url))
-    ab = res.text
-    print(ab)
-    return(ab)
-
-
 @app.route('/pr', methods=['GET', 'POST'])
 def pr():
     manufac_name = request.args.get('manuname')
