@@ -5,7 +5,8 @@
 ### Start with executing following commands
 
 ```python
-pip3 install -r pack.txt
+conda create --name aforeserve_symphony python=3.6 --no-default-packages
+pip install -r pack.txt
 ```
 
 ### Detailed structure of gui_flask.py (main file)
@@ -95,3 +96,11 @@ variable(s) = data(s)
 - In this route client can raise query.
 
 #### In most of the routes new ticket is created in ITSM as well as in DataBase and when automation result comes out, status is updated in ITSM as well as in DataBase. When Ticket is created or resolved client always get a acknowledgement mail.
+
+```python
+pyinstaller -w --add-data "templates;templates" --add-data "static;static" gui_flask.py
+```
+
+### Run Application
+- Navigate to /dist/gui_flask/gui_flask.exe
+- Run

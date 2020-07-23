@@ -7,3 +7,4 @@ platform
 getpass
 socket
 requests
+pyinstaller
