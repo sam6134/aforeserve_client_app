@@ -595,8 +595,8 @@ def osrelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'osnot':
@@ -604,8 +604,8 @@ def osrelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'osother':
@@ -678,8 +678,8 @@ def printerrelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'notproper':
@@ -687,8 +687,8 @@ def printerrelated():
             str(ids)
         res = get(url)
         return '''
-        <p class="speech-bubble btn-primary" style="height: 63%;">
-        '''+res.text+'''
+        <p class="speech-bubble btn-primary" style="height: 7%;">
+        Ticket ID : '''+res.text+'''
         </p>
         '''
     elif arg == 'otherprint':
@@ -750,8 +750,8 @@ def networkrelated():
             str(ids)
         res = get(url)
         return '''
-            <p class="speech-bubble btn-primary" style="height: 63%;">
-            '''+res.text+'''
+            <p class="speech-bubble btn-primary" style="height: 7%;">
+            Ticket ID : '''+res.text+'''
             </p>
             '''
     elif arg == 'noaccess':
@@ -759,8 +759,8 @@ def networkrelated():
             str(ids)
         res = get(url)
         return '''
-            <p class="speech-bubble btn-primary" style="height: 63%;">
-            '''+res.text+'''
+            <p class="speech-bubble btn-primary" style="height: 7%;">
+            Ticket ID : '''+res.text+'''
             </p>
             '''
     elif arg == 'ipchange':
@@ -768,8 +768,8 @@ def networkrelated():
             str(ids)
         res = get(url)
         return '''
-            <p class="speech-bubble btn-primary" style="height: 63%;">
-            '''+res.text+'''
+            <p class="speech-bubble btn-primary" style="height: 7%;">
+            Ticket ID : '''+res.text+'''
             </p>
             '''
     elif arg == 'wifi':
@@ -777,8 +777,8 @@ def networkrelated():
             str(ids)
         res = get(url)
         return '''
-            <p class="speech-bubble btn-primary" style="height: 63%;">
-            '''+res.text+'''
+            <p class="speech-bubble btn-primary" style="height: 7%;">
+            Ticket ID : '''+res.text+'''
             </p>
             '''
     elif arg == 'other':
