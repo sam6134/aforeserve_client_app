@@ -227,13 +227,32 @@ def mailConfig(username,inser,outser,email_ss,password_s):
    
                                         
                                         time.sleep(5)
+                                        
                                         test_account=pywinauto.findwindows.find_windows(best_match='Test Account Settings')
                                         test_account=control_panel.window_(handle=test_account[0])
                                         test_account.set_focus()
-                                        test_account.child_window(title='Close',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
+                                        while(1):
+                                            try:
+                                                test_account.child_window(title='Close',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
+                                                break
+                                            except:
+                                                try:
+                                                    test_account1=pywinauto.findwindows.find_windows(best_match='Internet Email - ' + str(email_ss))
+                                                    test_account1=control_panel.window_(handle=test_account1[0])
+                                                    test_account1.set_focus()
+                                                    send_keys('"%{F4}"')
+                                                    send_keys('"%{F4}"')
+                                                    send_keys('"%{F4}"')
+                                                    send_keys('"%{F4}"')
+                                                    send_keys('"%{F4}"')
+                                                    send_keys('"%{F4}"')
+                                                    return "Invalid Credential"
+                                                except:
+                                                    continue
                                     
-                                        time.sleep(5)
+                                        print("Test1")
                                         add_account.child_window(title="Finish", control_type="Button").click()
+                                        print("Test2")
                                         #time.sleep(2)
                                         #add_account.child_window(title="Cancel", control_type="Button").click()
                                         time.sleep(2)
@@ -242,11 +261,11 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         #account_settings.child_window(title="Close", control_type="Button").click()
                                         send_keys('"%{F4}"')
                                         
-                                        time.sleep(2)
+                                        
                                         send_keys('"%{F4}"')
                                         #mail_setup_outlook.child_window(title="Close", control_type="Button").click()
                                         
-                                        time.sleep(2)
+                                        
                                         send_keys('"%{F4}"')
                                         
     return 'Success'

@@ -2,7 +2,8 @@ import pyautogui
 import pywinauto
 import time
 import config
-
+import random
+from pywinauto.keyboard import send_keys
 flag=0
 
 def printerConfig(manufac_name,mdelname):
@@ -71,9 +72,13 @@ def printerConfig(manufac_name,mdelname):
              
          if device_printer_window:
             device_printer_window=control_panel.window_(handle=device_printer_window[0])
-            time.sleep(3)
+            time.sleep(5)
             device_printer_window.set_focus()
-            device_printer_window.child_window(title="Add a printer",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+            try:
+                device_printer_window.child_window(title="Add a printer",control_type="Button").wait('visible', timeout=10, retry_interval=0.5).click()
+            except:
+                send_keys('%{F4}')
+                return "Failed"
             #time.sleep(5)
             # click on printer not listed'
             try:
@@ -179,13 +184,27 @@ def printerConfig(manufac_name,mdelname):
                                                 #printer_model=['Microsoft','Microsoft OpenXPS Driver']
                                                 model_name,model_type=manufac_name,mdelname
                                                 time.sleep(5)
-                
+                                                print('Choosing model')
                                                 # ask from chatbot
-                                                printer_driver.child_window(title=model_name, control_type="ListItem").select()
-                                                #printer_driver.child_window(title="Printers", auto_id="HeaderItem 0", control_type="HeaderItem").ListView()
-                                                #a.get_item('Remote Desktop Easy Print').click()
+                                                
+                                                for i in range(10):
+                                                    try:
+                                                        pyautogui.press('tab')
+                                                        printer_driver.child_window(title='Microsoft', control_type="ListItem").select()
+                                                        print('slctd')
+                                                        break
+                                                    except:
+                                                        pyautogui.press('tab',presses=5)
+                                                        pyautogui.press('down',presses=4)
+                                                        continue
+                                                        
+                                                #a = printer_driver.child_window(title="Manufacturer", auto_id="HeaderItem 0", control_type="HeaderItem").ListView()
+                                                #a.get_item(model_name).click()
                                                 # ask from chatbot
+                                                
+                                                
                                                 printer_driver.child_window(best_match=model_type, control_type="ListItem").select()
+                                                       
                                                 printer_driver.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
                                                 #time.sleep(5)
                                                 
@@ -199,9 +218,13 @@ def printerConfig(manufac_name,mdelname):
                                                 if printer_version_confirm:
                                                     printer_version_confirm=control_panel.window_(handle=printer_version_confirm[0])
                                                     printer_version_confirm.set_focus()
-                                                    header_flag=checkForHeaderInWindows(printer_version_confirm,'Which version of the driver do you want to use?','Text')
-                                                    if header_flag:
-                                                        printer_version_confirm.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                    try:
+                                                        header_flag=checkForHeaderInWindows(printer_version_confirm,'Which version of the driver do you want to use?','Text')
+                                                        if header_flag:
+                                                            printer_version_confirm.child_window(title="Next",control_type="Button").wait('visible', timeout=10, retry_interval=0.5).click_input()
+                                                    except:
+                                                        pass
+                                                    
                                                     #time.sleep(5)                          
                                                     #click for printer name
                                                     try:
@@ -213,9 +236,12 @@ def printerConfig(manufac_name,mdelname):
                                                     if printer_name:
                                                         printer_name=control_panel.window_(handle=printer_name[0])
                                                         printer_name.set_focus()
-                                                        header_flag=checkForHeaderInWindows(printer_name,'Type a printer name','Text')
-                                                        if header_flag:
-                                                            printer_name.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                                                        try:
+                                                            header_flag=checkForHeaderInWindows(printer_name,'Type a printer name','Text')
+                                                            if header_flag:
+                                                                printer_name.child_window(title="Next",control_type="Button").wait('visible', timeout=10, retry_interval=0.5).click_input()
+                                                        except:
+                                                            pass
                 
                                                         #time.sleep(10)
                                                         
@@ -258,6 +284,8 @@ def printerConfig(manufac_name,mdelname):
                                                             pyautogui.press('tab')
                                                             pyautogui.press('tab')
                                                             pyautogui.press('enter')
+                                                            
+                                                            
 
                                                         config.logger.info("Default printer not set window closing")
                                                         
@@ -272,9 +300,31 @@ def printerConfig(manufac_name,mdelname):
                                                         except:
                                                             print('Finish in except for last page')
                                                             pyautogui.press('enter')
-                                                            
+                                                            while(1):
+                                                                try:
+                                                                    finish_page=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                                    break
+                                                                except:
+                                                                    continue
+                                                            finish_page=control_panel.window_(handle=finish_page[0])
+                                                            finish_page.set_focus()
+                                                            finish_page.child_window(title="Next",control_type="Button").wait('visible', timeout=10, retry_interval=0.5).click()
+                                                            while(1):
+                                                                try:
+                                                                    finish_page=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
+                                                                    break
+                                                                except:
+                                                                    continue
+                                                            finish_page=control_panel.window_(handle=finish_page[0])
+                                                            finish_page.set_focus()
+                                                            try:
+                                                                finish_page.child_window(title="Finish",control_type="Button").wait('visible', timeout=10, retry_interval=0.5).click()
+                                                            except:
+                                                                pyautogui.press('enter')
+                                                                time.sleep(2)
+                                                                pyautogui.press('tab')
+                                                                pyautogui.press('enter')
+                                                        time.sleep(1)
                                                         device_printer_window.child_window(title="Close", control_type="Button").click()
                                                              
-    return 'Success'                                                          
-                                                                
-               
+    return 'Success'          
