@@ -1,7 +1,9 @@
 import pyautogui
 import pywinauto
 import time
+
 import config
+
 from pywinauto.keyboard import send_keys, KeySequenceError
 flag=0
 
@@ -20,14 +22,17 @@ def printerConfig(manufac_name,mdelname):
     #time.sleep(5)
     # click on device and printers button 
     window=None
-    
     def checkForWindowExistence(window_title):
         
         print(window_title)
         global window
         config.logger.info('Searching for '+str(window_title)+' via infinite loop')
+        cnt=0
         while True:
+            cnt+=1
             print('In Loop part')
+            if(cnt==20):
+                return -1
             try:
                 window=pywinauto.findwindows.find_windows(best_match=window_title)
             except:
@@ -54,6 +59,8 @@ def printerConfig(manufac_name,mdelname):
         control_panel_window=pywinauto.findwindows.find_windows(best_match=u'All Control Panel Items')
     except:
         control_panel_window=checkForWindowExistence(u'All Control Panel Items')
+        if(control_panel == -1):
+            return "Failure"
         
     time.sleep(5)
     
@@ -68,12 +75,20 @@ def printerConfig(manufac_name,mdelname):
              device_printer_window=pywinauto.findwindows.find_windows(best_match=u'Control Panel\All Control Panel Items\Devices and Printers')
          except:
              device_printer_window=checkForWindowExistence(u'Devices and Printers')
+             if(device_printer_window == -1):
+                 send_keys('"%{F4}"')
+                 return "Failure"
              
          if device_printer_window:
             device_printer_window=control_panel.window_(handle=device_printer_window[0])
             time.sleep(3)
             device_printer_window.set_focus()
-            device_printer_window.child_window(title="Add a printer",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+            try:
+                device_printer_window.child_window(title="Add a printer",control_type="Button").wait('visible', timeout=10, retry_interval=0.5).click()
+            except:
+                send_keys('"%{F4}"')
+                send_keys('"%{F4}"')
+                return "Failure"
             print("test")
             #time.sleep(5)
             # click on printer not listed'
@@ -82,6 +97,10 @@ def printerConfig(manufac_name,mdelname):
                 add_a_device_window=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
             except:
                 add_a_device_window=checkForWindowExistence(u'Add Printer')
+                if(add_a_device_window == -1):
+                    send_keys('"%{F4}"')
+                    send_keys('"%{F4}"')
+                    return "Failure"
                 
             time.sleep(5)
             if add_a_device_window:
@@ -96,6 +115,10 @@ def printerConfig(manufac_name,mdelname):
                     add_a_local_printer=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                 except:
                     add_a_local_printer=checkForWindowExistence(u'Add Printer')
+                    if(add_a_local_printer == -1):
+                        send_keys('"%{F4}"')
+                        send_keys('"%{F4}"')
+                        return "Failure"
                     
                 if add_a_local_printer:
                     add_a_local_printer=control_panel.window_(handle=add_a_local_printer[0])
@@ -110,6 +133,11 @@ def printerConfig(manufac_name,mdelname):
                         new_port=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                     except:
                         new_port=checkForWindowExistence(u'Add Printer')
+                        if(new_port == -1):
+                            send_keys('"%{F4}"')
+                            send_keys('"%{F4}"')
+                            send_keys('"%{F4}"')
+                            return "Failure"
                         
                     if new_port:
                         new_port=control_panel.window_(handle=new_port[0])
@@ -131,6 +159,11 @@ def printerConfig(manufac_name,mdelname):
                                 printer_host_port=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                             except:
                                 printer_host_port=checkForWindowExistence(u'Add Printer')
+                                if(printer_host_port == -1):
+                                    send_keys('"%{F4}"')
+                                    send_keys('"%{F4}"')
+                                    send_keys('"%{F4}"')
+                                    return "Failure"
                                 
                             if printer_host_port:
                                 printer_host_port=control_panel.window_(handle=printer_host_port[0])
@@ -153,6 +186,11 @@ def printerConfig(manufac_name,mdelname):
                                     except:
                                         print('Code in Except block')
                                         additional_port_info=checkForWindowExistence(u'Add Printer')
+                                        if(additional_port_info == -1):
+                                            send_keys('"%{F4}"')
+                                            send_keys('"%{F4}"')
+                                            send_keys('"%{F4}"')
+                                            return "Failure"
                                         
                                     if additional_port_info:
                                         try:
@@ -173,6 +211,11 @@ def printerConfig(manufac_name,mdelname):
                                             printer_driver=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                         except:
                                             printer_driver=checkForWindowExistence(u'Add Printer')
+                                            if(printer_driver == -1):
+                                                send_keys('"%{F4}"')
+                                                send_keys('"%{F4}"')
+                                                send_keys('"%{F4}"')
+                                                return "Failure"
                                         
                                         if printer_driver:
                                             printer_driver=control_panel.window_(handle=printer_driver[0])
@@ -181,16 +224,32 @@ def printerConfig(manufac_name,mdelname):
                                             #printer_model=pd.read_csv('http://127.0.0.1:8000/input.csv').columns
                                             if header_flag:
                                                 #printer_model=['Microsoft','Microsoft OpenXPS Driver']
+                                                model_name,model_type=printer_model[0],printer_model[1]
                                                 model_name,model_type=manufac_name,mdelname
                                                 time.sleep(5)
-                
+                                                print('Choosing model')
                                                 # ask from chatbot
-                                                printer_driver.child_window(title=model_name, control_type="ListItem").select()
-                                                printer_driver.child_window(title="Printers", auto_id="HeaderItem 0", control_type="HeaderItem").ListView()
-                                                a.get_item(model_type).click()
+                                                
+                                                for i in range(10):
+                                                    try:
+                                                        pyautogui.press('tab')
+                                                        printer_driver.child_window(title='Microsoft', control_type="ListItem").select()
+                                                        print('slctd')
+                                                        break
+                                                    except:
+                                                        pyautogui.press('tab',presses=5)
+                                                        pyautogui.press('down',presses=4)
+                                                        continue
+                                                        
+                                                #a = printer_driver.child_window(title="Manufacturer", auto_id="HeaderItem 0", control_type="HeaderItem").ListView()
+                                                #a.get_item(model_name).click()
                                                 # ask from chatbot
+                                                
+                                                
                                                 printer_driver.child_window(best_match=model_type, control_type="ListItem").select()
+                                                       
                                                 printer_driver.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+               
                                                 #time.sleep(5)
                                                 
                                                 # confirmation for version
@@ -199,6 +258,11 @@ def printerConfig(manufac_name,mdelname):
                                                     printer_version_confirm=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                                 except:
                                                     printer_version_confirm=checkForWindowExistence(u'Add Printer')
+                                                    if(printer_version == -1):
+                                                        send_keys('"%{F4}"')
+                                                        send_keys('"%{F4}"')
+                                                        send_keys('"%{F4}"')
+                                                        return "Failure"
                                                 
                                                 if printer_version_confirm:
                                                     printer_version_confirm=control_panel.window_(handle=printer_version_confirm[0])
@@ -214,6 +278,11 @@ def printerConfig(manufac_name,mdelname):
                                                         printer_name=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                                     except:
                                                         printer_name=checkForWindowExistence(u'Add Printer')
+                                                        if(printer_name == -1):
+                                                            send_keys('"%{F4}"')
+                                                            send_keys('"%{F4}"')
+                                                            send_keys('"%{F4}"')
+                                                            return "Failure"
                 
                                                     if printer_name:
                                                         printer_name=control_panel.window_(handle=printer_name[0])
@@ -230,6 +299,12 @@ def printerConfig(manufac_name,mdelname):
                                                             printer_not_share=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                                         except:
                                                             printer_not_share=checkForWindowExistence(u'Add Printer')
+                                                            if(printer_not_share == -1):
+                                                                send_keys('"%{F4}"')
+                                                                send_keys('"%{F4}"')
+                                                                send_keys('"%{F4}"')
+                                                
+                                                                return "Failure"
                                                         
                                                         try:
                                                             if printer_not_share:
@@ -250,6 +325,12 @@ def printerConfig(manufac_name,mdelname):
                                                             finish_page=pywinauto.findwindows.find_windows(best_match=u'Add Printer')
                                                         except:
                                                             finish_page=checkForWindowExistence(u'Add Printer')
+                                                            if(finish_page == -1):
+                                                                send_keys('"%{F4}"')
+                                                                send_keys('"%{F4}"')
+                                                                send_keys('"%{F4}"')
+                                            
+                                                                return "Failure"
                                                         try:
                                                             if finish_page:
                                                                 finish_page=control_panel.window_(handle=finish_page[0])
@@ -283,6 +364,10 @@ def printerConfig(manufac_name,mdelname):
                                                         time.sleep(2)
                                                         send_keys('"%{F4}"')
                                                              
-    return 'Success'                                                          
+    
+    #windll.user32.BlockInput(False)
+    return 'Success'           
+    
+
                                                                 
                
