@@ -1,12 +1,16 @@
 import pyautogui
 import pywinauto
 import time
+import pandas as pd
+
+
+from ctypes import *
 from pywinauto.controls.win32_controls import ButtonWrapper
 from pywinauto.keyboard import send_keys, KeySequenceError
 import config
 flag=0
 def mailConfig(username,inser,outser,email_ss,password_s):
-    
+    #windll.user32.BlockInput(True)
     global flag
     config.logger.info('opening control panel for email configuration ')
     control_panel=pywinauto.Application(backend='uia').start(r'C:\Windows\System32\control.exe',timeout=50)
@@ -74,9 +78,9 @@ def mailConfig(username,inser,outser,email_ss,password_s):
         #time.sleep(20)
         try:
             config.logger.info('Searching for Mail Setup - AFS window')
-            mail_setup_outlook=pywinauto.findwindows.find_windows(best_match='Mail Setup - adityasingh')
+            mail_setup_outlook=pywinauto.findwindows.find_windows(best_match='Mail Setup - AFS')
         except:
-            mail_setup_outlook=checkForWindowExistence('Mail Setup - adityasingh')
+            mail_setup_outlook=checkForWindowExistence('Mail Setup - AFS)
         
         if mail_setup_outlook:
                     mail_setup_outlook=control_panel.window_(handle=mail_setup_outlook[0])
@@ -160,7 +164,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                     
                                     #user_details=pd.read_csv('http://127.0.0.1:8000/input.csv').columns
                                     
-                                    user_details=[username,email_ss,password_s]
+                                    user_details=[username,email_ss,password_s
                                     
                                     add_account["Your Name:Edit"].type_keys(user_details[0])    
                                     
@@ -227,16 +231,90 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         internet_email_settings.child_window(title="OK",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
                                         
                                         add_account.child_window(title="Next >",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-   
-                                        
-                                        time.sleep(5)
-                                        test_account=pywinauto.findwindows.find_windows(best_match='Add New E-mail Account')
+                                        send_keys('"%{F4}"')
+                                        time.sleep(2)
+                                        test_account=pywinauto.findwindows.find_windows(best_match='Account Settings')
                                         test_account=control_panel.window_(handle=test_account[0])
                                         test_account.set_focus()
-                                        test_account.child_window(title='Close',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
-                                    
+                                        time.sleep(2)
+                                        pyautogui.press('tab',presses=4)
+                                        #send_keys('{DOWN}')
+                                        time.sleep(2)
+                                        send_keys('"%{ENTER}')
+                                        try:
+                                            config.logger.info('Searching for change Account window for entering user details recevied via chatbot')
+                                            change_account=pywinauto.findwindows.find_windows(best_match='Change E-mail Account')
+                                
+                                        except:
+                                            change_account=checkForWindowExistence(u'Change E-mail Account')
+                                        change_account=control_panel.window_(handle=change_account[0])
+                                        change_account.set_focus()
+                                        change_account.child_window(title='Test Account Settings ...',control_type="Button").wait('visible',timeout=10, retry_interval=0.5).click()
+                                        while(1):
+                                            try:
+                                                config.logger.info('Searching for change Account window for entering user details recevied via chatbot')
+                                                change_account=pywinauto.findwindows.find_windows(best_match='Internet Security Warning')
+                                                if(change_account==None):
+                                                    continue
+                                                break
+                                            except:
+                                                continue
+                                        change_account=control_panel.window_(handle=change_account[0])
+                                        change_account.set_focus()
+                                        change_account.child_window(title='Yes',control_type="Button").wait('visible',timeout=10, retry_interval=0.5).click()
+                                        while(1):
+                                            print("In our test while")
+                                            
+                                            print('Searching for change Account window for entering user details recevied via chatbot')
+                                            try:
+                                                change_account=pywinauto.findwindows.find_windows(best_match='Internet Security Warning')
+                                                if(change_account):
+                                                    break
+                                            except:
+                                                    
+                                                    print("Into except TEST")
+                                                    try:
+                                                        invalid_password = pywinauto.findwindows.find_windows(best_match='Enter Network Password')
+                                                        if(invalid_password != None):
+                                                            send_keys('"%{F4}"')
+                                                    
+                                                            send_keys('"%{F4}"')
+                                                    
+                                                            send_keys('"%{F4}"')
+                                                    
+                                                            send_keys('"%{F4}"')
+                                                    
+                                                            send_keys('"%{F4}"')
+                                                    
+                                                            send_keys('"%{F4}"')
+                                                            return "Invalid Password"
+                                                            
+                                                    except:
+                                                        print("Both windows not found")
+                                                        continue
+                                                
+                                        change_account=control_panel.window_(handle=change_account[0])
+                                        change_account.set_focus()
+                                        change_account.child_window(title='Yes',control_type="Button").wait('visible',timeout=10, retry_interval=0.5).click()
+                                        try:
+                                            config.logger.info('Searching for change Account window for entering user details recevied via chatbot')
+                                            change_account=pywinauto.findwindows.find_windows(best_match='Test Account Settings')
+                                
+                                        except:
+                                            change_account=checkForWindowExistence(u'Test Account Settings')
+                                        change_account=control_panel.window_(handle=change_account[0])
+                                        change_account.set_focus()
                                         time.sleep(5)
-                                        #add_account.child_window(title="Close", control_type="Button").click()
+                                        change_account.child_window(title='Close',control_type="Button").wait('visible',timeout=60, retry_interval=0.5).click()
+                                        
+                                        #time.sleep(5)
+                                        #test_account=pywinauto.findwindows.find_windows(best_match='Account Settings')
+                                        #test_account=control_panel.window_(handle=test_account[0])
+                                        #test_account.set_focus()
+                                        #test_account.child_window(title='Close',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
+                                    
+                                        #time.sleep(5)
+                                        #add_account.child_window(title="Finish", control_type="Button").click()
                                         #time.sleep(2)
                                         #add_account.child_window(title="Cancel", control_type="Button").click()
                                         time.sleep(2)
@@ -251,5 +329,10 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         
                                         time.sleep(2)
                                         send_keys('"%{F4}"')
+                                        send_keys('%{F4}')
+                                        flag=1
     
-    return 'Success'
+    
+    #windll.user32.BlockInput(False)
+    return "Success"
+
