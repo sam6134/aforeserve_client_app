@@ -246,7 +246,16 @@ def printerConfig(manufac_name,mdelname):
                                                 # ask from chatbot
                                                 
                                                 
-                                                printer_driver.child_window(best_match=model_type, control_type="ListItem").select()
+                                                for i in range(4):
+                                                    try:
+                                                        #pyautogui.press('tab')
+                                                        printer_driver.child_window(title=model_type, control_type="ListItem").select()
+                                                        print('slctd')
+                                                        break
+                                                    except:
+                                                        pyautogui.press('tab')
+                                                        pyautogui.press('down',presses=10)
+                                                        continue
                                                        
                                                 printer_driver.child_window(title="Next",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
                
