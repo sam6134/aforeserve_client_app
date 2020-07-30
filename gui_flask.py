@@ -130,21 +130,33 @@ def pr():
     if rel == '8.1':
         out = Printer_Latest_Remove_Latency_for_8.printerConfig(
             manufac_name, mdelname)
-        url = 'http://35.184.236.4:7005/upt/'+res.text
-        res = get(url)
-        return res.text
+        if out == 'success':
+            url = 'http://35.184.236.4:7005/upt/'+res.text
+            res = get(url)
+            return res.text
+        elif out == 'failed':
+            #Assing to department
+            return 'Issue not resolved assigning it to other department'
     elif rel == '7':
         out = Printer_Latest_Remove_Latency_for_7.printerConfig(
             manufac_name, mdelname)
-        url = 'http://35.184.236.4:7005/upt/'+res.text
-        res = get(url)
-        return res.text
+        if out == 'success':
+            url = 'http://35.184.236.4:7005/upt/'+res.text
+            res = get(url)
+            return res.text
+        elif out == 'failed':
+            #Assing to department
+            return 'Issue not resolved assigning it to other department'
     else:
         out = Printer_Latest_Remove_Latency_win10.printerConfig(
             manufac_name, mdelname)
-        url = 'http://35.184.236.4:7005/upt/'+res.text
-        res = get(url)
-        return res.text
+        if out == 'success':
+            url = 'http://35.184.236.4:7005/upt/'+res.text
+            res = get(url)
+            return res.text
+        elif out == 'failed':
+            #Assing to department
+            return 'Issue not resolved assigning it to other department'
 
 
 @app.route('/emailconfig', methods=['GET', 'POST'])
@@ -159,21 +171,33 @@ def em():
     if rel == '8.1':
         out = test_fetch_mail_for_8.mailConfig(
             username, inser, outser, email_ss, password_s)
-        url = 'http://35.184.236.4:7005/upt/'+res.text
-        res = get(url)
-        return res.text
+        if out == 'success':
+            url = 'http://35.184.236.4:7005/upt/'+res.text
+            res = get(url)
+            return res.text
+        elif out == 'failed':
+            #Assing to department
+            return 'Issue not resolved assigning it to other department'
     elif rel == '7':
         out = test_fetch_mail_for_7.mailConfig(
             username, inser, outser, email_ss, password_s)
-        url = 'http://35.184.236.4:7005/upt/'+res.text
-        res = get(url)
-        return res.text
+        if out == 'success':
+            url = 'http://35.184.236.4:7005/upt/'+res.text
+            res = get(url)
+            return res.text
+        elif out == 'failed':
+            #Assing to department
+            return 'Issue not resolved assigning it to other department'
     else:
         out = test_fetch_mail_win10.mailConfig(
             username, inser, outser, email_ss, password_s)
-        url = 'http://35.184.236.4:7005/upt/'+res.text
-        res = get(url)
-        return res.text
+        if out == 'success':
+            url = 'http://35.184.236.4:7005/upt/'+res.text
+            res = get(url)
+            return res.text
+        elif out == 'failed':
+            #Assing to department
+            return 'Issue not resolved assigning it to other department'
 
 
 @app.route('/passw', methods=['GET', 'POST'])
@@ -191,11 +215,14 @@ def dc():
     url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/' + \
         str(ids)
     get(url)
-    error, out = diskCleanup.startCleanup()
-    print(error)
-    url = 'http://35.184.236.4:7005/upt/'+res.text
-    res = get(url)
-    return res.text
+    out = diskCleanup.startCleanup()
+    if out == 'success':
+        url = 'http://35.184.236.4:7005/upt/'+res.text
+        res = get(url)
+        return res.text
+    elif out == 'failed':
+        #Assing to department
+        return 'Issue not resolved assigning it to other department'
 
 
 @app.route('/sft', methods=['GET', 'POST'])

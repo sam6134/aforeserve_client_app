@@ -7,4 +7,4 @@ def startCleanup():
     #,stdout=sys.stdout
     #print(p.communicate())
     
-    return 'error','Success'
+    return 'Success'
