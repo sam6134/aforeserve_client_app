@@ -81,7 +81,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                 config.logger.info('Searching for Mail Setup - AFS window')
                 mail_setup_outlook=pywinauto.findwindows.find_windows(best_match='Mail Setup - AFS')
             except:
-                mail_setup_outlook=checkForWindowExistence('Mail Setup - AFS)
+                mail_setup_outlook=checkForWindowExistence('Mail Setup - AFS')
             
             if mail_setup_outlook:
                         mail_setup_outlook=control_panel.window_(handle=mail_setup_outlook[0])
@@ -89,11 +89,11 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                         #mail_setup_outlook.
                         #mail_setup_outlook.child_window(title_re="Email Accounts...",control_type="Button").click()
                         try:
-                        config.logger.info('Searching for E-mail Accounts button')
-                        mail_setup_outlook.child_window(title_re="E-mail Accounts...",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                            config.logger.info('Searching for E-mail Accounts button')
+                            mail_setup_outlook.child_window(title_re="E-mail Accounts...",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
                         except:
-                        mail_setup_outlook.child_window(title_re="E-mail Accounts...",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-                        print("test-1")    
+                            mail_setup_outlook.child_window(title_re="E-mail Accounts...",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
+                            print("test-1")    
                     # time.sleep(5)
                         
                         try:
@@ -165,7 +165,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         
                                         #user_details=pd.read_csv('http://127.0.0.1:8000/input.csv').columns
                                         
-                                        user_details=[username,email_ss,password_s
+                                        user_details=[username,email_ss,password_s]
                                         
                                         add_account["Your Name:Edit"].type_keys(user_details[0])    
                                         

@@ -21,7 +21,7 @@ import test_fetch_mail_for_8
 import Printer_Latest_Remove_Latency_for_7
 import test_fetch_mail_for_7
 
-
+# http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7001/lab
 # creating new id
 print(os.path.isfile('static/ids.txt'))
 if(os.path.isfile('static/ids.txt')):
@@ -29,7 +29,7 @@ if(os.path.isfile('static/ids.txt')):
     ids = open('static/ids.txt')
     ids = ids.read()
     ids = ids.replace('\n', '')
-    all_id = get('http://35.184.236.4:7005/getalluniqueid')
+    all_id = get('http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/getalluniqueid')
     all_id = all_id.json()
     all_id = all_id['MAC_ID']
     flag = 0
@@ -44,7 +44,7 @@ if(os.path.isfile('static/ids.txt')):
             ids = uuid.uuid1()
             ids = str(ids)
             ids = ids.replace('-', '')
-            all_id = get('http://35.184.236.4:7005/getalluniqueid')
+            all_id = get('http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/getalluniqueid')
             all_id = all_id.json()
             all_id = all_id['MAC_ID']
             flag = 0
@@ -56,7 +56,7 @@ if(os.path.isfile('static/ids.txt')):
             if flag == 0:
                 with open('static/ids.txt', 'w') as file:
                     file.write(str(ids))
-                url = 'http://35.184.236.4:7005/userdetails/new/1/1/' + \
+                url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/userdetails/new/1/1/' + \
                     str(ids)+'/1/1/1/outlook.office365.com/smtp.office.com/1/1'
                 res = get(url)
                 token = False
@@ -66,7 +66,7 @@ else:
         ids = uuid.uuid1()
         ids = str(ids)
         ids = ids.replace('-', '')
-        all_id = get('http://35.184.236.4:7005/getalluniqueid')
+        all_id = get('http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/getalluniqueid')
         all_id = all_id.json()
         all_id = all_id['MAC_ID']
         flag = 0
@@ -78,7 +78,7 @@ else:
         if flag == 0:
             with open('static/ids.txt', 'w') as file:
                 file.write(str(ids))
-            url = 'http://35.184.236.4:7005/userdetails/new/1/1/' + \
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/userdetails/new/1/1/' + \
                 str(ids)+'/1/1/1/outlook.office365.com/smtp.office.com/1/1'
             res = get(url)
             token = False
@@ -99,7 +99,7 @@ OS_v = platform()
 username = getuser()
 sernum = '12345'
 lap_desk = 'desk'
-url = 'http://35.184.236.4:7005/inoutserver/'+str(ids)
+url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/inoutserver/'+str(ids)
 print('------------')
 print(url)
 res = get(url)
@@ -110,7 +110,7 @@ dprint = '2'
 # creating new user
 
 
-url = 'http://35.184.236.4:7005/userdetails/old/'+hostname+'/'+IP+'/' + \
+url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/userdetails/old/'+hostname+'/'+IP+'/' + \
     str(ids)+'/'+sernum+'/'+OS_v+'/'+lap_desk + \
     '/'+inser+'/'+outser+'/'+dprint+'/'+username
 get(url)
@@ -124,14 +124,14 @@ def login():
 def pr():
     manufac_name = request.args.get('manuname')
     mdelname = request.args.get('model')
-    url = 'http://35.184.236.4:7005/newt/Printer_to_be_configured/Printer_to_be_configured/' + \
+    url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Printer_to_be_configured/Printer_to_be_configured/' + \
         str(ids)
     res = get(url)
     if rel == '8.1':
         out = Printer_Latest_Remove_Latency_for_8.printerConfig(
             manufac_name, mdelname)
         if out == 'success':
-            url = 'http://35.184.236.4:7005/upt/'+res.text
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
             res = get(url)
             return res.text
         elif out == 'failed':
@@ -141,7 +141,7 @@ def pr():
         out = Printer_Latest_Remove_Latency_for_7.printerConfig(
             manufac_name, mdelname)
         if out == 'success':
-            url = 'http://35.184.236.4:7005/upt/'+res.text
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
             res = get(url)
             return res.text
         elif out == 'failed':
@@ -151,7 +151,7 @@ def pr():
         out = Printer_Latest_Remove_Latency_win10.printerConfig(
             manufac_name, mdelname)
         if out == 'success':
-            url = 'http://35.184.236.4:7005/upt/'+res.text
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
             res = get(url)
             return res.text
         elif out == 'failed':
@@ -164,7 +164,7 @@ def em():
     username = request.args.get('username')
     email_ss = request.args.get('email_s')
     password_s = request.args.get('password_s')
-    url = 'http://35.184.236.4:7005/newt/Email_to_be_configured/Email_to_be_configured/' + \
+    url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Email_to_be_configured/Email_to_be_configured/' + \
         str(ids)
     res = get(url)
     print(res.text)
@@ -172,7 +172,7 @@ def em():
         out = test_fetch_mail_for_8.mailConfig(
             username, inser, outser, email_ss, password_s)
         if out == 'success':
-            url = 'http://35.184.236.4:7005/upt/'+res.text
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
             res = get(url)
             return res.text
         elif out == 'failed':
@@ -182,7 +182,7 @@ def em():
         out = test_fetch_mail_for_7.mailConfig(
             username, inser, outser, email_ss, password_s)
         if out == 'success':
-            url = 'http://35.184.236.4:7005/upt/'+res.text
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
             res = get(url)
             return res.text
         elif out == 'failed':
@@ -192,7 +192,7 @@ def em():
         out = test_fetch_mail_win10.mailConfig(
             username, inser, outser, email_ss, password_s)
         if out == 'success':
-            url = 'http://35.184.236.4:7005/upt/'+res.text
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
             res = get(url)
             return res.text
         elif out == 'failed':
@@ -202,22 +202,22 @@ def em():
 
 @app.route('/passw', methods=['GET', 'POST'])
 def passw():
-    url = 'http://35.184.236.4:7005/newt/password_has_to_be_changed/password_has_to_be_changed/' + \
+    url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/password_has_to_be_changed/password_has_to_be_changed/' + \
         str(ids)
     res = get(url)
-    url = 'http://35.184.236.4:7005/upt/'+res.text
+    url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
     res = get(url)
     return res.text
 
 
 @app.route('/diskclean', methods=['GET', 'POST'])
 def dc():
-    url = 'http://35.184.236.4:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/' + \
+    url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/' + \
         str(ids)
     get(url)
     out = diskCleanup.startCleanup()
     if out == 'success':
-        url = 'http://35.184.236.4:7005/upt/'+res.text
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/upt/'+res.text
         res = get(url)
         return res.text
     elif out == 'failed':
@@ -286,7 +286,7 @@ def connew():
     </p>
         '''
     elif arg == 'msoffice':
-        url = 'http://35.184.236.4:7005/newt/MS_office_installation/MS_office_installation/' + str(ids)
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/MS_office_installation/MS_office_installation/' + str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -294,7 +294,7 @@ def connew():
         </p>
         '''
     elif arg == 'adobe':
-        url = 'http://35.184.236.4:7005/newt/adobe_installation/adobe_installation/' + str(ids)
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/adobe_installation/adobe_installation/' + str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -302,7 +302,7 @@ def connew():
         </p>
         '''
     elif arg == 'anti':
-        url = 'http://35.184.236.4:7005/newt/Antivirus_installation/Antivirus_installation/' + str(ids)
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Antivirus_installation/Antivirus_installation/' + str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -326,7 +326,7 @@ def connew():
         symp = request.args.get('symptom')
         des = request.args.get('des')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -396,7 +396,7 @@ def sysrelated():
     </p>
         '''
     elif arg == 'autoshut':
-        url = 'http://35.184.236.4:7005/newt/auto_shutdown_restart/auto_shutdown_restart/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/auto_shutdown_restart/auto_shutdown_restart/' + \
             str(ids)
         res = get(url)
         return '''
@@ -405,7 +405,7 @@ def sysrelated():
         </p>
         '''
     elif arg == 'unlog':
-        url = 'http://35.184.236.4:7005/newt/unable_to_login/unable_to_login/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/unable_to_login/unable_to_login/' + \
             str(ids)
         res = get(url)
         return '''
@@ -430,7 +430,7 @@ def sysrelated():
         symp = request.args.get('symptom')
         des = request.args.get('des')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -483,7 +483,7 @@ def apprelated():
     </p>
         '''
     elif arg == 'outlook':
-        url = 'http://35.184.236.4:7005/newt/outlook_related_issue/outlook_related_issue/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/outlook_related_issue/outlook_related_issue/' + \
             str(ids)
         res = get(url)
         return '''
@@ -492,7 +492,7 @@ def apprelated():
         </p>
         '''
     elif arg == 'excel':
-        url = 'http://35.184.236.4:7005/newt/excel_not_responding/excel_not_responding/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/excel_not_responding/excel_not_responding/' + \
             str(ids)
         res = get(url)
         return '''
@@ -501,7 +501,7 @@ def apprelated():
         </p>
         '''
     elif arg == 'sap':
-        url = 'http://35.184.236.4:7005/newt/sap_not_responding/sap_not_responding/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/sap_not_responding/sap_not_responding/' + \
             str(ids)
         res = get(url)
         return '''
@@ -510,7 +510,7 @@ def apprelated():
         </p>
         '''
     elif arg == 'ie':
-        url = 'http://35.184.236.4:7005/newt/ie_configuration/ie_configuration/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/ie_configuration/ie_configuration/' + \
             str(ids)
         res = get(url)
         return '''
@@ -519,7 +519,7 @@ def apprelated():
         </p>
         '''
     elif arg == 'vpn':
-        url = 'http://35.184.236.4:7005/newt/vpn_configuration/vpn_configuration/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/vpn_configuration/vpn_configuration/' + \
             str(ids)
         res = get(url)
         return '''
@@ -546,7 +546,7 @@ def apprelated():
         symp = symp.replace(' ', '_')
         des = des.replace(' ', '_')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -593,7 +593,7 @@ def osrelated():
     </p>
         '''
     elif arg == 'addpc':
-        url = 'http://35.184.236.4:7005/newt/add_pc_with_domain/add_pc_with_domain/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/add_pc_with_domain/add_pc_with_domain/' + \
             str(ids)
         res = get(url)
         return '''
@@ -602,7 +602,7 @@ def osrelated():
         </p>
         '''
     elif arg == 'osnot':
-        url = 'http://35.184.236.4:7005/newt/os_not_booting/os_not_booting/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/os_not_booting/os_not_booting/' + \
             str(ids)
         res = get(url)
         return '''
@@ -629,7 +629,7 @@ def osrelated():
         symp = symp.replace(' ', '_')
         des = des.replace(' ', '_')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -676,7 +676,7 @@ def printerrelated():
     </p>
         '''
     elif arg == 'notprinter':
-        url = 'http://35.184.236.4:7005/newt/Printer_Not_working/Printer_Not_working/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Printer_Not_working/Printer_Not_working/' + \
             str(ids)
         res = get(url)
         return '''
@@ -685,7 +685,7 @@ def printerrelated():
         </p>
         '''
     elif arg == 'notproper':
-        url = 'http://35.184.236.4:7005/newt/Printer_not_proper/Printer_Not_proper/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Printer_not_proper/Printer_Not_proper/' + \
             str(ids)
         res = get(url)
         return '''
@@ -712,7 +712,7 @@ def printerrelated():
         symp = symp.replace(' ', '_')
         des = des.replace(' ', '_')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -748,7 +748,7 @@ def networkrelated():
     </p>
         '''
     elif arg == 'ie':
-        url = 'http://35.184.236.4:7005/newt/Internet_explorer_not_working/Internet_explorer_not_working/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Internet_explorer_not_working/Internet_explorer_not_working/' + \
             str(ids)
         res = get(url)
         return '''
@@ -757,7 +757,7 @@ def networkrelated():
             </p>
             '''
     elif arg == 'noaccess':
-        url = 'http://35.184.236.4:7005/newt/Unable_to_access_server/Unable_to_access_server/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/Unable_to_access_server/Unable_to_access_server/' + \
             str(ids)
         res = get(url)
         return '''
@@ -766,7 +766,7 @@ def networkrelated():
             </p>
             '''
     elif arg == 'ipchange':
-        url = 'http://35.184.236.4:7005/newt/IP_address_change/IP_address_change/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/IP_address_change/IP_address_change/' + \
             str(ids)
         res = get(url)
         return '''
@@ -775,7 +775,7 @@ def networkrelated():
             </p>
             '''
     elif arg == 'wifi':
-        url = 'http://35.184.236.4:7005/newt/wi_fi_configuration/wi_fi_configuration/' + \
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/wi_fi_configuration/wi_fi_configuration/' + \
             str(ids)
         res = get(url)
         return '''
@@ -802,7 +802,7 @@ def networkrelated():
         symp = symp.replace(' ', '_')
         des = des.replace(' ', '_')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                     <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -822,7 +822,7 @@ def networkrelated():
 def knowticket():
     arg = request.args.get('con1')
     if arg == 'know':
-        url = 'http://35.184.236.4:7005/know/'+str(ids)
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/know/'+str(ids)
         res = get(url)
         res = res.json()
         ticket_id = res['Incident ID']
@@ -850,7 +850,7 @@ def knowticket():
     '''
     elif arg == 'proceed':
         tid = request.args.get('id')
-        url = 'http://35.184.236.4:7005/oldt/'+str(tid)
+        url = 'http://ec2-3-129-90-244.us-east-2.compute.amazonaws.com:7005/oldt/'+str(tid)
         msg = get(url)
         return msg.text
 # flow new query
