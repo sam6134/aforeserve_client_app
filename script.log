@@ -1,0 +1,8 @@
+2020-08-01 17:01:44,211 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-01 17:01:46,829 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-01 17:01:47,144 - config - printerConfig - INFO - Searching for All Control Panel Items window in except
+2020-08-01 17:01:47,148 - config - checkForWindowExistence - INFO - Searching for All Control Panel Items via infinite loop
+2020-08-01 17:01:48,473 - config - checkForWindowExistence - INFO - All Control Panel Items is obtained
+2020-08-01 17:02:00,440 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-01 17:02:06,757 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-01 17:02:07,127 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop

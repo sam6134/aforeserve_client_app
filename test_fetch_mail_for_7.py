@@ -1,7 +1,7 @@
 import pyautogui
 import pywinauto
 import time
-import pandas as pd
+
 
 
 from ctypes import *
@@ -93,7 +93,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                             mail_setup_outlook.child_window(title_re="E-mail Accounts...",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
                         except:
                             mail_setup_outlook.child_window(title_re="E-mail Accounts...",control_type="Button").wait('visible', timeout=120, retry_interval=0.5).click()
-                            print("test-1")    
+                        print("test-1")    
                     # time.sleep(5)
                         
                         try:
