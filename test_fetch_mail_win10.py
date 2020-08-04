@@ -69,8 +69,8 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                 
             #click mail icon on control panel   
             try:
-                config.logger.info('Searching for Mail (Microsoft Outlook 2016) (32-bit) icon')
-                mail.child_window(title="Mail (Microsoft Outlook 2016) (32-bit)").wait('visible', timeout=120, retry_interval=0.5).click_input()
+                config.logger.info('Searching for Mail (Microsoft Outlook 2016) icon')
+                mail.child_window(title="Mail (Microsoft Outlook 2016)").wait('visible', timeout=120, retry_interval=0.5).click_input()
                 print('Code in try block')
             except Exception as e:
                 config.logger.info('Searching for Mail icon')

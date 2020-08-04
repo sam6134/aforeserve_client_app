@@ -116,6 +116,13 @@ url = config1['DEFAULT']['URL']+'/userdetails/old/'+hostname+'/'+IP+'/' + \
     '/'+inser+'/'+outser+'/'+dprint+'/'+username
 get(url)
 
+@app.route('/feedback',methods=['GET','POST'])
+def feedback():
+    feed = request.args.get('con1')
+    feed = feed.replace(' ','_')
+    url = config1['DEFAULT']['URL']+'/feedback/'+feed+'/'+str(ids)+'/'+str(tid)
+    res = get(url)
+    return None
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
@@ -128,13 +135,25 @@ def pr():
     url = config1['DEFAULT']['URL']+'/newt/Printer_to_be_configured/Printer_to_be_configured/' + \
         str(ids)
     res = get(url)
+    global tid 
+    tid = res.text
     if rel == '8.1':
         out = Printer_Latest_Remove_Latency_for_8.printerConfig(
             manufac_name, mdelname)
+        # out = 'success'
         if out == 'success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
-            res = get(url)
-            return res.text
+            res1 = get(url)
+            return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
         elif out == 'failed':
             #Assing to department
             return 'Issue not resolved assigning it to other department'
@@ -144,17 +163,36 @@ def pr():
         if out == 'success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
-            return res.text
+            return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
         elif out == 'failed':
             #Assing to department
             return 'Issue not resolved assigning it to other department'
     else:
         out = Printer_Latest_Remove_Latency_win10.printerConfig(
             manufac_name, mdelname)
+        # out = 'success'
         if out == 'success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
-            return res.text
+            return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
         elif out == 'failed':
             #Assing to department
             return 'Issue not resolved assigning it to other department'
@@ -168,6 +206,8 @@ def em():
     url = config1['DEFAULT']['URL']+'/newt/Email_to_be_configured/Email_to_be_configured/' + \
         str(ids)
     res = get(url)
+    global tid 
+    tid = res.text
     print(res.text)
     if rel == '8.1':
         out = test_fetch_mail_for_8.mailConfig(
@@ -175,7 +215,16 @@ def em():
         if out == 'success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
-            return res.text
+            return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
         elif out == 'failed':
             #Assing to department
             return 'Issue not resolved assigning it to other department'
@@ -185,17 +234,36 @@ def em():
         if out == 'success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
-            return res.text
+            return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
         elif out == 'failed':
             #Assing to department
             return 'Issue not resolved assigning it to other department'
     else:
         out = test_fetch_mail_win10.mailConfig(
             username, inser, outser, email_ss, password_s)
+        # out = 'success'
         if out == 'success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
-            return res.text
+            return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
         elif out == 'failed':
             #Assing to department
             return 'Issue not resolved assigning it to other department'
@@ -206,9 +274,20 @@ def passw():
     url = config1['DEFAULT']['URL']+'/newt/password_has_to_be_changed/password_has_to_be_changed/' + \
         str(ids)
     res = get(url)
+    global tid 
+    tid = res.text
     url = config1['DEFAULT']['URL']+'/upt/'+res.text
     res = get(url)
-    return res.text
+    return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
 
 
 @app.route('/diskclean', methods=['GET', 'POST'])
@@ -216,11 +295,22 @@ def dc():
     url = config1['DEFAULT']['URL']+'/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/' + \
         str(ids)
     res = get(url)
+    global tid 
+    tid = res.text
     out = diskCleanup.startCleanup()
     if out == 'success':
         url = config1['DEFAULT']['URL']+'/upt/'+ res.text
         res = get(url)
-        return res.text
+        return '''
+            <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+                            Please Give Feedback
+                            <br>
+                            <br>
+                                    <input type="text" id="feedback" class="form-control" placeholder = "Feedback">
+                            <br>
+                                    <button class="btn btn-secondary" onclick="feedback()">Proceed</button>                        
+    </p>
+            '''
     elif out == 'failed':
         #Assing to department
         return 'Issue not resolved assigning it to other department'
@@ -287,7 +377,7 @@ def connew():
     </p>
         '''
     elif arg == 'msoffice':
-        url = 'http://35.184.236.4:7005/newt/MS_office_installation/MS_office_installation/' + str(ids)
+        url = config1['DEFAULT']['URL']+'/newt/MS_office_installation/MS_office_installation/' + str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -295,7 +385,7 @@ def connew():
         </p>
         '''
     elif arg == 'adobe':
-        url = 'http://35.184.236.4:7005/newt/adobe_installation/adobe_installation/' + str(ids)
+        url = config1['DEFAULT']['URL']+'/newt/adobe_installation/adobe_installation/' + str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -303,7 +393,7 @@ def connew():
         </p>
         '''
     elif arg == 'anti':
-        url = 'http://35.184.236.4:7005/newt/Antivirus_installation/Antivirus_installation/' + str(ids)
+        url = config1['DEFAULT']['URL']+'/newt/Antivirus_installation/Antivirus_installation/' + str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -327,7 +417,7 @@ def connew():
         symp = request.args.get('symptom')
         des = request.args.get('des')
         if len(symp) >= 10 and len(des) >= 10:
-            url = 'http://35.184.236.4:7005/newt/'+symp+'/'+des+'/' + str(ids)
+            url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -549,6 +639,7 @@ def apprelated():
         if len(symp) >= 10 and len(des) >= 10:
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
+            
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
                 Ticket ID : '''+res.text+'''
@@ -874,7 +965,7 @@ def newquery():
     elif arg == 'asset':
         return '''
     <p class="speech-bubble btn-primary" style="height: 11%;">
-        Please verify your Username : '''+str(username.title())+''' and EmailID : xyz@emai.com 
+        Please verify your Username : '''+str(username.title())+''' and EmailID : xyz@email.com 
     </p>
     '''
 

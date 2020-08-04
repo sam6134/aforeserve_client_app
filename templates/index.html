@@ -778,6 +778,18 @@
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });
     }
+    // feedback 
+    function feedback(){
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Feedback Stored!</p></div>";
+      $("#mod").append(html);
+      text = document.getElementById('feedback').value;
+      $.get("/feedback",{con1:text}).done(function (data) {
+        console.log(data);
+        html = "<br><div align='left'>" + data + "</div>";
+        $("#mod").append(html);
+        $('#mod').scrollTop($('#mod')[0].scrollHeight);
+      });
+    }
   </script>
 </body>
 

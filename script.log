@@ -6,3 +6,41 @@
 2020-08-01 17:02:00,440 - config - printerConfig - INFO - Searching for Devices and Printers window
 2020-08-01 17:02:06,757 - config - printerConfig - INFO - Searching for Add a Device window
 2020-08-01 17:02:07,127 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-04 11:44:19,406 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-04 11:44:19,406 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-04 11:44:21,681 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-04 11:44:21,681 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-04 11:44:22,493 - config - printerConfig - INFO - Searching for All Control Panel Items window in except
+2020-08-04 11:44:22,493 - config - printerConfig - INFO - Searching for All Control Panel Items window in except
+2020-08-04 11:44:22,493 - config - checkForWindowExistence - INFO - Searching for All Control Panel Items via infinite loop
+2020-08-04 11:44:22,493 - config - checkForWindowExistence - INFO - Searching for All Control Panel Items via infinite loop
+2020-08-04 11:44:22,900 - config - checkForWindowExistence - INFO - All Control Panel Items is obtained
+2020-08-04 11:44:22,900 - config - checkForWindowExistence - INFO - All Control Panel Items is obtained
+2020-08-04 11:44:28,466 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-04 11:44:28,466 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-04 11:44:31,696 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-04 11:44:31,696 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-04 11:44:31,722 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-04 11:44:31,722 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-04 13:33:11,490 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 13:33:13,805 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 13:33:19,401 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) (32-bit) icon
+2020-08-04 13:34:45,009 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 13:37:16,640 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 13:37:18,842 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 13:37:24,068 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) (32-bit) icon
+2020-08-04 13:38:03,858 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 13:41:28,653 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 13:41:30,887 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 13:41:36,187 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 13:41:37,480 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 13:41:37,568 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 13:41:39,344 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 13:41:41,768 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 13:41:41,881 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 13:41:42,182 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 13:41:44,921 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 13:41:46,046 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 13:41:47,046 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 13:41:55,724 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 13:41:55,898 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
