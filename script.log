@@ -44,3 +44,1417 @@
 2020-08-04 13:41:47,046 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
 2020-08-04 13:41:55,724 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
 2020-08-04 13:41:55,898 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:42:05,851 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:42:07,996 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:42:13,148 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:42:13,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:42:13,591 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:42:18,996 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:42:21,132 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:42:21,158 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:42:21,247 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:42:22,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:42:22,637 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:42:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:42:26,057 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:42:26,125 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:44:08,758 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:44:08,758 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:44:10,886 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:44:10,886 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:44:15,941 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:44:15,941 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:44:16,334 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:44:16,334 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:44:16,353 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:44:16,353 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:44:17,491 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:44:17,491 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:44:19,612 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:44:19,612 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:44:19,634 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:44:19,634 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:44:19,714 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:44:19,714 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:44:20,630 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:44:20,630 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:44:21,005 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:44:21,005 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:44:21,328 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:44:21,328 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:44:24,117 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:44:24,117 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:44:24,180 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:44:24,180 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:46:27,495 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:46:27,495 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:46:27,495 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:46:29,625 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:46:29,625 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:46:29,625 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:46:34,784 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:46:34,784 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:46:34,784 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:46:35,201 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:46:35,201 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:46:35,201 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:46:35,240 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:46:35,240 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:46:35,240 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:46:36,120 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:46:36,120 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:46:36,120 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:46:38,221 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:46:38,221 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:46:38,221 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:46:38,252 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:46:38,252 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:46:38,252 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:46:38,329 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:46:38,329 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:46:38,329 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:46:39,208 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:46:39,208 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:46:39,208 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:46:39,506 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:46:39,506 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:46:39,506 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:46:39,759 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:46:39,759 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:46:39,759 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:46:42,478 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:46:42,478 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:46:42,478 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:46:42,538 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:46:42,538 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:46:42,538 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:47:23,996 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:47:23,996 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:47:23,996 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:47:23,996 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:47:26,123 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:47:26,123 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:47:26,123 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:47:26,123 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:47:31,277 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:47:31,277 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:47:31,277 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:47:31,277 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:47:31,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:47:31,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:47:31,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:47:31,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:47:31,673 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:47:31,673 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:47:31,673 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:47:31,673 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:47:32,723 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:47:32,723 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:47:32,723 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:47:32,723 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:47:34,836 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:47:34,836 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:47:34,836 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:47:34,836 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:47:34,862 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:47:34,862 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:47:34,862 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:47:34,862 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:47:34,963 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:47:34,963 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:47:34,963 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:47:34,963 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:47:35,876 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:47:35,876 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:47:35,876 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:47:35,876 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:47:36,181 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:47:36,181 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:47:36,181 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:47:36,181 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:47:36,436 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:47:36,436 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:47:36,436 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:47:36,436 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:47:39,372 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:47:39,372 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:47:39,372 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:47:39,372 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:47:39,440 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:47:39,440 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:47:39,440 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:47:39,440 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:49:13,362 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:13,362 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:13,362 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:13,362 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:13,362 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:15,491 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:15,491 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:15,491 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:15,491 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:15,491 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:20,588 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:20,588 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:20,588 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:20,588 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:20,588 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:20,968 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:20,968 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:20,968 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:20,968 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:20,968 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:20,996 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:20,996 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:20,996 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:20,996 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:20,996 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:38,148 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:38,148 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:38,148 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:38,148 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:38,148 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:38,148 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:49:40,271 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:40,271 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:40,271 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:40,271 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:40,271 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:40,271 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:49:45,300 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:45,300 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:45,300 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:45,300 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:45,300 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:45,300 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:49:45,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:45,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:45,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:45,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:45,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:45,655 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:49:45,677 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:49:45,677 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:49:45,677 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:49:45,677 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:49:45,677 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:49:45,677 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:49:46,564 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:46,564 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:46,564 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:46,564 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:46,564 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:46,564 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:49:48,669 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:49:48,669 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:49:48,669 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:49:48,669 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:49:48,669 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:49:48,669 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:49:48,691 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:49:48,691 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:49:48,691 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:49:48,691 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:49:48,691 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:49:48,691 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:49:48,775 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:49:48,775 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:49:48,775 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:49:48,775 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:49:48,775 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:49:48,775 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:49:49,644 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:49:49,644 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:49:49,644 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:49:49,644 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:49:49,644 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:49:49,644 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:49:49,953 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:49:49,953 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:49:49,953 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:49:49,953 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:49:49,953 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:49:49,953 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:49:50,213 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:49:50,213 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:49:50,213 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:49:50,213 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:49:50,213 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:49:50,213 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:49:53,184 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:49:53,184 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:49:53,184 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:49:53,184 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:49:53,184 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:49:53,184 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:49:53,245 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:49:53,245 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:49:53,245 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:49:53,245 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:49:53,245 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:49:53,245 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:34,788 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:36,920 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,161 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,561 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:42,584 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:55,629 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:50:57,755 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:02,920 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,285 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:03,304 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:04,179 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,284 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,312 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:06,388 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,277 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,568 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:07,818 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,770 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:51:10,840 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:52:59,039 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:01,190 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,678 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:02,680 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:10,820 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:12,951 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,030 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,400 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:18,419 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:19,313 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,422 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,445 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:21,525 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,382 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,688 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:22,941 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,863 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:53:25,937 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:55,260 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:57,387 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,979 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:54:58,980 - config - mailConfig - INFO - Searching for Mail icon
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:07,020 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:09,148 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,298 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,677 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:14,694 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:15,568 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,663 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,685 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:17,761 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,604 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:18,881 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:19,124 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,851 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:55:21,904 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:24,109 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:26,234 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,425 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,793 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:31,819 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:32,797 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,912 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:34,936 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,016 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:35,949 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,309 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:36,616 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,612 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:57:39,665 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:18,076 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:20,203 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,271 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,649 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:25,668 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:26,600 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,719 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,743 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:28,867 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:29,804 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,137 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:30,404 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,428 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:58:33,492 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:01,944 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:04,067 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,175 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,544 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:09,563 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:10,642 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,763 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,794 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:12,930 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:13,844 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:14,508 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,628 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 15:59:17,690 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 17:13:32,368 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 17:13:32,368 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 17:13:34,669 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 17:13:34,669 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 17:13:40,078 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 17:13:40,078 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 17:13:41,292 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 17:13:41,292 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 17:13:41,425 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 17:13:41,425 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 17:13:43,254 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 17:13:43,254 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 17:13:45,662 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 17:13:45,662 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 17:13:45,765 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 17:13:45,765 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 17:13:46,506 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 17:13:46,506 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 17:13:47,879 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 17:13:47,879 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 17:13:48,825 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 17:13:48,825 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 17:13:49,578 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 17:13:49,578 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 17:13:58,420 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 17:13:58,420 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 17:13:58,580 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 17:13:58,580 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-04 17:21:12,046 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-04 17:21:14,296 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-04 17:21:19,879 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-04 17:21:21,083 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-04 17:21:21,178 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-04 17:21:22,438 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-04 17:21:24,842 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-04 17:21:24,955 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-04 17:21:25,649 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-04 17:21:27,010 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-04 17:21:28,110 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-04 17:21:28,962 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-04 17:21:37,112 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-04 17:21:37,246 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop

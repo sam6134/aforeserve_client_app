@@ -168,7 +168,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         
                                         add_account["Your Name:Edit"].type_keys(user_details[0])    
                                         
-                                        add_account["Email Address:Edit"].type_keys(user_details[1])
+                                        add_account["Email Address:Edit"].type_keys(user_details[3])
                                         
                                         add_account["Incoming mail server:Edit"].type_keys(inser)
                                         
@@ -177,9 +177,9 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                         add_account["User Name:Edit"].type_keys('^a{BACKSPACE}')
                                         #add_account["User Name:Edit"].Edit.set_edit_text(u'')
                                         
-                                        add_account["Password:Edit"].type_keys(user_details[2])
+                                        add_account["Password:Edit"].type_keys(user_details[4])
                                         
-                                        add_account["User Name:Edit"].type_keys(user_details[1])
+                                        add_account["User Name:Edit"].type_keys(user_details[3])
                                         
                                         add_account.child_window(title="More Settings ...").wait('visible', timeout=120, retry_interval=0.5).click()
                                         
@@ -243,7 +243,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                                     break
                                                 except:
                                                     try:
-                                                            invalid_password = pywinauto.findwindows.find_windows(best_match='Internet Email - '+str(user_details[1]))
+                                                            invalid_password = pywinauto.findwindows.find_windows(title='Internet Email - '+str(user_details[3]))
                                                             invalid_password=control_panel.window_(handle=invalid_password[0])
                                                             invalid_password.set_focus()
                                                             print(invalid_password)
@@ -274,7 +274,7 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                             #add_account.child_window(title="Cancel", control_type="Button").click()
                                             #time.sleep(2)
                                             
-                                            #account_settings.child_window(title='Close',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
+                                            #account_settings.child_window(t"itle='Close',control_type="Button").wait('visible',timeout=120, retry_interval=0.5).click()
                                             #account_settings.child_window(title="Close", control_type="Button").click()
                                             send_keys('"%{F4}"')
                                             
@@ -288,7 +288,8 @@ def mailConfig(username,inser,outser,email_ss,password_s):
                                             flag=1
         
         
-        return "Sucess"
+        return "Success"
     except:
         return "Failed"
-#mailConfig()
+# val = mailConfig('hardik','outlook.office365.com','smtp.office365.com','bramhesh.srivastav@algo8.ai',"Dps@01129@")
+# print(val)

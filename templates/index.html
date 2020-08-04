@@ -780,12 +780,12 @@
     }
     // feedback 
     function feedback(){
-      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Feedback Stored!</p></div>";
+      html = "<br><div align='right'><p class='speech-bubble btn-light' style='padding-right: 3%;'>Storing feedback</p></div>";
       $("#mod").append(html);
       text = document.getElementById('feedback').value;
       $.get("/feedback",{con1:text}).done(function (data) {
         console.log(data);
-        html = "<br><div align='left'>" + data + "</div>";
+        html = html = "<br><div align='left'><p class='speech-bubble btn-primary' style='padding-right: 3%;'>"+data+"</p></div>";
         $("#mod").append(html);
         $('#mod').scrollTop($('#mod')[0].scrollHeight);
       });

@@ -109,7 +109,11 @@ inser, outser = res['inserver'], res['outserver']
 dprint = '2'
 
 # creating new user
-
+# storing tid
+def storetid(t):
+    global tid
+    tid = t
+    return tid
 
 url = config1['DEFAULT']['URL']+'/userdetails/old/'+hostname+'/'+IP+'/' + \
     str(ids)+'/'+sernum+'/'+OS_v+'/'+lap_desk + \
@@ -120,9 +124,9 @@ get(url)
 def feedback():
     feed = request.args.get('con1')
     feed = feed.replace(' ','_')
-    url = config1['DEFAULT']['URL']+'/feedback/'+feed+'/'+str(ids)+'/'+str(tid)
+    url = config1['DEFAULT']['URL']+'/feedback/'+feed+'/'+str(tid)+'/'+str(ids)
     res = get(url)
-    return None
+    return res.text
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
@@ -135,13 +139,12 @@ def pr():
     url = config1['DEFAULT']['URL']+'/newt/Printer_to_be_configured/Printer_to_be_configured/' + \
         str(ids)
     res = get(url)
-    global tid 
-    tid = res.text
+    storetid(res.text)
     if rel == '8.1':
         out = Printer_Latest_Remove_Latency_for_8.printerConfig(
             manufac_name, mdelname)
         # out = 'success'
-        if out == 'success':
+        if out == 'Success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res1 = get(url)
             return '''
@@ -160,7 +163,7 @@ def pr():
     elif rel == '7':
         out = Printer_Latest_Remove_Latency_for_7.printerConfig(
             manufac_name, mdelname)
-        if out == 'success':
+        if out == 'Success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
             return '''
@@ -180,7 +183,7 @@ def pr():
         out = Printer_Latest_Remove_Latency_win10.printerConfig(
             manufac_name, mdelname)
         # out = 'success'
-        if out == 'success':
+        if out == 'Success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
             res = get(url)
             return '''
@@ -206,14 +209,12 @@ def em():
     url = config1['DEFAULT']['URL']+'/newt/Email_to_be_configured/Email_to_be_configured/' + \
         str(ids)
     res = get(url)
-    global tid 
-    tid = res.text
-    print(res.text)
+    storetid(res.text)
     if rel == '8.1':
         out = test_fetch_mail_for_8.mailConfig(
             username, inser, outser, email_ss, password_s)
-        if out == 'success':
-            url = config1['DEFAULT']['URL']+'/upt/'+res.text
+        if out == 'Success':
+            url = config1['DEFAULT']['URL']+'/upt/'+str(res.text)
             res = get(url)
             return '''
             <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
@@ -231,9 +232,8 @@ def em():
     elif rel == '7':
         out = test_fetch_mail_for_7.mailConfig(
             username, inser, outser, email_ss, password_s)
-        if out == 'success':
+        if out == 'Success':
             url = config1['DEFAULT']['URL']+'/upt/'+res.text
-            res = get(url)
             return '''
             <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
                             Please Give Feedback
@@ -251,9 +251,12 @@ def em():
         out = test_fetch_mail_win10.mailConfig(
             username, inser, outser, email_ss, password_s)
         # out = 'success'
-        if out == 'success':
-            url = config1['DEFAULT']['URL']+'/upt/'+res.text
+        # print(out)
+        if out == 'Success':
+            url = config1['DEFAULT']['URL']+'/upt/'+str(tid)
+            # print(url)
             res = get(url)
+            # print(res.text)
             return '''
             <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
                             Please Give Feedback
@@ -274,8 +277,7 @@ def passw():
     url = config1['DEFAULT']['URL']+'/newt/password_has_to_be_changed/password_has_to_be_changed/' + \
         str(ids)
     res = get(url)
-    global tid 
-    tid = res.text
+    storetid(res.text)
     url = config1['DEFAULT']['URL']+'/upt/'+res.text
     res = get(url)
     return '''
@@ -295,10 +297,9 @@ def dc():
     url = config1['DEFAULT']['URL']+'/newt/Disk_full_disk_clean_to_be_configured/disk_full_disk_clean_to_be_configured/' + \
         str(ids)
     res = get(url)
-    global tid 
-    tid = res.text
+    storetid(res.text)
     out = diskCleanup.startCleanup()
-    if out == 'success':
+    if out == 'Success':
         url = config1['DEFAULT']['URL']+'/upt/'+ res.text
         res = get(url)
         return '''
