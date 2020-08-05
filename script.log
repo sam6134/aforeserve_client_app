@@ -1458,3 +1458,34 @@
 2020-08-04 17:21:28,962 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
 2020-08-04 17:21:37,112 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
 2020-08-04 17:21:37,246 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-05 19:33:44,842 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-05 19:33:44,855 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-05 19:33:47,074 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-05 19:33:47,084 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-05 19:33:54,124 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-05 19:33:54,129 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-05 19:33:54,156 - config - checkForWindowExistence - INFO - Searching for Devices and Printers via infinite loop
+2020-08-05 19:33:54,165 - config - checkForWindowExistence - INFO - Searching for Devices and Printers via infinite loop
+2020-08-05 19:37:39,537 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-05 19:37:41,710 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-05 19:37:47,359 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-05 19:37:50,601 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-05 19:37:50,709 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-05 19:40:13,972 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-05 19:40:16,133 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-05 19:40:21,765 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-05 19:40:25,005 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-05 19:40:25,038 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-05 19:40:25,282 - config - checkForWindowExistence - INFO - Add a device is obtained
+2020-08-05 19:40:30,541 - config - printerConfig - INFO - Searching for Add Printer window for a adding a local printer
+2020-08-05 19:40:31,413 - config - checkForWindowExistence - INFO - Searching for Add Printer via infinite loop
+2020-08-05 19:40:31,435 - config - checkForWindowExistence - INFO - Add Printer is obtained
+2020-08-05 19:40:31,738 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer port
+2020-08-05 19:40:35,248 - config - printerConfig - INFO - Searching for Add Printer window for adding hostname and portname
+2020-08-05 19:40:35,674 - config - printerConfig - INFO - Searching for Add Printer window for additonal printer info
+2020-08-05 19:41:25,485 - config - printerConfig - INFO - Searching for Add Printer window for selecting manufacturer name and printer name
+2020-08-05 19:43:13,261 - config - printerConfig - INFO - Searching for Add Printer window for confirming printer version
+2020-08-05 19:43:13,961 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer name
+2020-08-05 19:43:14,112 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer do not share
+2020-08-05 19:43:20,003 - config - printerConfig - INFO - Searching for Add Printer window for selecting finish button
+2020-08-05 19:43:21,807 - config - printerConfig - INFO - Default printer not set window closing
