@@ -122,6 +122,7 @@ url = config1['DEFAULT']['URL']+'/userdetails/old/'+hostname+'/'+IP+'/' + \
     '/'+inser+'/'+outser+'/'+dprint+'/'+username
 get(url)
 
+
 @app.route('/feedback',methods=['GET','POST'])
 def feedback():
     feed = request.args.get('con1')
@@ -129,6 +130,14 @@ def feedback():
     url = config1['DEFAULT']['URL']+'/feedback/'+feed+'/'+str(tid)+'/'+str(ids)
     res = get(url)
     return res.text
+
+@app.route('/emailadd',methods=['GET','POST'])
+def emailadd():
+    feed = request.args.get('em')
+    feed = feed.replace(' ','_')
+    url = config1['DEFAULT']['URL']+'/emailadd/'+feed+'/'+str(ids)
+    res = get(url)
+    return "hello"
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
@@ -162,7 +171,7 @@ def pr():
             '''
         else:
             #Assing to department
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return 'Issue not resolved assigning it to other department'
     elif rel == '7':
@@ -183,7 +192,7 @@ def pr():
             '''
         else:
             #Assing to department
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return res.text
             
@@ -207,7 +216,7 @@ def pr():
             '''
         else:
             #Assing to department
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return res.text
 
@@ -239,7 +248,7 @@ def em():
             '''
         else:
             #Assing to department
-            rurl = config1['DEFAULT']['URL']+'/assign/'+res.text
+            rurl = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return res.text
     elif rel == '7':
@@ -259,7 +268,7 @@ def em():
             '''
         else:
             #Assing to department
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return res.text
     else:
@@ -284,7 +293,7 @@ def em():
             '''
         else:
             #Assing to department
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return res.text
 
@@ -331,7 +340,7 @@ def dc():
             '''
     else:
         #Assing to department
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return res.text
 
@@ -353,10 +362,17 @@ def newreq():
         Your IP : '''+str(IP)+'''
        <br>
        Your Hostname : '''+str(username.title())+'''
+       </p>
+    <p class="speech-bubble btn-primary" style="height: 43%;padding-right: 3%;">
+    <br>
+                            Please enter your email
+                            <br>
+                            <br>
+                                    <input type="text" id="user_email" class="form-control" placeholder="Email">
+                                                  
     </p>
     '''
-
-
+    
 @app.route('/confirmnew', methods=['GET', 'POST'])
 def connew():
     arg = request.args.get('con1')
@@ -380,6 +396,7 @@ def connew():
                                             
     </p>
     '''
+    # elif arg == 'proceed':
     elif arg == 'sftcon':
         return '''
         <p class="speech-bubble btn-primary" style="height: 55%;">
@@ -400,7 +417,7 @@ def connew():
         url = config1['DEFAULT']['URL']+'/newt/MS_office_installation/MS_office_installation/' + str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -411,7 +428,7 @@ def connew():
         url = config1['DEFAULT']['URL']+'/newt/adobe_installation/adobe_installation/' + str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -423,7 +440,7 @@ def connew():
         url = config1['DEFAULT']['URL']+'/newt/Antivirus_installation/Antivirus_installation/' + str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -450,7 +467,7 @@ def connew():
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             ticket = res.text
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return '''
                 <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -524,7 +541,7 @@ def sysrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -536,7 +553,7 @@ def sysrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -563,7 +580,7 @@ def sysrelated():
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             ticket = res.text
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return '''
             <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -620,7 +637,7 @@ def apprelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -632,7 +649,7 @@ def apprelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -644,7 +661,7 @@ def apprelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -656,7 +673,7 @@ def apprelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -668,7 +685,7 @@ def apprelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -697,7 +714,7 @@ def apprelated():
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             ticket = res.text
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return '''
             <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -748,7 +765,7 @@ def osrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -760,7 +777,7 @@ def osrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -789,7 +806,7 @@ def osrelated():
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             ticket = res.text
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return '''
             <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -840,7 +857,7 @@ def printerrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -852,7 +869,7 @@ def printerrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -881,7 +898,7 @@ def printerrelated():
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             ticket = res.text
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return '''
             <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -921,7 +938,7 @@ def networkrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
             <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -933,7 +950,7 @@ def networkrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -945,7 +962,7 @@ def networkrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -957,7 +974,7 @@ def networkrelated():
             str(ids)
         res = get(url)
         ticket = res.text
-        url = config1['DEFAULT']['URL']+'/assign/'+res.text
+        url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
         res = get(url)
         return '''
         <p class="speech-bubble btn-primary" style="height: 7%;">
@@ -986,7 +1003,7 @@ def networkrelated():
             url = config1['DEFAULT']['URL']+'/newt/'+symp+'/'+des+'/' + str(ids)
             res = get(url)
             ticket = res.text
-            url = config1['DEFAULT']['URL']+'/assign/'+res.text
+            url = config1['DEFAULT']['URL']+'/assign/'+res.text+'/'+str(ids)
             res = get(url)
             return '''
                     <p class="speech-bubble btn-primary" style="height: 7%;">
