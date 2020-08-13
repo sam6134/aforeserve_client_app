@@ -1,0 +1,44 @@
+2020-08-08 18:12:51,552 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-08 18:12:53,608 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-08 18:12:58,679 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-08 18:12:59,087 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-08 18:12:59,110 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-08 18:13:00,170 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-08 18:13:02,276 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-08 18:13:02,300 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-08 18:13:02,510 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-08 18:13:03,930 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-08 18:13:04,230 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-08 18:13:04,463 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-08 18:13:08,060 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-08 18:13:08,297 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-08 19:18:45,220 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-08 19:18:47,268 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-08 19:18:53,071 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-08 19:18:56,356 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-08 19:18:56,384 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-08 19:18:56,804 - config - checkForWindowExistence - INFO - Add a device is obtained
+2020-08-08 19:19:02,073 - config - printerConfig - INFO - Searching for Add Printer window for a adding a local printer
+2020-08-08 19:19:02,671 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer port
+2020-08-08 19:19:05,890 - config - printerConfig - INFO - Searching for Add Printer window for adding hostname and portname
+2020-08-08 19:19:06,373 - config - printerConfig - INFO - Searching for Add Printer window for additonal printer info
+2020-08-08 19:19:55,148 - config - printerConfig - INFO - Searching for Add Printer window for selecting manufacturer name and printer name
+2020-08-08 19:20:51,353 - config - printerConfig - INFO - Searching for Add Printer window for confirming printer version
+2020-08-08 19:20:52,038 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer name
+2020-08-08 19:20:52,194 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer do not share
+2020-08-08 19:20:55,614 - config - printerConfig - INFO - Searching for Add Printer window for selecting finish button
+2020-08-08 19:20:55,771 - config - printerConfig - INFO - Default printer not set window closing
+2020-08-08 20:06:14,482 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-08 20:06:16,518 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-08 20:06:21,588 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-08 20:06:21,999 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-08 20:06:22,015 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-08 20:06:23,628 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-08 20:06:25,861 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-08 20:06:25,883 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-08 20:06:25,977 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-08 20:06:27,288 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-08 20:06:27,676 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-08 20:06:27,929 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-08 20:06:31,736 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-08 20:06:31,792 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop

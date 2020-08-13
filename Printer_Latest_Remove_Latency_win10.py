@@ -501,4 +501,4 @@ def printerConfig(manufac_name,mdelname):
            send_keys('%{F4}"') 
         return 'Failed'
 
-print(printerConfig('Microsoft','Microsoft OpenXPS Class Driver'))
+# print(printerConfig('Microsoft','Microsoft OpenXPS Class Driver'))

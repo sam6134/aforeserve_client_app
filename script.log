@@ -265,3 +265,128 @@
 2020-08-05 22:37:05,291 - config - mailConfig - INFO - Searching for E-mail Accounts button
 2020-08-05 22:37:07,448 - config - mailConfig - INFO - Searching for Account Settings window
 2020-08-05 22:37:07,480 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-07 11:05:20,634 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-07 11:05:22,728 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-07 11:05:28,968 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-07 11:05:29,048 - config - checkForWindowExistence - INFO - Searching for Devices and Printers via infinite loop
+2020-08-07 12:37:59,985 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-07 12:37:59,985 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-07 12:38:02,034 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-07 12:38:02,034 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-07 12:38:07,365 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-07 12:38:07,365 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-07 12:38:07,377 - config - checkForWindowExistence - INFO - Searching for Devices and Printers via infinite loop
+2020-08-07 12:38:07,377 - config - checkForWindowExistence - INFO - Searching for Devices and Printers via infinite loop
+2020-08-07 19:51:57,887 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-07 19:51:59,953 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-07 19:52:06,713 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-07 19:52:10,008 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-07 19:52:10,092 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-07 19:52:12,444 - config - checkForWindowExistence - INFO - Add a device is obtained
+2020-08-07 19:52:17,733 - config - printerConfig - INFO - Searching for Add Printer window for a adding a local printer
+2020-08-07 19:52:18,132 - config - checkForWindowExistence - INFO - Searching for Add Printer via infinite loop
+2020-08-07 19:52:18,152 - config - checkForWindowExistence - INFO - Add Printer is obtained
+2020-08-07 19:52:18,580 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer port
+2020-08-07 19:52:35,277 - config - printerConfig - INFO - Searching for Add Printer window for adding hostname and portname
+2020-08-07 19:52:39,389 - config - printerConfig - INFO - Searching for Add Printer window for additonal printer info
+2020-08-07 19:53:32,679 - config - printerConfig - INFO - Searching for Add Printer window for selecting manufacturer name and printer name
+2020-08-07 19:54:29,043 - config - printerConfig - INFO - Searching for Add Printer window for confirming printer version
+2020-08-07 19:54:29,698 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer name
+2020-08-07 19:54:29,852 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer do not share
+2020-08-07 19:54:31,798 - config - printerConfig - INFO - Searching for Add Printer window for selecting finish button
+2020-08-07 19:54:32,965 - config - printerConfig - INFO - Default printer not set window closing
+2020-08-08 01:42:21,790 - config - loginAndCreateTickets - INFO - Logging into ITSM tool for generating ticket
+2020-08-08 01:42:21,790 - config - loginAndCreateTickets - INFO - Logging into ITSM tool for generating ticket
+2020-08-08 01:42:21,790 - config - loginAndCreateTickets - INFO - Logging into ITSM tool for generating ticket
+2020-08-08 01:42:21,791 - config - loginAndCreateTickets - ERROR - Error in logging into ITSM tool for generating ticket
+Traceback (most recent call last):
+  File "C:\Users\hseth\Desktop\symphony server\createticket.py", line 24, in loginAndCreateTickets
+    driver.get('https://staging-ci.symphonysummit.com/Afsservicedesk/Summit_WebLogin.aspx')
+NameError: name 'driver' is not defined
+2020-08-08 01:42:21,791 - config - loginAndCreateTickets - ERROR - Error in logging into ITSM tool for generating ticket
+Traceback (most recent call last):
+  File "C:\Users\hseth\Desktop\symphony server\createticket.py", line 24, in loginAndCreateTickets
+    driver.get('https://staging-ci.symphonysummit.com/Afsservicedesk/Summit_WebLogin.aspx')
+NameError: name 'driver' is not defined
+2020-08-08 01:42:21,791 - config - loginAndCreateTickets - ERROR - Error in logging into ITSM tool for generating ticket
+Traceback (most recent call last):
+  File "C:\Users\hseth\Desktop\symphony server\createticket.py", line 24, in loginAndCreateTickets
+    driver.get('https://staging-ci.symphonysummit.com/Afsservicedesk/Summit_WebLogin.aspx')
+NameError: name 'driver' is not defined
+2020-08-08 01:42:21,791 - config - loginAndCreateTickets - ERROR - error in generating ticket
+Traceback (most recent call last):
+  File "C:\Users\hseth\Desktop\symphony server\createticket.py", line 60, in loginAndCreateTickets
+    element2 = driver.find_element_by_id("BodyContentPlaceHolder_txtSymptom")
+NameError: name 'driver' is not defined
+2020-08-08 01:42:21,791 - config - loginAndCreateTickets - ERROR - error in generating ticket
+Traceback (most recent call last):
+  File "C:\Users\hseth\Desktop\symphony server\createticket.py", line 60, in loginAndCreateTickets
+    element2 = driver.find_element_by_id("BodyContentPlaceHolder_txtSymptom")
+NameError: name 'driver' is not defined
+2020-08-08 01:42:21,791 - config - loginAndCreateTickets - ERROR - error in generating ticket
+Traceback (most recent call last):
+  File "C:\Users\hseth\Desktop\symphony server\createticket.py", line 60, in loginAndCreateTickets
+    element2 = driver.find_element_by_id("BodyContentPlaceHolder_txtSymptom")
+NameError: name 'driver' is not defined
+2020-08-08 01:46:01,378 - config - loginAndCreateTickets - INFO - Logging into ITSM tool for generating ticket
+2020-08-08 01:46:01,378 - config - loginAndCreateTickets - INFO - Logging into ITSM tool for generating ticket
+2020-08-08 01:46:01,378 - config - loginAndCreateTickets - INFO - Logging into ITSM tool for generating ticket
+2020-08-08 12:50:44,537 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-08 12:50:46,760 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-08 12:50:47,001 - config - checkForWindowExistence - INFO - Searching for All Control Panel Items via infinite loop
+2020-08-08 12:50:53,142 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-08 12:50:54,657 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-08 12:50:54,734 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-08 12:51:06,171 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-08 12:51:08,452 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-08 12:51:08,580 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-08 12:57:29,969 - config - mailConfig - INFO - opening control panel for email configuration 
+2020-08-08 12:57:32,215 - config - mailConfig - INFO - Searching for All Control Panel Items window
+2020-08-08 12:57:37,950 - config - mailConfig - INFO - Searching for Mail (Microsoft Outlook 2016) icon
+2020-08-08 12:57:39,373 - config - mailConfig - INFO - Searching for Mail Setup - Outlook window
+2020-08-08 12:57:39,447 - config - checkForWindowExistence - INFO - Searching for Mail Setup - Outlook via infinite loop
+2020-08-08 12:57:42,469 - config - mailConfig - INFO - Searching for E-mail Accounts button
+2020-08-08 12:57:44,934 - config - mailConfig - INFO - Searching for Account Settings window
+2020-08-08 12:57:45,033 - config - checkForWindowExistence - INFO - Searching for Account Settings via infinite loop
+2020-08-08 12:58:47,044 - config - mailConfig - INFO - Clicking on Email and New button in Account Settings window
+2020-08-08 12:58:47,430 - config - mailConfig - INFO - Searching for Add Account window for clicking on Manual Setup radio button
+2020-08-08 12:58:49,547 - config - checkForWindowExistence - INFO - Searching for Add Account via infinite loop
+2020-08-08 12:58:50,662 - config - mailConfig - INFO - Searching for Add Account window for clicking on POP or IMAP radio button
+2020-08-08 12:58:51,439 - config - mailConfig - INFO - Searching for Add Account window for entering user details recevied via chatbot
+2020-08-08 12:59:00,733 - config - mailConfig - INFO - Searching for Internet Email Settings for entering Incoming and Outgoing port details
+2020-08-08 12:59:01,027 - config - checkForWindowExistence - INFO - Searching for Internet Email Settings via infinite loop
+2020-08-08 13:00:32,542 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-08 13:00:34,649 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-08 13:00:40,633 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-08 13:00:44,846 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-08 13:00:44,974 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-08 13:00:46,317 - config - checkForWindowExistence - INFO - Add a device is obtained
+2020-08-08 13:00:52,005 - config - printerConfig - INFO - Searching for Add Printer window for a adding a local printer
+2020-08-08 13:00:52,588 - config - checkForWindowExistence - INFO - Searching for Add Printer via infinite loop
+2020-08-08 13:00:52,644 - config - checkForWindowExistence - INFO - Add Printer is obtained
+2020-08-08 13:00:53,786 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer port
+2020-08-08 13:00:59,649 - config - printerConfig - INFO - Searching for Add Printer window for adding hostname and portname
+2020-08-08 13:01:04,081 - config - printerConfig - INFO - Searching for Add Printer window for additonal printer info
+2020-08-08 13:01:55,190 - config - printerConfig - INFO - Searching for Add Printer window for selecting manufacturer name and printer name
+2020-08-08 13:07:45,922 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-08 13:07:48,031 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-08 13:07:54,023 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-08 13:07:58,040 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-08 13:07:58,169 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-08 13:07:58,743 - config - checkForWindowExistence - INFO - Add a device is obtained
+2020-08-08 13:08:04,334 - config - printerConfig - INFO - Searching for Add Printer window for a adding a local printer
+2020-08-08 13:08:05,483 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer port
+2020-08-08 13:08:09,685 - config - printerConfig - INFO - Searching for Add Printer window for adding hostname and portname
+2020-08-08 13:08:11,135 - config - printerConfig - INFO - Searching for Add Printer window for additonal printer info
+2020-08-08 13:09:01,163 - config - printerConfig - INFO - Searching for Add Printer window for selecting manufacturer name and printer name
+2020-08-08 13:13:25,772 - config - printerConfig - INFO - opening control panel for printer configuration 
+2020-08-08 13:13:27,862 - config - printerConfig - INFO - Searching for All Control Panel Items window in try
+2020-08-08 13:13:33,813 - config - printerConfig - INFO - Searching for Devices and Printers window
+2020-08-08 13:13:37,909 - config - printerConfig - INFO - Searching for Add a Device window
+2020-08-08 13:13:37,983 - config - checkForWindowExistence - INFO - Searching for Add a device via infinite loop
+2020-08-08 13:13:38,359 - config - checkForWindowExistence - INFO - Add a device is obtained
+2020-08-08 13:13:43,899 - config - printerConfig - INFO - Searching for Add Printer window for a adding a local printer
+2020-08-08 13:13:45,219 - config - printerConfig - INFO - Searching for Add Printer window for selecting printer port
+2020-08-08 13:13:49,515 - config - printerConfig - INFO - Searching for Add Printer window for adding hostname and portname
+2020-08-08 13:13:50,805 - config - printerConfig - INFO - Searching for Add Printer window for additonal printer info
+2020-08-08 13:14:40,491 - config - printerConfig - INFO - Searching for Add Printer window for selecting manufacturer name and printer name
