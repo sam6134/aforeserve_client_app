@@ -7,7 +7,7 @@ from platform import platform, system, release
 from getpass import getuser
 import uuid
 import os.path
-
+import config
 # for windows 10
 import Printer_Latest_Remove_Latency_win10
 import test_fetch_mail_win10
@@ -116,8 +116,8 @@ def run():
     sernum = '12345'
     lap_desk = 'desk'
     url = config1['DEFAULT']['URL']+'/inoutserver/'+str(ids)
-    print('------------')
-    print(url)
+    config.logger.info('------------')
+    config.logger.info(url)
     res = get(url)
     res = res.json()
     inser, outser = res['inserver'], res['outserver']
@@ -185,7 +185,7 @@ def run():
         if rel == '8.1':
             out = Printer_Latest_Remove_Latency_for_8.printerConfig(
                 manufac_name, mdelname)
-            print(out)
+            config.logger.info(out)
             # out = 'success'
             if out == 'Success':
                 url = config1['DEFAULT']['URL']+'/upt/'+res.text+'/'+str(ids)
@@ -245,7 +245,7 @@ def run():
         else:
             out = Printer_Latest_Remove_Latency_win10.printerConfig(
                 manufac_name, mdelname)
-            print(out)
+            config.logger.info(out)
             # out = 'Fail'
             if out == 'Success':
                 url = config1['DEFAULT']['URL']+'/upt/'+res.text+'/'+str(ids)
@@ -342,7 +342,7 @@ def run():
             out = test_fetch_mail_win10.mailConfig(
                 username, inser, outser, email_ss, password_s)
             # out = 'success'
-            print(out)
+            config.logger.info(out)
             if out == 'Success':
                 url = config1['DEFAULT']['URL']+'/upt/'+str(tid)+'/'+str(ids)
                 # print(url)
